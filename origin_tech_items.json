@@ -1,0 +1,4767 @@
+[
+  {
+    "type": "/obj/item/gift",
+    "name": "gift",
+    "origin_tech": {
+      "TECH_MAGNET": 2,
+      "TECH_ILLEGAL": 3
+    },
+    "matter": {
+      "MAT_STEEL": 100
+    }
+  },
+  {
+    "type": "/obj/item/storage/part_replacer/adv",
+    "name": "advanced rapid part exchange device",
+    "origin_tech": {
+      "TECH_MATERIAL": 1
+    },
+    "matter": {
+      "MAT_GLASS": 200
+    }
+  },
+  {
+    "type": "/obj/item/melee/cultblade",
+    "name": "cult blade",
+    "origin_tech": {
+      "TECH_COMBAT": 1,
+      "TECH_ARCANE": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/soulstone",
+    "name": "Soul Stone Shard",
+    "origin_tech": {
+      "TECH_BLUESPACE": 4,
+      "TECH_MATERIAL": 4,
+      "TECH_ARCANE": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/technomancer_core",
+    "name": "manipulation core",
+    "origin_tech": {
+      "TECH_MATERIAL": 8,
+      "TECH_ENGINEERING": 8,
+      "TECH_POWER": 8,
+      "TECH_BLUESPACE": 10,
+      "TECH_COMBAT": 7,
+      "TECH_MAGNET": 9,
+      "TECH_DATA": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/technomancer_core",
+    "name": "Rapid Core",
+    "origin_tech": {
+      "TECH_MAGNET": 6,
+      "TECH_ENGINEERING": 6
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/disposable_teleporter",
+    "name": "disposable teleporter",
+    "origin_tech": {
+      "TECH_BLUESPACE": 4,
+      "TECH_POWER": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/bioprinter",
+    "name": "bioprinter circuit",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_BIO": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/roboprinter",
+    "name": "roboprinter circuit",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_BIO": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/cryopodcontrol",
+    "name": "Cryogenic Oversight Control",
+    "origin_tech": {
+      "TECH_DATA": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/machine/vitals_monitor",
+    "name": "circuit board (vitals monitor)",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_BIO": 4,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/clamp/C = new/obj/item/clamp(src.loc)",
+    "name": "stasis clamp",
+    "origin_tech": {
+      "TECH_ENGINEERING": 4,
+      "TECH_MAGNET": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/airlock_electronics",
+    "name": "airlock electronics",
+    "origin_tech": {
+      "TECH_DATA": 2
+    },
+    "matter": {
+      "MAT_STEEL": 50,
+      "MAT_GLASS": 50
+    }
+  },
+  {
+    "type": "/obj/item/circuitboard/mecha_control",
+    "name": "Exosuit tracking beacon",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_MAGNET": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts",
+    "name": "mecha part",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/chassis/phazon",
+    "name": "Phazon Chassis",
+    "origin_tech": {
+      "TECH_MATERIAL": 7
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/component/actuator",
+    "name": "mecha actuator",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/component/armor",
+    "name": "mecha plating",
+    "origin_tech": {
+      "TECH_DATA": 1,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/component/electrical",
+    "name": "mecha electrical harness",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/component/hull",
+    "name": "mecha hull",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/component/gas",
+    "name": "mecha life-support",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/component",
+    "name": "mecha component",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment",
+    "name": "mecha equipment",
+    "origin_tech": {
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/anticcw_armor_booster //what is that noise? A BAWWW from TK mutants.",
+    "name": "\\improper CCW armor booster",
+    "origin_tech": {
+      "TECH_MATERIAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster",
+    "name": "\\improper RW armor booster",
+    "origin_tech": {
+      "TECH_MATERIAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/gravcatapult",
+    "name": "gravitational catapult",
+    "origin_tech": {
+      "TECH_BLUESPACE": 2,
+      "TECH_MAGNET": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/cloak",
+    "name": "cloaking device",
+    "origin_tech": {
+      "TECH_MAGNET": 5,
+      "TECH_DATA": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/tool/drill",
+    "name": "drill",
+    "origin_tech": {
+      "TECH_MATERIAL": 4,
+      "TECH_ENGINEERING": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/tesla_energy_relay",
+    "name": "energy relay",
+    "origin_tech": {
+      "TECH_MAGNET": 4,
+      "TECH_ILLEGAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/generator",
+    "name": "phoron generator",
+    "origin_tech": {
+      "TECH_PHORON": 2,
+      "TECH_POWER": 2,
+      "TECH_ENGINEERING": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/hardpoint_actuator",
+    "name": "hardpoint actuator clamp",
+    "origin_tech": {
+      "TECH_MATERIAL": 5,
+      "TECH_ENGINEERING": 5,
+      "TECH_POWER": 4,
+      "TECH_COMBAT": 1,
+      "TECH_MAGNET": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/tool/powertool/inflatables",
+    "name": "inflatable deployment mechanism",
+    "origin_tech": {
+      "TECH_MATERIAL": 5,
+      "TECH_MAGNET": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/weapon/energy/medigun",
+    "name": "\\improper BL-3 \\",
+    "origin_tech": {
+      "TECH_MATERIAL": 5,
+      "TECH_COMBAT": 5,
+      "TECH_BIO": 6,
+      "TECH_POWER": 6
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/tool/orescanner",
+    "name": "mounted ore scanner",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_MAGNET": 2,
+      "TECH_POWER": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/tool/passenger",
+    "name": "passenger compartment",
+    "origin_tech": {
+      "TECH_ENGINEERING": 1,
+      "TECH_BIO": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/tool/powertool",
+    "name": "pneumatic wrench",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_MAGNET": 2,
+      "TECH_POWER": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/tool/rcd",
+    "name": "mounted RCD",
+    "origin_tech": {
+      "TECH_MATERIAL": 4,
+      "TECH_BLUESPACE": 3,
+      "TECH_MAGNET": 4,
+      "TECH_POWER": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/repair_droid",
+    "name": "repair droid",
+    "origin_tech": {
+      "TECH_MAGNET": 3,
+      "TECH_DATA": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/runningboard",
+    "name": "hacked powered exosuit running board",
+    "origin_tech": {
+      "TECH_MATERIAL": 6
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/combat_shield",
+    "name": "linear combat shield",
+    "origin_tech": {
+      "TECH_PHORON": 3,
+      "TECH_MAGNET": 6,
+      "TECH_ILLEGAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/omni_shield",
+    "name": "omni shield",
+    "origin_tech": {
+      "TECH_PHORON": 3,
+      "TECH_MAGNET": 6,
+      "TECH_ILLEGAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/tool/sleeper",
+    "name": "mounted sleeper",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_BIO": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/speedboost",
+    "name": "ripley leg actuator overdrive",
+    "origin_tech": {
+      "TECH_POWER": 5,
+      "TECH_MATERIAL": 4,
+      "TECH_ENGINEERING": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/storage",
+    "name": "auxillary exosuit storage bay",
+    "origin_tech": {
+      "TECH_MATERIAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/tool/syringe_gun",
+    "name": "syringe gun",
+    "origin_tech": {
+      "TECH_MATERIAL": 3,
+      "TECH_BIO": 4,
+      "TECH_MAGNET": 4,
+      "TECH_DATA": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/teleporter",
+    "name": "teleporter",
+    "origin_tech": {
+      "TECH_BLUESPACE": 10
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/tool/powertool/welding",
+    "name": "welding laser",
+    "origin_tech": {
+      "TECH_MATERIAL": 4,
+      "TECH_MAGNET": 3,
+      "TECH_POWER": 4,
+      "TECH_PHORON": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/wormhole_generator",
+    "name": "wormhole generator",
+    "origin_tech": {
+      "TECH_BLUESPACE": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/weapon/honker",
+    "name": "sound emission device",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_COMBAT": 4,
+      "TECH_ILLEGAL": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/weapon",
+    "name": "mecha weapon",
+    "origin_tech": {
+      "TECH_MATERIAL": 3,
+      "TECH_COMBAT": 3
+    },
+    "matter": {
+      "MAT_STEEL": 6000,
+      "MAT_GLASS": 3000
+    }
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/mortar",
+    "name": "\\improper HEP RC 4 \\",
+    "origin_tech": {
+      "TECH_MATERIAL": 4,
+      "TECH_COMBAT": 5,
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot",
+    "name": "\\improper LBX AC 10 \\",
+    "origin_tech": {
+      "TECH_MATERIAL": 3,
+      "TECH_COMBAT": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/shocker",
+    "name": "exosuit electrifier",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_POWER": 6
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/weapon/energy/ion",
+    "name": "mkIV ion heavy cannon",
+    "origin_tech": {
+      "TECH_MATERIAL": 3,
+      "TECH_COMBAT": 4,
+      "TECH_MAGNET": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser",
+    "name": "\\improper CH-PS \\",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_COMBAT": 3,
+      "TECH_MAGNET": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/weapon/energy/phase",
+    "name": "\\improper NT-PE \\",
+    "origin_tech": {
+      "TECH_MATERIAL": 1,
+      "TECH_COMBAT": 2,
+      "TECH_MAGNET": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/weapon/energy/pulse",
+    "name": "eZ-13 mk2 heavy pulse rifle",
+    "origin_tech": {
+      "TECH_MATERIAL": 3,
+      "TECH_COMBAT": 6,
+      "TECH_POWER": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/grenade",
+    "name": "\\improper SGL-6 grenade launcher",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MATERIAL": 5,
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/weapon/energy/flamer",
+    "name": "\\improper CR-3 Mark 8",
+    "origin_tech": {
+      "TECH_MATERIAL": 4,
+      "TECH_COMBAT": 6,
+      "TECH_PHORON": 4,
+      "TECH_ILLEGAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/incendiary",
+    "name": "\\improper DR-AC 3",
+    "origin_tech": {
+      "TECH_MATERIAL": 4,
+      "TECH_COMBAT": 5,
+      "TECH_PHORON": 2,
+      "TECH_ILLEGAL": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/micro/chassis/gopher",
+    "name": "Gopher Chassis",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_MATERIAL": 2,
+      "TECH_BIO": 2,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/micro/chassis/polecat",
+    "name": "Polecat Chassis",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_MATERIAL": 3,
+      "TECH_BIO": 3,
+      "TECH_ENGINEERING": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mecha_parts/micro/chassis/weasel",
+    "name": "Weasel Chassis",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_MATERIAL": 3,
+      "TECH_BIO": 3,
+      "TECH_ENGINEERING": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/mecha/gopher",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/bodybag",
+    "name": "body bag",
+    "origin_tech": {
+      "TECH_BIO": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/poi",
+    "name": "Object - Pascal B Steel Shaft Cap",
+    "origin_tech": {
+      "TECH_ENGINEERING": 4,
+      "TECH_MATERIAL": 3,
+      "TECH_DATA": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/bodybag/cryobag/robobag",
+    "name": "synthmorph bag",
+    "origin_tech": {
+      "TECH_ENGINEERING": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/nifrepairer",
+    "name": "advanced NIF repair tool",
+    "origin_tech": {
+      "TECH_MAGNET": 5,
+      "TECH_BLUESPACE": 5,
+      "TECH_MATERIAL": 5,
+      "TECH_ENGINEERING": 5,
+      "TECH_DATA": 5
+    },
+    "matter": {
+      "MAT_STEEL": 4000,
+      "MAT_GLASS": 6000
+    }
+  },
+  {
+    "type": "/obj/item/aicard",
+    "name": "intelliCore",
+    "origin_tech": {
+      "TECH_DATA": 4,
+      "TECH_MATERIAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/multitool/ai_detector",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_MAGNET": 2,
+      "TECH_ENGINEERING": 2,
+      "TECH_ILLEGAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/bodysnatcher",
+    "name": "\\improper Body Snatcher Device",
+    "origin_tech": {
+      "TECH_MAGNET": 2,
+      "TECH_BIO": 2,
+      "TECH_ILLEGAL": 1
+    },
+    "matter": {
+      "MAT_STEEL": 200
+    }
+  },
+  {
+    "type": "/obj/item/chameleon",
+    "name": "chameleon projector",
+    "origin_tech": {
+      "TECH_ILLEGAL": 4,
+      "TECH_MAGNET": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/debugger",
+    "name": "debugger",
+    "origin_tech": {
+      "TECH_MAGNET": 1,
+      "TECH_ENGINEERING": 1
+    },
+    "matter": {
+      "MAT_STEEL": 50,
+      "MAT_GLASS": 20
+    }
+  },
+  {
+    "type": "/obj/item/defib_kit",
+    "name": "defibrillator",
+    "origin_tech": {
+      "TECH_BIO": 4,
+      "TECH_POWER": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/defib_kit/compact",
+    "name": "compact defibrillator",
+    "origin_tech": {
+      "TECH_BIO": 5,
+      "TECH_POWER": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/flash",
+    "name": "flash",
+    "origin_tech": {
+      "TECH_MAGNET": 2,
+      "TECH_COMBAT": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/flash/attack(mob/living/M, mob/living/user, var/target_zone)",
+    "name": "synthetic flash",
+    "origin_tech": {
+      "TECH_MAGNET": 2,
+      "TECH_COMBAT": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gps",
+    "name": "global positioning system",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_BLUESPACE": 2,
+      "TECH_MAGNET": 1
+    },
+    "matter": {
+      "MAT_STEEL": 500
+    }
+  },
+  {
+    "type": "/obj/item/gps/proc/display_list()",
+    "name": "global positioning system ([gps_tag])",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_BLUESPACE": 3,
+      "TECH_MAGNET": 2,
+      "TECH_ILLEGAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/laser_pointer",
+    "name": "laser pointer",
+    "origin_tech": {
+      "TECH_MAGNET": 2,
+      "TECH_COMBAT": 1
+    },
+    "matter": {
+      "MAT_GLASS": 500,
+      "MAT_STEEL": 500
+    }
+  },
+  {
+    "type": "/obj/item/lightreplacer",
+    "name": "light replacer",
+    "origin_tech": {
+      "TECH_MAGNET": 3,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/multitool",
+    "name": "multitool",
+    "origin_tech": {
+      "TECH_MAGNET": 1,
+      "TECH_ENGINEERING": 1
+    },
+    "matter": {
+      "MAT_STEEL": 50,
+      "MAT_GLASS": 20
+    }
+  },
+  {
+    "type": "/obj/item/paicard)",
+    "name": "personal AI device",
+    "origin_tech": {
+      "TECH_DATA": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/personal_shield_generator",
+    "name": "personal shield generator",
+    "origin_tech": {
+      "TECH_MATERIAL": 6,
+      "TECH_COMBAT": 8,
+      "TECH_POWER": 6,
+      "TECH_DATA": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/powersink",
+    "name": "power sink",
+    "origin_tech": {
+      "TECH_POWER": 3,
+      "TECH_ILLEGAL": 5
+    },
+    "matter": {
+      "MAT_STEEL": 750
+    }
+  },
+  {
+    "type": "/obj/item/camerabug",
+    "name": "mobile camera pod",
+    "origin_tech": {
+      "TECH_DATA": 1,
+      "TECH_ENGINEERING": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/camerabug/verb/reset()",
+    "name": "Reset camera bug",
+    "origin_tech": {
+      "TECH_ENGINEERING": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/bug_monitor/attack_self(mob/user)",
+    "name": "\\improper PDA",
+    "origin_tech": {
+      "TECH_DATA": 1,
+      "TECH_ENGINEERING": 1,
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/suit_cooling_unit",
+    "name": "portable suit cooling unit",
+    "origin_tech": {
+      "TECH_MAGNET": 2,
+      "TECH_MATERIAL": 2
+    },
+    "matter": {
+      "MAT_STEEL": 15000,
+      "MAT_GLASS": 3500
+    }
+  },
+  {
+    "type": "/obj/item/batterer",
+    "name": "mind batterer",
+    "origin_tech": {
+      "TECH_MAGNET": 3,
+      "TECH_COMBAT": 3,
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/universal_translator",
+    "name": "handheld translator",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_ENGINEERING": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/perfect_tele",
+    "name": "personal translocator",
+    "origin_tech": {
+      "TECH_MAGNET": 5,
+      "TECH_BLUESPACE": 5,
+      "TECH_ILLEGAL": 7
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/perfect_tele/one_beacon",
+    "name": "mini-translocator",
+    "origin_tech": {
+      "TECH_MAGNET": 5,
+      "TECH_BLUESPACE": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/t_scanner",
+    "name": "\\improper T-ray scanner",
+    "origin_tech": {
+      "TECH_MAGNET": 1,
+      "TECH_ENGINEERING": 1
+    },
+    "matter": {
+      "MAT_STEEL": 150
+    }
+  },
+  {
+    "type": "/obj/item/t_scanner/proc/get_overlay(obj/scanned)",
+    "name": "Upgraded T-ray Scanner",
+    "origin_tech": {
+      "TECH_MAGNET": 4,
+      "TECH_ENGINEERING": 5
+    },
+    "matter": {
+      "MAT_STEEL": 500,
+      "PHORON": 150
+    }
+  },
+  {
+    "type": "/obj/item/communicator",
+    "name": "communicator",
+    "origin_tech": {
+      "TECH_ENGINEERING": 2,
+      "TECH_MAGNET": 2,
+      "TECH_BLUESPACE": 2,
+      "TECH_DATA": 2
+    },
+    "matter": {
+      "MAT_STEEL": 30,
+      "MAT_GLASS": 10
+    }
+  },
+  {
+    "type": "/obj/item/radio/beacon",
+    "name": "tracking beacon",
+    "origin_tech": {
+      "TECH_BLUESPACE": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/encryptionkey/",
+    "name": "standard encryption key",
+    "origin_tech": {
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/encryptionkey)))",
+    "name": "broken radio headset",
+    "origin_tech": {
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/radio_jammer/J as anything in active_radio_jammers)",
+    "name": "subspace jammer",
+    "origin_tech": {
+      "TECH_ILLEGAL": 7,
+      "TECH_BLUESPACE": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/analyzer",
+    "name": "gas analyzer",
+    "origin_tech": {
+      "TECH_MAGNET": 1,
+      "TECH_ENGINEERING": 1
+    },
+    "matter": {
+      "MAT_STEEL": 30,
+      "MAT_GLASS": 20
+    }
+  },
+  {
+    "type": "/obj/item/halogen_counter",
+    "name": "halogen counter",
+    "origin_tech": {
+      "TECH_MAGNET": 1,
+      "TECH_BIO": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/healthanalyzer",
+    "name": "health analyzer",
+    "origin_tech": {
+      "TECH_MAGNET": 1,
+      "TECH_BIO": 1
+    },
+    "matter": {
+      "MAT_STEEL": 200
+    }
+  },
+  {
+    "type": "/obj/item/organ/internal/appendix/a in H.internal_organs)",
+    "name": "Switch Verbosity",
+    "origin_tech": {
+      "TECH_MAGNET": 5,
+      "TECH_BIO": 6
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mass_spectrometer",
+    "name": "mass spectrometer",
+    "origin_tech": {
+      "TECH_MAGNET": 2,
+      "TECH_BIO": 2
+    },
+    "matter": {
+      "MAT_STEEL": 30,
+      "MAT_GLASS": 20
+    }
+  },
+  {
+    "type": "/obj/item/motiontracker",
+    "name": "Motion Tracker",
+    "origin_tech": {
+      "TECH_MAGNET": 1,
+      "TECH_DATA": 1
+    },
+    "matter": {
+      "MAT_STEEL": 30,
+      "MAT_GLASS": 20
+    }
+  },
+  {
+    "type": "/obj/item/reagent_scanner",
+    "name": "reagent scanner",
+    "origin_tech": {
+      "TECH_MAGNET": 2,
+      "TECH_BIO": 2
+    },
+    "matter": {
+      "MAT_STEEL": 30,
+      "MAT_GLASS": 20
+    }
+  },
+  {
+    "type": "/obj/item/sleevemate",
+    "name": "\\improper SleeveMate 3700",
+    "origin_tech": {
+      "TECH_MAGNET": 2,
+      "TECH_BIO": 2
+    },
+    "matter": {
+      "MAT_STEEL": 200
+    }
+  },
+  {
+    "type": "/obj/item/slime_scanner",
+    "name": "slime scanner",
+    "origin_tech": {
+      "TECH_BIO": 1
+    },
+    "matter": {
+      "MAT_STEEL": 30,
+      "MAT_GLASS": 20
+    }
+  },
+  {
+    "type": "/obj/item/stack/medical",
+    "name": "medical pack",
+    "origin_tech": {
+      "TECH_BIO": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/medical/advanced",
+    "name": "liquid bandage kit",
+    "origin_tech": {
+      "TECH_BIO": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/nanopaste",
+    "name": "nanopaste",
+    "origin_tech": {
+      "TECH_MATERIAL": 4,
+      "TECH_ENGINEERING": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_MATERIAL": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/telecrystal",
+    "name": "telecrystal",
+    "origin_tech": {
+      "TECH_MATERIAL": 6,
+      "TECH_BLUESPACE": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/tile/grass",
+    "name": "grass tile",
+    "origin_tech": {
+      "TECH_BIO": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/aiModule",
+    "name": "\\improper AI module",
+    "origin_tech": {
+      "TECH_DATA": 3
+    },
+    "matter": {
+      "MAT_STEEL": 30,
+      "MAT_GLASS": 10
+    }
+  },
+  {
+    "type": "/obj/item/aiModule/reset/Initialize(mapload)",
+    "name": "\\improper 'Purge' AI module",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_MATERIAL": 6
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/aiModule/drone",
+    "name": "\\improper 'Drone' core AI module",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_MATERIAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/aiModule/predator",
+    "name": "\\improper 'Predator' core AI module",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_BIO": 2,
+      "TECH_MATERIAL": 6,
+      "TECH_ILLEGAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/autopsy_scanner",
+    "name": "biopsy scanner",
+    "origin_tech": {
+      "TECH_MATERIAL": 1,
+      "TECH_BIO": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/flame/match",
+    "name": "match",
+    "origin_tech": {
+      "TECH_MATERIAL": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/plastique",
+    "name": "plastic explosives",
+    "origin_tech": {
+      "TECH_ILLEGAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/flamethrower",
+    "name": "flamethrower",
+    "origin_tech": {
+      "TECH_COMBAT": 1,
+      "TECH_PHORON": 1
+    },
+    "matter": {
+      "MAT_STEEL": 500
+    }
+  },
+  {
+    "type": "/obj/item/handcuffs",
+    "name": "handcuffs",
+    "origin_tech": {
+      "TECH_MATERIAL": 1
+    },
+    "matter": {
+      "MAT_STEEL": 500
+    }
+  },
+  {
+    "type": "/obj/item/handcuffs/legcuffs",
+    "name": "legcuffs",
+    "origin_tech": {
+      "TECH_MATERIAL": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/rcd",
+    "name": "rapid construction device",
+    "origin_tech": {
+      "TECH_ENGINEERING": 4,
+      "TECH_MATERIAL": 2
+    },
+    "matter": {
+      "DEFAULT_WALL_MATERIAL": 50000
+    }
+  },
+  {
+    "type": "/obj/item/rcd_ammo",
+    "name": "compressed matter cartridge",
+    "origin_tech": {
+      "TECH_MATERIAL": 2
+    },
+    "matter": {
+      "DEFAULT_WALL_MATERIAL": 30000,
+      "MAT_GLASS": 15000
+    }
+  },
+  {
+    "type": "/obj/item/rms",
+    "name": "Rapid Material Synthesizer",
+    "origin_tech": {
+      "TECH_ENGINEERING": 3,
+      "TECH_MATERIAL": 3
+    },
+    "matter": {
+      "DEFAULT_WALL_MATERIAL": 5000
+    }
+  },
+  {
+    "type": "/obj/item/pipe_dispenser",
+    "name": "Rapid Piping Device (RPD)",
+    "origin_tech": {
+      "TECH_ENGINEERING": 4,
+      "TECH_MATERIAL": 2
+    },
+    "matter": {
+      "MAT_STEEL": 50000,
+      "MAT_GLASS": 25000
+    }
+  },
+  {
+    "type": "/obj/item/teleportation_scroll",
+    "name": "scroll of teleportation",
+    "origin_tech": {
+      "TECH_BLUESPACE": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/projectile))",
+    "name": "shield",
+    "origin_tech": {
+      "TECH_MATERIAL": 2
+    },
+    "matter": {
+      "MAT_GLASS": 7500,
+      "MAT_STEEL": 1000
+    }
+  },
+  {
+    "type": "/obj/item/melee/baton",
+    "name": "stunbaton",
+    "origin_tech": {
+      "TECH_COMBAT": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/surgical/bioregen",
+    "name": "bioregenerator",
+    "origin_tech": {
+      "TECH_MATERIAL": 1,
+      "TECH_BIO": 1
+    },
+    "matter": {
+      "MAT_STEEL": 10000,
+      "MAT_GLASS": 5000
+    }
+  },
+  {
+    "type": "/obj/item/surgical/hemostat",
+    "name": "hemostat",
+    "origin_tech": {
+      "TECH_MATERIAL": 1,
+      "TECH_BIO": 1
+    },
+    "matter": {
+      "MAT_STEEL": 5000,
+      "MAT_GLASS": 2500
+    }
+  },
+  {
+    "type": "/obj/item/surgical/cautery",
+    "name": "cautery",
+    "origin_tech": {
+      "TECH_MATERIAL": 1,
+      "TECH_BIO": 1
+    },
+    "matter": {
+      "MAT_STEEL": 5000,
+      "MAT_GLASS": 2500
+    }
+  },
+  {
+    "type": "/obj/item/surgical/surgicaldrill",
+    "name": "surgical drill",
+    "origin_tech": {
+      "TECH_MATERIAL": 1,
+      "TECH_BIO": 1
+    },
+    "matter": {
+      "MAT_STEEL": 15000,
+      "MAT_GLASS": 10000
+    }
+  },
+  {
+    "type": "/obj/item/surgical/scalpel",
+    "name": "scalpel",
+    "origin_tech": {
+      "TECH_MATERIAL": 1,
+      "TECH_BIO": 1
+    },
+    "matter": {
+      "MAT_STEEL": 10000,
+      "MAT_GLASS": 5000
+    }
+  },
+  {
+    "type": "/obj/item/surgical/scalpel/laser1",
+    "name": "laser scalpel",
+    "origin_tech": {
+      "TECH_MATERIAL": 5,
+      "TECH_BIO": 3,
+      "TECH_ILLEGAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/surgical/circular_saw",
+    "name": "circular saw",
+    "origin_tech": {
+      "TECH_MATERIAL": 1,
+      "TECH_BIO": 1
+    },
+    "matter": {
+      "MAT_STEEL": 20000,
+      "MAT_GLASS": 10000
+    }
+  },
+  {
+    "type": "/obj/item/surgical/bonegel",
+    "name": "bone gel",
+    "origin_tech": {
+      "TECH_MATERIAL": 1,
+      "TECH_BIO": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/locator",
+    "name": "locator",
+    "origin_tech": {
+      "TECH_MAGNET": 1
+    },
+    "matter": {
+      "MAT_STEEL": 400
+    }
+  },
+  {
+    "type": "/obj/item/hand_tele",
+    "name": "hand tele",
+    "origin_tech": {
+      "TECH_MAGNET": 1,
+      "TECH_BLUESPACE": 3
+    },
+    "matter": {
+      "MAT_STEEL": 10000
+    }
+  },
+  {
+    "type": "/obj/item/beartrap",
+    "name": "mechanical trap",
+    "origin_tech": {
+      "TECH_MATERIAL": 1
+    },
+    "matter": {
+      "MAT_STEEL": 18750
+    }
+  },
+  {
+    "type": "/obj/item/circuitboard",
+    "name": "circuit board",
+    "origin_tech": {
+      "TECH_DATA": 2
+    },
+    "matter": {
+      "MAT_STEEL": 30,
+      "MAT_GLASS": 10
+    }
+  },
+  {
+    "type": "/obj/item/circuitboard/partslathe",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_ENGINEERING": 2,
+      "TECH_DATA": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/algae_farm",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_ENGINEERING": 3,
+      "TECH_BIO": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/thermoregulator",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_ENGINEERING": 4,
+      "TECH_POWER": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/bomb_tester",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_PHORON": 3,
+      "TECH_DATA": 2,
+      "TECH_MAGNET": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/guestpass",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_MAGNET": 2,
+      "TECH_BIO": 2
+    },
+    "matter": {
+      "MAT_STEEL": 50,
+      "MAT_GLASS": 50
+    }
+  },
+  {
+    "type": "/obj/item/stock_parts/console_screen = 1,",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_MAGNET": 2,
+      "TECH_BIO": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/mecha",
+    "name": "exosuit circuit board",
+    "origin_tech": {
+      "TECH_DATA": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/aicore",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 4,
+      "TECH_BIO": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/message_monitor",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/shuttle_console",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/shuttle_console/explore",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_BLUESPACE": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/supplycomp",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/comm_monitor",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/biogenerator",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/clonepod",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_BIO": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/fluidpump",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/jukebox",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_MAGNET": 2,
+      "TECH_DATA": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/mech_recharger",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_POWER": 2,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/miningdrill",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 1,
+      "TECH_ENGINEERING": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/pacman",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_POWER": 3,
+      "TECH_PHORON": 3,
+      "TECH_ENGINEERING": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/pandemic",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_BIO": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/smes",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_POWER": 6,
+      "TECH_ENGINEERING": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/recharge_station",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_ENGINEERING": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/recycler_crusher",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_MATERIAL": 2
+    },
+    "matter": {
+      "MAT_STEEL": 50,
+      "MAT_GLASS": 50
+    }
+  },
+  {
+    "type": "/obj/item/circuitboard/rdserver",
+    "name": "Circuit board (Exosuit Fabricator)",
+    "origin_tech": {
+      "TECH_DATA": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/shield_generator",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_MAGNET": 3,
+      "TECH_POWER": 4,
+      "TECH_BLUESPACE": 2,
+      "TECH_ENGINEERING": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/shield_gen_ex",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_BLUESPACE": 4,
+      "TECH_PHORON": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/pointdefense",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_ENGINEERING": 3,
+      "TECH_COMBAT": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/telecomms",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 4,
+      "TECH_ENGINEERING": 3,
+      "TECH_BLUESPACE": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/telecomms/exonet_node",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 5,
+      "TECH_ENGINEERING": 5,
+      "TECH_BLUESPACE": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/unary_atmos",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_POWER": 2,
+      "TECH_ENGINEERING": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/grenade/anti_photon",
+    "name": "photon disruption grenade",
+    "origin_tech": {
+      "TECH_BLUESPACE": 4,
+      "TECH_MATERIAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/grenade/chem_grenade/examine(mob/user)",
+    "name": "large chem grenade",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MATERIAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/grenade/empgrenade",
+    "name": "emp grenade",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_MAGNET": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/grenade/flashbang",
+    "name": "flashbang",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_COMBAT": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/grenade/spawnergrenade",
+    "name": "delivery grenade",
+    "origin_tech": {
+      "TECH_MATERIAL": 3,
+      "TECH_MAGNET": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/grenade/spawnergrenade/detonate()",
+    "name": "manhack delivery grenade",
+    "origin_tech": {
+      "TECH_MATERIAL": 3,
+      "TECH_MAGNET": 4,
+      "TECH_ILLEGAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/grenade/supermatter",
+    "name": "supermatter grenade",
+    "origin_tech": {
+      "TECH_BLUESPACE": 5,
+      "TECH_MAGNET": 4,
+      "TECH_ENGINEERING": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/card",
+    "name": "card",
+    "origin_tech": {
+      "TECH_MAGNET": 2,
+      "TECH_ILLEGAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/card/id/syndicate",
+    "name": "agent card",
+    "origin_tech": {
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/implant/death_alarm",
+    "name": "death alarm implant",
+    "origin_tech": {
+      "TECH_MATERIAL": 1,
+      "TECH_BIO": 2,
+      "TECH_DATA": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/implant/compressed",
+    "name": "compressed matter implant",
+    "origin_tech": {
+      "TECH_MATERIAL": 4,
+      "TECH_BIO": 2,
+      "TECH_ILLEGAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/implant/organ",
+    "name": "nanite fabrication implant",
+    "origin_tech": {
+      "TECH_MATERIAL": 5,
+      "TECH_BIO": 2,
+      "TECH_ILLEGAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/material/kitchen/utensil",
+    "name": "fork",
+    "origin_tech": {
+      "TECH_MATERIAL": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/material/knife",
+    "name": "kitchen knife",
+    "origin_tech": {
+      "TECH_MATERIAL": 1
+    },
+    "matter": {
+      "MAT_STEEL": 12000
+    }
+  },
+  {
+    "type": "/obj/item/material/harpoon",
+    "name": "harpoon",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_COMBAT": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/material/knife/machete/hatchet/unathiknife",
+    "name": "duelling knife",
+    "origin_tech": {
+      "TECH_COMBAT": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/material/twohanded/fireaxe  // DEM AXES MAN, marker -Agouri",
+    "name": "fire axe",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_COMBAT": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/melee/energy/axe",
+    "name": "energy axe",
+    "origin_tech": {
+      "TECH_MAGNET": 3,
+      "TECH_COMBAT": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/melee/energy/sword",
+    "name": "energy sword",
+    "origin_tech": {
+      "TECH_MAGNET": 3,
+      "TECH_ILLEGAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/melee/chainofcommand",
+    "name": "chain of command",
+    "origin_tech": {
+      "TECH_COMBAT": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/melee/shock_maul",
+    "name": "concussion maul",
+    "origin_tech": {
+      "TECH_COMBAT": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/storage/backpack/holding",
+    "name": "bag of holding",
+    "origin_tech": {
+      "TECH_BLUESPACE": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/storage/bag/trash",
+    "name": "trash bag",
+    "origin_tech": {
+      "TECH_BLUESPACE": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/storage/toolbox",
+    "name": "toolbox",
+    "origin_tech": {
+      "TECH_COMBAT": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/storage/toolbox/syndicate",
+    "name": "black and red toolbox",
+    "origin_tech": {
+      "TECH_COMBAT": 1,
+      "TECH_ILLEGAL": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/weldingtool/brass",
+    "name": "brass welding tool",
+    "origin_tech": {
+      "TECH_ENGINEERING": 2,
+      "TECH_PHORON": 2
+    },
+    "matter": {
+      "MAT_STEEL": 70,
+      "MAT_GLASS": 60
+    }
+  },
+  {
+    "type": "/obj/item/tool/crowbar",
+    "name": "crowbar",
+    "origin_tech": {
+      "TECH_ENGINEERING": 1
+    },
+    "matter": {
+      "MAT_STEEL": 50
+    }
+  },
+  {
+    "type": "/obj/item/tool/screwdriver",
+    "name": "screwdriver",
+    "origin_tech": {
+      "TECH_MATERIAL": 3,
+      "TECH_ENGINEERING": 3
+    },
+    "matter": {
+      "MAT_STEEL": 75
+    }
+  },
+  {
+    "type": "/obj/item/tool/transforming",
+    "name": "transforming tool",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": {
+      "MAT_METAL": 150,
+      "MAT_SILVER": 50
+    }
+  },
+  {
+    "type": "/obj/item/weldingtool",
+    "name": "\\improper welding tool",
+    "origin_tech": {
+      "TECH_ENGINEERING": 1
+    },
+    "matter": {
+      "MAT_STEEL": 70,
+      "MAT_GLASS": 30
+    }
+  },
+  {
+    "type": "/obj/item/weldingtool/proc/eyecheck(mob/living/carbon/user)",
+    "name": "industrial welding tool",
+    "origin_tech": {
+      "TECH_ENGINEERING": 2,
+      "TECH_PHORON": 2
+    },
+    "matter": {
+      "MAT_STEEL": 70,
+      "MAT_GLASS": 60
+    }
+  },
+  {
+    "type": "/obj/item/tool/wirecutters",
+    "name": "wirecutters",
+    "origin_tech": {
+      "TECH_MATERIAL": 1,
+      "TECH_ENGINEERING": 1
+    },
+    "matter": {
+      "MAT_STEEL": 80
+    }
+  },
+  {
+    "type": "/obj/item/tool/wrench",
+    "name": "wrench",
+    "origin_tech": {
+      "TECH_MATERIAL": 1,
+      "TECH_ENGINEERING": 1
+    },
+    "matter": {
+      "MAT_STEEL": 150
+    }
+  },
+  {
+    "type": "/obj/item/deadringer",
+    "name": "silver pocket watch",
+    "origin_tech": {
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/telecube",
+    "name": "locus",
+    "origin_tech": {
+      "TECH_MATERIAL": 7,
+      "TECH_POWER": 6,
+      "TECH_BLUESPACE": 7,
+      "TECH_ARCANE": 2,
+      "TECH_PRECURSOR": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/assembly",
+    "name": "assembly",
+    "origin_tech": {
+      "TECH_MAGNET": 1
+    },
+    "matter": {
+      "MAT_STEEL": 100
+    }
+  },
+  {
+    "type": "/obj/item/assembly/igniter",
+    "name": "igniter",
+    "origin_tech": {
+      "TECH_MAGNET": 1
+    },
+    "matter": {
+      "MAT_STEEL": 500,
+      "MAT_GLASS": 50
+    }
+  },
+  {
+    "type": "/obj/item/assembly/infra",
+    "name": "infrared emitter",
+    "origin_tech": {
+      "TECH_MAGNET": 2
+    },
+    "matter": {
+      "MAT_STEEL": 1000,
+      "MAT_GLASS": 500
+    }
+  },
+  {
+    "type": "/obj/item/assembly/mousetrap",
+    "name": "mousetrap",
+    "origin_tech": {
+      "TECH_COMBAT": 1
+    },
+    "matter": {
+      "MAT_STEEL": 100
+    }
+  },
+  {
+    "type": "/obj/item/assembly/prox_sensor",
+    "name": "proximity sensor",
+    "origin_tech": {
+      "TECH_MAGNET": 1
+    },
+    "matter": {
+      "MAT_STEEL": 800,
+      "MAT_GLASS": 200
+    }
+  },
+  {
+    "type": "/obj/item/assembly/signaler",
+    "name": "remote signaling device",
+    "origin_tech": {
+      "TECH_MAGNET": 1
+    },
+    "matter": {
+      "MAT_STEEL": 1000,
+      "MAT_GLASS": 200
+    }
+  },
+  {
+    "type": "/obj/item/assembly/timer",
+    "name": "timer",
+    "origin_tech": {
+      "TECH_MAGNET": 1
+    },
+    "matter": {
+      "MAT_STEEL": 500,
+      "MAT_GLASS": 50
+    }
+  },
+  {
+    "type": "/obj/item/assembly/voice",
+    "name": "voice analyzer",
+    "origin_tech": {
+      "TECH_MAGNET": 1
+    },
+    "matter": {
+      "MAT_STEEL": 500,
+      "MAT_GLASS": 50
+    }
+  },
+  {
+    "type": "/obj/item/radio/headset/casino",
+    "name": "casino headset",
+    "origin_tech": {
+      "TECH_ILLEGAL": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/grenade/spawnergrenade/casino",
+    "name": "Creature Container (Cat)",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_MAGNET": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/cataloguer",
+    "name": "cataloguer",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_DATA": 3,
+      "TECH_MAGNET": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/clothing/head/chameleon",
+    "name": "grey cap",
+    "origin_tech": {
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/clothing/suit/chameleon",
+    "name": "armor",
+    "origin_tech": {
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/clothing/shoes/chameleon",
+    "name": "black shoes",
+    "origin_tech": {
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/storage/backpack/chameleon",
+    "name": "backpack",
+    "origin_tech": {
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/clothing/gloves/chameleon",
+    "name": "black gloves",
+    "origin_tech": {
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/clothing/mask/chameleon",
+    "name": "gas mask",
+    "origin_tech": {
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/clothing/glasses/chameleon",
+    "name": "Optical Meson Scanner",
+    "origin_tech": {
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/storage/belt/chameleon",
+    "name": "belt",
+    "origin_tech": {
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/clothing/accessory/chameleon",
+    "name": "black tie",
+    "origin_tech": {
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/chameleon",
+    "name": "desert eagle",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MATERIAL": 2,
+      "TECH_ILLEGAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/clothing/accessory/ring/reagent",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_ILLEGAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/clothing/accessory/ring/reagent/sleepy",
+    "name": "silver ring",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_ILLEGAL": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/clothing/glasses",
+    "name": "glasses",
+    "origin_tech": {
+      "TECH_MAGNET": 2,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": {
+      "MAT_STEEL": 1500,
+      "MAT_GLASS": 1000
+    }
+  },
+  {
+    "type": "/obj/item/clothing/glasses/hud",
+    "name": "Health Scanner HUD",
+    "origin_tech": {
+      "TECH_MAGNET": 3,
+      "TECH_BIO": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/clothing/glasses/omnihud",
+    "name": "\\improper AR glasses",
+    "origin_tech": {
+      "TECH_MAGNET": 3,
+      "TECH_BIO": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/clothing/mask/synthfacemask",
+    "name": "Synth Face",
+    "origin_tech": {
+      "TECH_ILLEGAL": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/voice_changer",
+    "name": "voice changer",
+    "origin_tech": {
+      "TECH_ILLEGAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/clothing/shoes/syndigaloshes",
+    "name": "brown shoes",
+    "origin_tech": {
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/uv_light",
+    "name": "\\improper UV light",
+    "origin_tech": {
+      "TECH_MAGNET": 1,
+      "TECH_ENGINEERING": 1
+    },
+    "matter": {
+      "MAT_STEEL": 150
+    }
+  },
+  {
+    "type": "/obj/item/retail_scanner",
+    "name": "retail scanner",
+    "origin_tech": {
+      "TECH_MATERIAL": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/firework_star",
+    "name": "firework star",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_ENGINEERING": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/firework_launcher",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_MATERIAL": 4,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/station_map",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/disk/integrated_circuit/upgrade",
+    "name": "integrated circuit printer upgrade disk",
+    "origin_tech": {
+      "TECH_ENGINEERING": 3,
+      "TECH_DATA": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/disk/integrated_circuit/upgrade/clone",
+    "name": "integrated circuit printer upgrade disk - circuit cloner",
+    "origin_tech": {
+      "TECH_ENGINEERING": 5,
+      "TECH_DATA": 6
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/passive/power",
+    "name": "power thingy",
+    "origin_tech": {
+      "TECH_POWER": 2,
+      "TECH_ENGINEERING": 2,
+      "TECH_DATA": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/passive/power/solar_cell",
+    "name": "tiny photovoltaic cell",
+    "origin_tech": {
+      "TECH_POWER": 3,
+      "TECH_ENGINEERING": 3,
+      "TECH_DATA": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/passive/power/metabolic_siphon",
+    "name": "metabolic siphon",
+    "origin_tech": {
+      "TECH_POWER": 4,
+      "TECH_ENGINEERING": 4,
+      "TECH_DATA": 4,
+      "TECH_BIO": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/passive/power/relay",
+    "name": "tesla power relay",
+    "origin_tech": {
+      "TECH_POWER": 3,
+      "TECH_ENGINEERING": 3,
+      "TECH_DATA": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/passive/power/chemical_cell",
+    "name": "fuel cell",
+    "origin_tech": {
+      "TECH_ENGINEERING": 2,
+      "TECH_DATA": 2,
+      "TECH_BIO": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/passive/power/relay/large",
+    "name": "large tesla power relay",
+    "origin_tech": {
+      "TECH_POWER": 6,
+      "TECH_ENGINEERING": 5,
+      "TECH_DATA": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/passive/power/powernet",
+    "name": "power network interface",
+    "origin_tech": {
+      "TECH_ENGINEERING": 2,
+      "TECH_POWER": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/illegal/EPv2_Spoofer",
+    "name": "\\improper EPv2 Spoofer circuit",
+    "origin_tech": {
+      "TECH_ENGINEERING": 2,
+      "TECH_DATA": 2,
+      "TECH_MAGNET": 2,
+      "TECH_BLUESPACE": 2,
+      "TECH_ILLEGAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/illegal/EPv2_Discoverer",
+    "name": "\\improper EPv2 Discovery circuit",
+    "origin_tech": {
+      "TECH_ENGINEERING": 2,
+      "TECH_DATA": 2,
+      "TECH_MAGNET": 2,
+      "TECH_BLUESPACE": 2,
+      "TECH_ILLEGAL": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/input",
+    "name": "button",
+    "origin_tech": {
+      "TECH_ENGINEERING": 2,
+      "TECH_DATA": 2,
+      "TECH_BIO": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/input/gps",
+    "name": "global positioning system",
+    "origin_tech": {
+      "TECH_ENGINEERING": 4,
+      "TECH_DATA": 4,
+      "TECH_POWER": 4,
+      "TECH_MAGNET": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/manipulation",
+    "name": "weapon firing mechanism",
+    "origin_tech": {
+      "TECH_ENGINEERING": 3,
+      "TECH_DATA": 3,
+      "TECH_COMBAT": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/manipulation/locomotion/do_work()",
+    "name": "grenade primer",
+    "origin_tech": {
+      "TECH_ENGINEERING": 3,
+      "TECH_DATA": 3,
+      "TECH_COMBAT": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/manipulation/grenade/proc/attach_grenade(var/obj/item/grenade/G)",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_ENGINEERING": 3,
+      "TECH_DATA": 3,
+      "TECH_COMBAT": 10
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/memory",
+    "name": "memory chip",
+    "origin_tech": {
+      "TECH_ENGINEERING": 3,
+      "TECH_DATA": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/output",
+    "name": "small screen",
+    "origin_tech": {
+      "TECH_ENGINEERING": 3,
+      "TECH_DATA": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/power/",
+    "name": "power transmission circuit",
+    "origin_tech": {
+      "TECH_ENGINEERING": 4,
+      "TECH_DATA": 4,
+      "TECH_POWER": 4,
+      "TECH_MAGNET": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/reagent",
+    "name": "smoke generator",
+    "origin_tech": {
+      "TECH_ENGINEERING": 2,
+      "TECH_DATA": 2,
+      "TECH_BIO": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/integrated_circuit/smart",
+    "name": "basic pathfinder",
+    "origin_tech": {
+      "TECH_ENGINEERING": 4,
+      "TECH_DATA": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/material/phoron",
+    "name": "crystal",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_PHORON": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/material/diamond",
+    "name": "crystal",
+    "origin_tech": {
+      "TECH_MATERIAL": 6
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/material/valhollide",
+    "name": "gem",
+    "origin_tech": {
+      "TECH_MATERIAL": 7,
+      "TECH_PHORON": 5,
+      "TECH_BLUESPACE": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/material/glass",
+    "name": "reinforced glass",
+    "origin_tech": {
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/material/glass/titanium",
+    "name": "plas-titanium glass",
+    "origin_tech": {
+      "TECH_MATERIAL": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/material/plastic",
+    "name": "foam",
+    "origin_tech": {
+      "TECH_MATERIAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/material/snow",
+    "name": "pile",
+    "origin_tech": {
+      "TECH_MATERIAL": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/material/supermatter",
+    "name": "crystal",
+    "origin_tech": {
+      "TECH_MATERIAL": 8,
+      "TECH_PHORON": 5,
+      "TECH_BLUESPACE": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/material/durasteel",
+    "name": "ingot",
+    "origin_tech": {
+      "TECH_MATERIAL": 8
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/material/plasteel",
+    "name": "rod",
+    "origin_tech": {
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/material/plastitanium",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_MATERIAL": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/material/chitin",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_MATERIAL": 3,
+      "TECH_BIO": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/material/fishing_net, 10, time = 30 SECONDS, pass_stack_color = TRUE, supplied_material = \"[name]\"),",
+    "name": "teal cloth",
+    "origin_tech": {
+      "TECH_MATERIAL": 3,
+      "TECH_BIO": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/material/leather",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_BIO": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/material/wood",
+    "name": "plank",
+    "origin_tech": {
+      "TECH_MATERIAL": 1,
+      "TECH_BIO": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/xenochitin",
+    "name": "alien chitin piece",
+    "origin_tech": {
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/flashlight/lantern",
+    "name": "lantern",
+    "origin_tech": {
+      "TECH_MATERIAL": 1
+    },
+    "matter": {
+      "MAT_STEEL": 2500
+    }
+  },
+  {
+    "type": "/obj/item/ore",
+    "name": "small rock",
+    "origin_tech": {
+      "TECH_MATERIAL": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/ore/glass/throw_impact(atom/hit_atom)",
+    "name": "phoron crystals",
+    "origin_tech": {
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/ore/verdantium/throw_impact(atom/hit_atom)",
+    "name": "lead glance",
+    "origin_tech": {
+      "TECH_MATERIAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/ore/rutile",
+    "name": "rutile",
+    "origin_tech": {
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/resonator",
+    "name": "resonator",
+    "origin_tech": {
+      "TECH_MAGNET": 3,
+      "TECH_ENGINEERING": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/resonator",
+    "name": "resonator",
+    "origin_tech": {
+      "TECH_MAGNET": 3,
+      "TECH_ENGINEERING": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mining_scanner",
+    "name": "deep scan device",
+    "origin_tech": {
+      "TECH_MAGNET": 1,
+      "TECH_ENGINEERING": 1
+    },
+    "matter": {
+      "MAT_STEEL": 150
+    }
+  },
+  {
+    "type": "/obj/item/circuitboard/mining_equipment_vendor",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 1,
+      "TECH_ENGINEERING": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/holder/diona",
+    "name": "mouse",
+    "origin_tech": {
+      "TECH_MAGNET": 3,
+      "TECH_BIO": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mmi",
+    "name": "man-machine interface",
+    "origin_tech": {
+      "TECH_BIO": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mmi/attack_self(mob/user as mob)",
+    "name": "Man-Machine Interface",
+    "origin_tech": {
+      "TECH_BIO": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mmi/digital/robot",
+    "name": "robotic intelligence circuit",
+    "origin_tech": {
+      "TECH_ENGINEERING": 4,
+      "TECH_MATERIAL": 3,
+      "TECH_DATA": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mmi/inert/ai_remote",
+    "name": "\\improper AI remote interface",
+    "origin_tech": {
+      "TECH_ENGINEERING": 2,
+      "TECH_MATERIAL": 2,
+      "TECH_BLUESPACE": 2,
+      "TECH_DATA": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mmi/digital/posibrain",
+    "name": "positronic brain",
+    "origin_tech": {
+      "TECH_ENGINEERING": 4,
+      "TECH_MATERIAL": 4,
+      "TECH_BLUESPACE": 2,
+      "TECH_DATA": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/mmi/digital/robot",
+    "name": "robotic intelligence circuit",
+    "origin_tech": {
+      "TECH_ENGINEERING": 4,
+      "TECH_MATERIAL": 3,
+      "TECH_DATA": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/potion_material/glamour_transparent",
+    "name": "transparent glamour",
+    "origin_tech": {
+      "TECH_BLUESPACE": 7,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/slime_extract",
+    "name": "slime extract",
+    "origin_tech": {
+      "TECH_BIO": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/slime_core",
+    "name": "slime extract",
+    "origin_tech": {
+      "TECH_BIO": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/reagent_containers/food/snacks/egg/slime",
+    "name": "slime egg",
+    "origin_tech": {
+      "TECH_BIO": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/robotanalyzer",
+    "name": "cyborg analyzer",
+    "origin_tech": {
+      "TECH_MAGNET": 2,
+      "TECH_BIO": 1,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": {
+      "MAT_STEEL": 500,
+      "MAT_GLASS": 200
+    }
+  },
+  {
+    "type": "/obj/item/matter_decompiler/swarm",
+    "name": "matter assimilator",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MATERIAL": 3,
+      "TECH_MAGNET": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/reagent_containers/food/snacks/meat",
+    "name": "Stomach",
+    "origin_tech": {
+      "TECH_BIO": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/projectile/energy/spidertoxin",
+    "name": "concentrated spidertoxin",
+    "origin_tech": {
+      "TECH_BIO": 10
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/computer_hardware/battery_module",
+    "name": "standard battery",
+    "origin_tech": {
+      "TECH_POWER": 1,
+      "TECH_ENGINEERING": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/computer_hardware/card_slot",
+    "name": "RFID card slot",
+    "origin_tech": {
+      "TECH_DATA": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/computer_hardware/hard_drive/",
+    "name": "basic hard drive",
+    "origin_tech": {
+      "TECH_DATA": 1,
+      "TECH_ENGINEERING": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/computer_hardware/hard_drive/small",
+    "name": "small hard drive",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/computer_hardware/nano_printer",
+    "name": "nano printer",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/computer_hardware/network_card/",
+    "name": "basic NTNet network card",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_ENGINEERING": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/computer_hardware/hard_drive/portable",
+    "name": "basic data crystal",
+    "origin_tech": {
+      "TECH_DATA": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/computer_hardware/processor_unit",
+    "name": "standard processor",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/computer_hardware/tesla_link",
+    "name": "tesla link",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_POWER": 3,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/organ/internal/brain)",
+    "name": "brain",
+    "origin_tech": {
+      "TECH_BIO": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/disperser",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_ENGINEERING": 2,
+      "TECH_COMBAT": 2,
+      "TECH_BLUESPACE": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/unary_atmos/engine //why don't we move this elsewhere?",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_POWER": 1,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/engine/ion",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_POWER": 1,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/pen/multi",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_ILLEGAL": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/pen/reagent/sleepy",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_ILLEGAL": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/pen/reagent/paralysis",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_ILLEGAL": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/cell",
+    "name": "power cell",
+    "origin_tech": {
+      "TECH_POWER": 1
+    },
+    "matter": {
+      "MAT_STEEL": 700,
+      "MAT_GLASS": 50
+    }
+  },
+  {
+    "type": "/obj/item/circuitboard/machine/rtg",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_POWER": 3,
+      "TECH_PHORON": 3,
+      "TECH_ENGINEERING": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/machine/reg_d",
+    "name": "c-type rotary electric generator",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_POWER": 4,
+      "TECH_ENGINEERING": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/machine/power_compressor",
+    "name": "gas turbine generator",
+    "origin_tech": {
+      "TECH_MATERIAL": 4,
+      "TECH_POWER": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/cell/device/crap",
+    "name": "\\improper rechargable D battery",
+    "origin_tech": {
+      "TECH_POWER": 0
+    },
+    "matter": {
+      "MAT_STEEL": 350,
+      "MAT_GLASS": 30
+    }
+  },
+  {
+    "type": "/obj/item/cell/device/weapon/recharge/alien",
+    "name": "void cell (device)",
+    "origin_tech": {
+      "TECH_POWER": 8,
+      "TECH_ENGINEERING": 6
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/cell/spike",
+    "name": "modified power cell",
+    "origin_tech": {
+      "TECH_POWER": 2
+    },
+    "matter": {
+      "MAT_STEEL": 1000,
+      "MAT_GLASS": 80,
+      "MAT_SILVER": 100
+    }
+  },
+  {
+    "type": "/obj/item/cell/crap",
+    "name": "\\improper rechargable DD battery",
+    "origin_tech": {
+      "TECH_POWER": 0
+    },
+    "matter": {
+      "MAT_STEEL": 700,
+      "MAT_GLASS": 40
+    }
+  },
+  {
+    "type": "/obj/item/cell/apc",
+    "name": "heavy-duty power cell",
+    "origin_tech": {
+      "TECH_POWER": 1
+    },
+    "matter": {
+      "MAT_STEEL": 700,
+      "MAT_GLASS": 50
+    }
+  },
+  {
+    "type": "/obj/item/cell/high",
+    "name": "high-capacity power cell",
+    "origin_tech": {
+      "TECH_POWER": 2
+    },
+    "matter": {
+      "MAT_STEEL": 700,
+      "MAT_GLASS": 60
+    }
+  },
+  {
+    "type": "/obj/item/cell/super",
+    "name": "super-capacity power cell",
+    "origin_tech": {
+      "TECH_POWER": 5
+    },
+    "matter": {
+      "MAT_STEEL": 700,
+      "MAT_GLASS": 70
+    }
+  },
+  {
+    "type": "/obj/item/cell/hyper",
+    "name": "hyper-capacity power cell",
+    "origin_tech": {
+      "TECH_POWER": 6
+    },
+    "matter": {
+      "MAT_STEEL": 700,
+      "MAT_GLASS": 80
+    }
+  },
+  {
+    "type": "/obj/item/cell/mech",
+    "name": "mecha power cell",
+    "origin_tech": {
+      "TECH_POWER": 0
+    },
+    "matter": {
+      "MAT_STEEL": 800,
+      "MAT_GLASS": 60
+    }
+  },
+  {
+    "type": "/obj/item/cell/potato",
+    "name": "potato battery",
+    "origin_tech": {
+      "TECH_POWER": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/cell/slime",
+    "name": "charged slime core",
+    "origin_tech": {
+      "TECH_POWER": 4,
+      "TECH_BIO": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/cell/void",
+    "name": "void cell (machinery)",
+    "origin_tech": {
+      "TECH_POWER": 8,
+      "TECH_ENGINEERING": 6
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/fusion_core_control",
+    "name": "circuit board (fusion core controller)",
+    "origin_tech": {
+      "TECH_DATA": 4,
+      "TECH_ENGINEERING": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/tesla_coil",
+    "name": "Machine Design (Tesla Coil Board)",
+    "origin_tech": {
+      "TECH_MAGNET": 2,
+      "TECH_POWER": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/grounding_rod",
+    "name": "grounding rod electronics",
+    "origin_tech": {
+      "TECH_MAGNET": 1,
+      "TECH_POWER": 2
+    },
+    "matter": {
+      "MAT_STEEL": 50,
+      "MAT_GLASS": 50
+    }
+  },
+  {
+    "type": "/obj/item/dnalockingchip",
+    "name": "DNA Chip Lock",
+    "origin_tech": {
+      "TECH_COMBAT": 4,
+      "TECH_DATA": 4,
+      "TECH_BIO": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun",
+    "name": "gun",
+    "origin_tech": {
+      "TECH_COMBAT": 1
+    },
+    "matter": {
+      "MAT_STEEL": 2000
+    }
+  },
+  {
+    "type": "/obj/item/ammo_magazine/m38/makarov",
+    "name": "makarov magazine (.38)",
+    "origin_tech": {
+      "TECH_COMBAT": 2
+    },
+    "matter": {
+      "MAT_STEEL": 480
+    }
+  },
+  {
+    "type": "/obj/item/ammo_magazine/m38/giskard",
+    "name": "magazine (.38)",
+    "origin_tech": {
+      "TECH_COMBAT": 2
+    },
+    "matter": {
+      "MAT_STEEL": 540
+    }
+  },
+  {
+    "type": "/obj/item/ammo_magazine/s45",
+    "name": "speedloader (.45)",
+    "origin_tech": {
+      "TECH_COMBAT": 2
+    },
+    "matter": {
+      "MAT_STEEL": 525
+    }
+  },
+  {
+    "type": "/obj/item/ammo_magazine/m9mm/large",
+    "name": "extended magazine (9mm)",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_ILLEGAL": 1
+    },
+    "matter": {
+      "MAT_STEEL": 1000
+    }
+  },
+  {
+    "type": "/obj/item/ammo_magazine/m9mm/compact",
+    "name": "compact magazine (9mm)",
+    "origin_tech": {
+      "TECH_COMBAT": 2
+    },
+    "matter": {
+      "MAT_STEEL": 480
+    }
+  },
+  {
+    "type": "/obj/item/ammo_magazine/m9mm/luger",
+    "name": "\\improper \\",
+    "origin_tech": {
+      "TECH_COMBAT": 2
+    },
+    "matter": {
+      "MAT_STEEL": 480
+    }
+  },
+  {
+    "type": "/obj/item/ammo_magazine/m9mmAdvanced",
+    "name": "magazine (10mm)",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_ILLEGAL": 1
+    },
+    "matter": {
+      "MAT_STEEL": 1200
+    }
+  },
+  {
+    "type": "/obj/item/ammo_magazine/m10mm/pistol",
+    "name": "magazine (10mm practice)",
+    "origin_tech": {
+      "TECH_COMBAT": 2
+    },
+    "matter": {
+      "MAT_STEEL": 1000
+    }
+  },
+  {
+    "type": "/obj/item/ammo_magazine/m545saw",
+    "name": "magazine box (5.45mm)",
+    "origin_tech": {
+      "TECH_COMBAT": 2
+    },
+    "matter": {
+      "MAT_STEEL": 10000
+    }
+  },
+  {
+    "type": "/obj/item/magnetic_ammo",
+    "name": "flechette magazine",
+    "origin_tech": {
+      "TECH_COMBAT": 1
+    },
+    "matter": {
+      "MAT_STEEL": 1800
+    }
+  },
+  {
+    "type": "/obj/item/gun/energy/modular",
+    "name": "modular weapon",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MAGNET": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile",
+    "name": "gun",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2
+    },
+    "matter": {
+      "MAT_STEEL": 1000
+    }
+  },
+  {
+    "type": "/obj/item/gun/projectile/revolver/capgun",
+    "name": "cap gun",
+    "origin_tech": {
+      "TECH_COMBAT": 1,
+      "TECH_MATERIAL": 1
+    },
+    "matter": {
+      "MAT_STEEL": 1000
+    }
+  },
+  {
+    "type": "/obj/item/gun/projectile/shotgun/pump/toy",
+    "name": "\\improper Donk-Soft shotgun",
+    "origin_tech": {
+      "TECH_COMBAT": 1,
+      "TECH_MATERIAL": 1
+    },
+    "matter": {
+      "MAT_PLASTIC": 2000
+    }
+  },
+  {
+    "type": "/obj/item/gun/projectile/pistol/toy",
+    "name": "\\improper Donk-Soft pistol",
+    "origin_tech": {
+      "TECH_COMBAT": 1,
+      "TECH_MATERIAL": 1
+    },
+    "matter": {
+      "MAT_PLASTIC": 1000
+    }
+  },
+  {
+    "type": "/obj/item/gun/projectile/revolver/toy",
+    "name": "\\improper Donk-Soft revolver",
+    "origin_tech": {
+      "TECH_COMBAT": 1,
+      "TECH_MATERIAL": 1
+    },
+    "matter": {
+      "MAT_PLASTIC": 1000
+    }
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/toy",
+    "name": "\\improper Donk-Soft SMG",
+    "origin_tech": {
+      "TECH_COMBAT": 1,
+      "TECH_MATERIAL": 1
+    },
+    "matter": {
+      "MAT_PLASTIC": 1500
+    }
+  },
+  {
+    "type": "/obj/item/gun/energy/lasertag",
+    "name": "laser tag gun",
+    "origin_tech": {
+      "TECH_COMBAT": 1,
+      "TECH_MAGNET": 2
+    },
+    "matter": {
+      "MAT_STEEL": 2000
+    }
+  },
+  {
+    "type": "/obj/item/gun/energy/altevian",
+    "name": "Magneto-Electric Energy Projector",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MAGNET": 2
+    },
+    "matter": {
+      "MAT_STEEL": 1000
+    }
+  },
+  {
+    "type": "/obj/item/bluespace_harpoon",
+    "name": "bluespace harpoon",
+    "origin_tech": {
+      "TECH_BLUESPACE": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/fluff/crestrose",
+    "name": "Crescent Rose",
+    "origin_tech": {
+      "TECH_COMBAT": 7,
+      "TECH_MATERIAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/melee/robotic/jaws/small/attack_self(mob/user)",
+    "name": "combat jaws",
+    "origin_tech": {
+      "TECH_COMBAT": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/gun/fluff/gunsword",
+    "name": "Sword Buster",
+    "origin_tech": {
+      "TECH_COMBAT": 8,
+      "TECH_MATERIAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/cell/device/weapon/gunsword",
+    "name": "Buster Cell",
+    "origin_tech": {
+      "TECH_MAGNET": 3,
+      "TECH_COMBAT": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/laser",
+    "name": "laser rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MAGNET": 2
+    },
+    "matter": {
+      "MAT_STEEL": 2000
+    }
+  },
+  {
+    "type": "/obj/item/gun/energy/laser/sleek",
+    "name": "\\improper LR1 \\",
+    "origin_tech": {
+      "TECH_COMBAT": 4,
+      "TECH_MAGNET": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/alien",
+    "name": "alien pistol",
+    "origin_tech": {
+      "TECH_COMBAT": 8,
+      "TECH_MAGNET": 7
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/lasercannon",
+    "name": "laser cannon",
+    "origin_tech": {
+      "TECH_COMBAT": 4,
+      "TECH_MATERIAL": 3,
+      "TECH_POWER": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/xray",
+    "name": "xray laser gun",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MATERIAL": 3,
+      "TECH_MAGNET": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/sniperrifle",
+    "name": "marksman energy rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 6,
+      "TECH_MATERIAL": 5,
+      "TECH_POWER": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/lasershotgun",
+    "name": "laser scattergun",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MAGNET": 1,
+      "TECH_MATERIAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/imperial",
+    "name": "imperial energy pistol",
+    "origin_tech": {
+      "TECH_COMBAT": 4,
+      "TECH_MAGNET": 2
+    },
+    "matter": {
+      "MAT_STEEL": 2000
+    }
+  },
+  {
+    "type": "/obj/item/gun/energy/mininglaser",
+    "name": "mining-laser rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MAGNET": 2
+    },
+    "matter": {
+      "MAT_STEEL": 2000
+    }
+  },
+  {
+    "type": "/obj/item/gun/energy/laser/old",
+    "name": "vintage laser rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MAGNET": 1
+    },
+    "matter": {
+      "MAT_STEEL": 1500
+    }
+  },
+  {
+    "type": "/obj/item/gun/energy/monorifle",
+    "name": "antique mono-rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 6,
+      "TECH_MATERIAL": 4,
+      "TECH_POWER": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/netgun",
+    "name": "energy net gun",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MATERIAL": 5,
+      "TECH_MAGNET": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/gun",
+    "name": "energy gun",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MAGNET": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/gun/rifle",
+    "name": "energy rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 4,
+      "TECH_MAGNET": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/gun/burst",
+    "name": "energy carbine",
+    "origin_tech": {
+      "TECH_COMBAT": 4,
+      "TECH_MAGNET": 2,
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/gun/etommy",
+    "name": "Energy RCW",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MAGNET": 3,
+      "TECH_ILLEGAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/gun/compact",
+    "name": "personal energy weapon",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MAGNET": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/gun/eluger",
+    "name": "energy Luger",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MAGNET": 2,
+      "TECH_ILLEGAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/gun/nuclear",
+    "name": "advanced energy gun",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MATERIAL": 5,
+      "TECH_POWER": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/particle //base gun, similar stats to an egun",
+    "name": "Anti-particle projector pistol",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MAGNET": 2,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/gun/protector",
+    "name": "secure small energy gun",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MATERIAL": 3,
+      "TECH_MAGNET": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/pummeler",
+    "name": "hypersonic gun",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MATERIAL": 3,
+      "TECH_MAGNET": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/locked/frontier",
+    "name": "frontier phaser",
+    "origin_tech": {
+      "TECH_COMBAT": 4,
+      "TECH_MAGNET": 2,
+      "TECH_POWER": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/sickshot",
+    "name": "\\'Sickshot\\' revolver",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MATERIAL": 3,
+      "TECH_MAGNET": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/ionrifle",
+    "name": "ion rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MAGNET": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/staff/focus",
+    "name": "mental focus",
+    "origin_tech": {
+      "TECH_COMBAT": 6,
+      "TECH_MAGNET": 6,
+      "TECH_ILLEGAL": 6
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/crossbow",
+    "name": "mini energy-crossbow",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MAGNET": 2,
+      "TECH_ILLEGAL": 5
+    },
+    "matter": {
+      "MAT_STEEL": 2000
+    }
+  },
+  {
+    "type": "/obj/item/gun/energy/plasmastun",
+    "name": "plasma pulse projector",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2,
+      "TECH_POWER": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/stunrevolver",
+    "name": "stun revolver",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MATERIAL": 3,
+      "TECH_POWER": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/stunrevolver/vintage",
+    "name": "vintage stun revolver",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MATERIAL": 3,
+      "TECH_POWER": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/stunrevolver/snubnose",
+    "name": "snub stun revolver",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MATERIAL": 3,
+      "TECH_POWER": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/temperature",
+    "name": "temperature gun",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MATERIAL": 4,
+      "TECH_POWER": 3,
+      "TECH_MAGNET": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/cell_loaded //this one can load both medical and security cells! for ERT/admin use.",
+    "name": "multipurpose cell-loaded revolver",
+    "origin_tech": {
+      "TECH_COMBAT": 7,
+      "TECH_MATERIAL": 6,
+      "TECH_MAGNET": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/ammo_magazine/cell_mag",
+    "name": "microbattery magazine",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MATERIAL": 5,
+      "TECH_MAGNET": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/cell_loaded/medical",
+    "name": "cell-loaded medigun",
+    "origin_tech": {
+      "TECH_MATERIAL": 4,
+      "TECH_MAGNET": 2,
+      "TECH_BIO": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/ammo_magazine/cell_mag/medical //medical",
+    "name": "nanite magazine",
+    "origin_tech": {
+      "TECH_MATERIAL": 3,
+      "TECH_BIO": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/ammo_casing/microbattery/medical",
+    "name": "\\'ML-3/M\\' nanite cell - UNKNOWN",
+    "origin_tech": {
+      "TECH_BIO": 2,
+      "TECH_MATERIAL": 1,
+      "TECH_MAGNET": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/cell_loaded/combat",
+    "name": "cell-loaded revolver",
+    "origin_tech": {
+      "TECH_COMBAT": 7,
+      "TECH_MATERIAL": 4,
+      "TECH_MAGNET": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/ammo_magazine/cell_mag/combat",
+    "name": "microbattery magazine",
+    "origin_tech": {
+      "TECH_COMBAT": 4,
+      "TECH_MATERIAL": 3,
+      "TECH_MAGNET": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/ammo_casing/microbattery/combat",
+    "name": "\\'NSFW\\' microbattery - UNKNOWN",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 1,
+      "TECH_MAGNET": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/launcher/confetti_cannon",
+    "name": "confetti cannon",
+    "origin_tech": {
+      "TECH_COMBAT": 1,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/launcher/rocket",
+    "name": "rocket launcher",
+    "origin_tech": {
+      "TECH_COMBAT": 8,
+      "TECH_MATERIAL": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/magnetic/gasthrower",
+    "name": "phoronthrower",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MATERIAL": 4,
+      "TECH_ILLEGAL": 2,
+      "TECH_PHORON": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/cell/cell                              // Currently installed powercell.",
+    "name": "Fuel-Rod Cannon",
+    "origin_tech": {
+      "TECH_COMBAT": 6,
+      "TECH_MATERIAL": 4,
+      "TECH_PHORON": 4,
+      "TECH_ILLEGAL": 5,
+      "TECH_MAGNET": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/magnetic/railgun",
+    "name": "railgun",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MATERIAL": 4,
+      "TECH_MAGNET": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/advanced_smg",
+    "name": "advanced SMG",
+    "origin_tech": {
+      "TECH_COMBAT": 4,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/c20r",
+    "name": "submachine gun",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MATERIAL": 2,
+      "TECH_ILLEGAL": 8
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/sts35",
+    "name": "assault rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 6,
+      "TECH_MATERIAL": 1,
+      "TECH_ILLEGAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/pdw",
+    "name": "personal defense weapon",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/wt550",
+    "name": "machine pistol",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/z8",
+    "name": "battle rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 8,
+      "TECH_MATERIAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/l6_saw",
+    "name": "light machine gun",
+    "origin_tech": {
+      "TECH_COMBAT": 6,
+      "TECH_MATERIAL": 1,
+      "TECH_ILLEGAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/as24",
+    "name": "automatic shotgun",
+    "origin_tech": {
+      "TECH_COMBAT": 6,
+      "TECH_MATERIAL": 1,
+      "TECH_ILLEGAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/mini_uzi",
+    "name": "micro-smg",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MATERIAL": 2,
+      "TECH_ILLEGAL": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/p90",
+    "name": "personal defense weapon",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/tommygun",
+    "name": "\\improper Tommy Gun",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MATERIAL": 2,
+      "TECH_ILLEGAL": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/bullpup // Admin abuse assault rifle. ToDo: Make this less shit. Maybe remove its autofire, and make it spawn with only 10 rounds at start.",
+    "name": "bullpup rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 6,
+      "TECH_MATERIAL": 1,
+      "TECH_ILLEGAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/combatsmg",
+    "name": "\\improper PP3 Ten",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MATERIAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/battlerifle",
+    "name": "\\improper USDF service rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 4,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/stg",
+    "name": "\\improper Sturmgewehr",
+    "origin_tech": {
+      "TECH_COMBAT": 4,
+      "TECH_MATERIAL": 2,
+      "TECH_ILLEGAL": 6
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/automatic/sol",
+    "name": "\\improper \\",
+    "origin_tech": {
+      "TECH_COMBAT": 4,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/ammo_magazine/m9mml",
+    "name": "\\improper SMG magazine (9mm)",
+    "origin_tech": {
+      "TECH_COMBAT": 2
+    },
+    "matter": {
+      "MAT_STEEL": 1800
+    }
+  },
+  {
+    "type": "/obj/item/gun/projectile/shotgun/pump/rifle",
+    "name": "bolt-action rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/shotgun/pump/surplus",
+    "name": "surplus rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/shotgun/pump/rifle/scoped",
+    "name": "scoped bolt-action rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/caseless/prototype",
+    "name": "prototype caseless rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/projectile/bullet/chemdart",
+    "name": "dart",
+    "origin_tech": {
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/dartgun/proc/fill_dart(var/obj/item/projectile/bullet/chemdart/dart)",
+    "name": "prototype dart gun",
+    "origin_tech": {
+      "TECH_COMBAT": 6,
+      "TECH_MATERIAL": 4,
+      "TECH_BIO": 4,
+      "TECH_MAGNET": 2,
+      "TECH_ILLEGAL": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/colt",
+    "name": ".45 pistol",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/sec",
+    "name": ".45 pistol",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/silenced",
+    "name": "silenced pistol",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2,
+      "TECH_ILLEGAL": 8
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/gyropistol",
+    "name": "gyrojet pistol",
+    "origin_tech": {
+      "TECH_COMBAT": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/pistol",
+    "name": "compact pistol",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2,
+      "TECH_ILLEGAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/aps",
+    "name": "pistol",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2,
+      "TECH_ILLEGAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/derringer",
+    "name": "derringer",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2,
+      "TECH_ILLEGAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/luger",
+    "name": "\\improper Jindal T15 \\",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/p92x",
+    "name": "9mm pistol",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/giskard",
+    "name": "\\improper \\",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/makarov",
+    "name": "makarov",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/n99",
+    "name": "promotional pistol",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/ecureuil",
+    "name": "\\improper \\",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/lamia",
+    "name": "\\improper FS HG .44 \\",
+    "origin_tech": {
+      "TECH_COMBAT": 4,
+      "TECH_MATERIAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/revolver",
+    "name": "revolver",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/revolver/detective",
+    "name": "revolver",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/revolver/lombardi",
+    "name": "Lombardi Buzzard",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/revolver/cappeacekeeper",
+    "name": "decorated peacekeeper",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/revolver/mateba",
+    "name": "mateba",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/revolver/deckard",
+    "name": "\\improper \\",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/revolver/judge",
+    "name": "\\",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2,
+      "TECH_ILLEGAL": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/revolver/lemat",
+    "name": "Mako revolver",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/revolver/webley",
+    "name": "patrol revolver",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/revolver/consul",
+    "name": "\\improper \\",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MATERIAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/ammo_casing/a380",
+    "name": "magazine (.380)",
+    "origin_tech": {
+      "TECH_COMBAT": 2
+    },
+    "matter": {
+      "MAT_STEEL": 480
+    }
+  },
+  {
+    "type": "/obj/item/gun/projectile/garand",
+    "name": "semi-automatic rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/revolvingrifle",
+    "name": "revolving rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/shotgun/pump",
+    "name": "shotgun",
+    "origin_tech": {
+      "TECH_COMBAT": 4,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/shotgun/pump/combat",
+    "name": "combat shotgun",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/shotgun/doublebarrel",
+    "name": "double-barreled shotgun",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MATERIAL": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/shotgun/semi",
+    "name": "semi-automatic shotgun",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/shotgun/compact",
+    "name": "compact shotgun",
+    "origin_tech": {
+      "TECH_COMBAT": 5,
+      "TECH_MATERIAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/projectile/smartgun",
+    "name": "\\improper OP-15 'S.M.A.R.T.' Rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 4,
+      "TECH_MATERIAL": 6,
+      "TECH_BLUESPACE": 4
+    },
+    "matter": {
+      "MAT_STEEL": 6000,
+      "MAT_DIAMOND": 2000,
+      "MAT_URANIUM": 2000
+    }
+  },
+  {
+    "type": "/obj/item/gun/projectile/heavysniper",
+    "name": "anti-materiel rifle",
+    "origin_tech": {
+      "TECH_COMBAT": 8,
+      "TECH_MATERIAL": 2,
+      "TECH_ILLEGAL": 8
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/stack/hose",
+    "name": "plastic tubing",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_ENGINEERING": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/reagent_containers/hypospray/autoinjector/biginjector",
+    "name": "empty hypo",
+    "origin_tech": {
+      "TECH_BIO": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/reagent_containers/spray/cleaner",
+    "name": "space cleaner",
+    "origin_tech": {
+      "TECH_COMBAT": 3,
+      "TECH_MATERIAL": 3,
+      "TECH_ENGINEERING": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/transhuman_clonepod",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_BIO": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/paicard/sleevecard",
+    "name": "sleevecard",
+    "origin_tech": {
+      "TECH_DATA": 2
+    },
+    "matter": {
+      "MAT_STEEL": 4000,
+      "MAT_GLASS": 4000
+    }
+  },
+  {
+    "type": "/obj/item/circuitboard/roguezones",
+    "name": "R-38 Scanner Console Guide",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_BLUESPACE": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/shield_diffuser",
+    "name": "portable shield diffuser",
+    "origin_tech": {
+      "TECH_MAGNET": 5,
+      "TECH_POWER": 5,
+      "TECH_ILLEGAL": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/bluespace_crystal",
+    "name": "bluespace crystal",
+    "origin_tech": {
+      "TECH_BLUESPACE": 6,
+      "TECH_MATERIAL": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/telesci_console",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_BLUESPACE": 3,
+      "TECH_PHORON": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/quantumpad",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_ENGINEERING": 4,
+      "TECH_POWER": 4,
+      "TECH_BLUESPACE": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gps/advanced",
+    "name": "global positioning system",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_ENGINEERING": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/mouseray",
+    "name": "mouse ray",
+    "origin_tech": {
+      "TECH_BLUESPACE": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/melee/baton/fluff/stunstaff",
+    "name": "Electrostaff",
+    "origin_tech": {
+      "TECH_COMBAT": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/melee/fluffstuff",
+    "name": "Wolfgirl Sword Replica",
+    "origin_tech": {
+      "TECH_MATERIAL": 2,
+      "TECH_COMBAT": 1
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/slow_sizegun",
+    "name": "gradual size gun",
+    "origin_tech": {
+      "TECH_BLUESPACE": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/gun/energy/sizegun",
+    "name": "size gun",
+    "origin_tech": {
+      "TECH_BLUESPACE": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/strangerock",
+    "name": "Strange rock",
+    "origin_tech": {
+      "TECH_MATERIAL": 5
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/melee/artifact_blade",
+    "name": "artifact blade",
+    "origin_tech": {
+      "TECH_COMBAT": 6,
+      "TECH_ARCANE": 6,
+      "TECH_BIO": 6
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/measuring_tape",
+    "name": "measuring tape",
+    "origin_tech": {
+      "TECH_MATERIAL": 1
+    },
+    "matter": {
+      "MAT_STEEL": 100
+    }
+  },
+  {
+    "type": "/obj/item/slime_extract",
+    "name": "slime extract",
+    "origin_tech": {
+      "TECH_BIO": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/slime_extract",
+    "name": "slime extract",
+    "origin_tech": {
+      "TECH_BIO": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/slimepotion",
+    "name": "slime agent",
+    "origin_tech": {
+      "TECH_BIO": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/slime_crystal",
+    "name": "lesser slime cystal",
+    "origin_tech": {
+      "TECH_MAGNET": 6,
+      "TECH_BLUESPACE": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/melee/baton/slime",
+    "name": "slimebaton",
+    "origin_tech": {
+      "TECH_COMBAT": 2,
+      "TECH_BIO": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/xenobio/examine(var/mob/user)",
+    "name": "Bluespace Cube Rehydrator",
+    "origin_tech": {
+      "TECH_BLUESPACE": 5,
+      "TECH_BIO": 6
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/processor",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 2,
+      "TECH_BIO": 2
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/slimeextractor",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_BIO": 3
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/disk/xenobio",
+    "name": "biological data disk",
+    "origin_tech": {
+      "TECH_DATA": 4,
+      "TECH_BIO": 4
+    },
+    "matter": null
+  },
+  {
+    "type": "/obj/item/circuitboard/slimereplicator",
+    "name": "Unknown",
+    "origin_tech": {
+      "TECH_DATA": 3,
+      "TECH_BIO": 3
+    },
+    "matter": null
+  }
+]
