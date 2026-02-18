@@ -172,28 +172,28 @@ window.onload = function() {
 		}
 		{ // Required Experiments
 			if (node.required_experiments) {
-				html += `<div class="section"><h3>Required Experiments:</h3>`;
+				html += `<div class="section"><h3>Required Experiments:</h3><ul>`;
 				node.required_experiments.forEach(experimentPath => {
 					const lookup = experimentLookup[experimentPath];
 					const experimentName = lookup ? lookup.name : experimentPath;
 					const experimentDesc = lookup ? lookup.desc : "[NODATAFOUND]";
 					html += `<li><details><summary>${experimentName}</summary><p style="text-indent: 2em;">${experimentDesc}</p></details></li>`;
 				}); // Could use a lookup check as half of them look like "/datum/experiment/scanning/random/mecha_equipped_scan" or so.
-				html += `</div>`;
+				html += `</ul></div>`;
 			}
 		}
 		{ // Unlocks Tech
 			if (node.children.length > 0) {
-				html += `<div class="section"><h3>Unlocks ${(node.children.length)} Tech Nodes:</h3>`;
+				html += `<div class="section"><h3>Unlocks ${(node.children.length)} Tech Nodes:</h3><ul>`;
 				node.children.forEach(c => {
 					html += `<li>${c.display_name}</li>`; // Clickable text to go to this node.
 				});
-				html += `</div>`;
+				html += `</ul></div>`;
 			}
 		}
 		{ // Discounts
 			if (node.discount_experiments && Object.keys(node.discount_experiments).length > 0) {
-				html += `<div class="section"><h3>Discount Experiments:</h3>`;
+				html += `<div class="section"><h3>Discount Experiments:</h3><ul>`;
 				Object.entries(node.discount_experiments).forEach(([experimentPath, tierKey]) => {
 					const lookup = experimentLookup[experimentPath];
 					const experimentName = lookup ? lookup.name : experimentPath;
@@ -212,8 +212,7 @@ window.onload = function() {
 			if (node.design_ids && Object.keys(node.design_ids).length > 0) { // Hidden for now due to the items being itemID code stuff.
 				const visibleItems = node.design_ids.filter(d => !d.startsWith("//"));
 				if (visibleItems.length > 0) {
-					html += `<div class="section"><h3>Unlocks ${(visibleItems.length)} Items</h3><ul>`;
-					html += `<h6>[Warning, these are formated with Item-ID's and has no current lookup!]</h6>`;
+					html += `<div class="section"><h3>Unlocks ${(visibleItems.length)} Items</h3><span class='chat ooc'>(( OOC: Warning, these are formated with Item-ID's and has no current lookup!))</span><ul>`;
 					visibleItems.forEach(d => {
 						html += `<li>${d}</li>`;
 					});

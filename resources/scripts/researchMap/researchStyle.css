@@ -8,7 +8,7 @@
 
 	display: flex;
 	height: 100vh;
-	text-shadow: 0 0 4px #ffaa3c66;
+	text-shadow: 0 0 4px #ca832766;
 	position: relative;
 	max-width: 875;
 }
@@ -152,18 +152,3 @@
 	border-radius: 3px;
 	color: #ffc76a;
 }
-.dept {
-	display: inline-block;
-	padding: 2px 6px;
-	margin: 2px 4px 2px 0;
-	border: 1px solid #5a3b1a;
-	font-size: 0.8em;
-}
-.dept.science { border-color: #8c00ff; color: #8c00ff; }
-.dept.engineering { border-color: #ffd900; color: #ffd900; }
-.dept.medical { border-color: #8cd1ff; color: #8cd1ff; }
-.dept.security { border-color: #9e1818; color: #9e1818; }
-.dept.cargo { border-color: #7e551f; color: #7e551f; }
-.dept.command { border-color: #172655; color: #172655; }
-.dept.service { border-color: #56b856; color: #56b856; }
-.dept.common { border-color: #0e8503; color: #0e8503; }
