@@ -1,3 +1,282 @@
+window.onload = function() {
+	const searchInput = document.getElementById("searchInput");
+	const nodeListDiv = document.getElementById("nodeList");
+	const nodeDetailsDiv = document.getElementById("nodeDetails");
+	const nodeSelectText = document.getElementById("selectANode");
+	nodeSelectText.innerHTML = '<div class="section"><h2>Select A Node To Begin</h2></div>';
+
+	const wrapper = document.getElementById("content-wrapper");
+	const current = document.getElementById("content");
+	
+	let nodes = [];
+	let nodeMap = {};
+	const tierLookup = {
+		TECHWEB_TIER_1_POINTS:	40,
+		TECHWEB_TIER_2_POINTS:	80,
+		TECHWEB_TIER_3_POINTS:	120,
+		TECHWEB_TIER_4_POINTS:	160,
+		TECHWEB_TIER_5_POINTS:	200
+	};
+	const experimentLookup = { // Another set of a bunch of stuff I should probably setup as a json fetch. Hell, I might make all of the lookup a seperate fetch..
+		"/datum/experiment/scanning/random/mecha_equipped_scan": { 
+			name: "Exosuit Materials: Load Strain Test",
+			desc: "Scan an Exosuit / Mech. You may find one or create one by robotics. Follow the <a href='/departments/science/ripley-aplu-construction/'>RIPLEY APLU Construction</a> guide for more info regarding construction."
+		},
+		"/datum/experiment/scanning/points/machinery_tiered_scan/tier2_any": {
+			name: "Upgraded Stock Parts Benchmark",
+			desc: "Scan a machine with tier 2 or above parts in it. This can be done with grabbing a RPED(Rapid Part Exchange Device) loading it with needed parts and locating a machine you wish to upgrade. Grab a screwdriver and open it up, tap the RPED onto it, close it back. And scan it. Repeat until happy."
+		},
+		"/datum/experiment/scanning/points/machinery_tiered_scan/tier3_any": {
+			name: "Upgraded Stock Parts Benchmark",
+			desc: "Scan a machine with tier 3 or above parts in it. This can be done with grabbing a RPED(Rapid Part Exchange Device), though a bluespace one, if you can get either, is always reccomended, loading it with needed parts and locating a machine you wish to upgrade. Grab a screwdriver and open it up, tap the RPED onto it, close it back. And scan it. Repeat until happy."
+		},
+		"/datum/experiment/scanning/points/machinery_tiered_scan/tier4_any": {
+			name: "Upgraded Stock Parts Benchmark",
+			desc: "Scan a machine with tier 4 or above parts in it. This can be done with grabbing a RPED(Rapid Part Exchange Device), though a bluespace one, if you can get either, is always reccomended, loading it with needed parts and locating a machine you wish to upgrade. Grab a screwdriver and open it up, tap the RPED onto it, close it back. And scan it. Repeat until happy."
+		},
+		"/datum/experiment/scanning/random/artifact_destruction": {
+			name: "Artifact Analysis",
+			desc: "Destructively analyze several small artifact research samples to assess their exotic molecular properties."
+		},
+		"/datum/experiment/scanning/bluespace_crystal": {
+			name: "Bluespace Crystal Analysis",
+			desc: "Destructively analyze a bluespace crystal to examine it's exotic molecular shape."
+		},
+		"/datum/experiment/scanning/points/easy_cytology": {
+			name: "Basic Cytology Scanning Experiment",
+			desc: "After all, a good scientist needs a test subject. Either go to the bar or maints to find any of the applicable; mothroach, mice, rats, or other small vermin stated in the experiscanner."
+		},
+		"/datum/experiment/scanning/points/slime_scanning": {
+			name: "Slime Scanning Experiment",
+			desc: "Scan a slime or their core. Can be done if you head to xenobiology, of course."
+		},
+		"/datum/experiment/scanning/points/basic_engi_rig": {
+			name: "Basic Engineering Suit Scans",
+			desc: "[Umbree, add data here!]"
+		},
+		"/datum/experiment/scanning/points/basic_sec_rig": {
+			name: "Basic Security Suit Scans",
+			desc: "[Umbree, add data here!]"
+		},
+		"/datum/experiment/scanning/points/basic_med_rig": {
+			name: "Basic Medical Suit Scans",
+			desc: "[Umbree, add data here!]"
+		},
+		"/datum/experiment/scanning/points/basic_min_rig": {
+			name: "Basic Mining Suit Scans",
+			desc: "[Umbree, add data here!]"
+		},
+		"/datum/experiment/scanning/points/basic_sci_rig": {
+			name: "Basic Research Suit Scans",
+			desc: "[Umbree, add data here!]"
+		},
+		"/datum/experiment/scanning/people/big_or_smol": {
+			name: "Big or small",
+			desc: "Scan unique individuals with a size bigger than 125% or smaller than 75%. Look around or scan yourself if you fit the bill! This is virgo, there's gotta be a mi/macro around somewhere.. Behind you?"
+		},
+		"/datum/experiment/scanning/people/hurt_medigun": {
+			name: "Medigun",
+			desc: "Scan an individual that doesn't have a full healthy meter! Can be more easily visible with a hud that reports back a persons 'healthly' suit value."
+		},
+		"/datum/experiment/physical/teleporting": {
+			name: "Teleporation Basics",
+			desc: "Teleport an object by using telescience! -- If you are on the Adephagia / Teather I am sorry you must build telescience equipment. Otherwise you may use the Stellar Delights Virgo-2 Aerostat telescience thats south and to the east relative to the exit Quantum Pad!"
+		},
+		"/datum/experiment/scanning/random/janitor_trash": {
+			name: "[Umbree, add data here!]",
+			desc: "[Umbree, add data here!]"
+		}
+	};
+	const departmentLookup = {
+		CHANNEL_SCIENCE:		"<span class='dept science'>Science</span>",
+		CHANNEL_ENGINEERING:	"<span class='dept engineering'>Engineering</span>",
+		CHANNEL_MEDICAL:		"<span class='dept medical'>Medical</span>",
+		CHANNEL_SECURITY:		"<span class='dept security'>Security</span>",
+		CHANNEL_SUPPLY:			"<span class='dept cargo'>Cargo</span>",
+		CHANNEL_COMMAND:		"<span class='dept command'>Command</span>",
+		CHANNEL_SERVICE:		"<span class='dept service'>Service</span>",
+		CHANNEL_COMMON:			"<span class='dept common'>Common</span>"
+	};
+	fetch("https://umbriee.github.io/UmbreesWebsiteStoreData/resources/parsedInfo/origin_tech_items.json").then(r => r.json()).then(data => {
+		nodes = Array.isArray(data) ? data : data.nodes;
+		nodes.forEach(n => {
+			nodeMap[n.id] = n;
+			n.parents = [];
+			n.children = [];
+		});
+		nodes.forEach(n => {
+			if (n.prereq_ids) {
+				n.prereq_ids.forEach(pid => {
+					const parent = nodeMap[pid];
+					if (parent) {
+						n.parents.push(parent);
+						parent.children.push(n);
+					}
+				});
+			}
+		});
+		renderList(nodes);
+	});
+	function renderList(list) {
+		nodeListDiv.innerHTML = "";
+		const starters = list.filter(n => n.starting_node === true || n.starting_node === "TRUE");
+		const others = list.filter(n => !starters.includes(n));
+		const sorted = [...starters, ...others];
+		sorted.forEach(n => {
+			const item = document.createElement("div");
+			item.className = "nodeItem";
+			let label = n.display_name;
+			if (starters.includes(n)) {
+				label = "* " + label;
+			}
+			item.textContent = label;
+			item.onclick = function(){
+				document.querySelectorAll(".nodeItem").forEach(e => e.classList.remove("active"));
+				item.classList.add("active");
+				showNode(n);
+			};
+			nodeListDiv.appendChild(item);
+		});
+	}
+	function showNode(node) {
+		const chain = getPrereqChain(node);
+		let totalCost = 0;
+		let firstCost = getCost(node);
+		let starter = (node.starting_node === true);
+		chain.forEach(n => {totalCost += getCost(n);});
+		let html = `<div class="section"><h1>Node Data:</h1>`;
+		{ // Name Desc
+			html += `<div class="section">
+				<h2>${node.display_name}</h2>
+				<p>${node.description || ""}</p>`
+			if (starter) {html += `<h5>[*Node Starts Unlocked]</h5>`;}
+			html += `
+			</div>`;
+		}
+		{ // Department
+			if (node.announce_channels && node.announce_channels.length > 0) {
+				html += `<div class="section"><h3>Department(s):</h3>`;
+				node.announce_channels.forEach(ch => {html += (departmentLookup[ch] || ch) + " "; // Had the idea to make it color coded dependent on departments. But there can be multiple. So I may make it mix their colors together if there is a department and try to figure out the best way to organize them color wise in the node list.
+				});
+				html += `
+				</div>`;
+			}
+		}
+		if (!starter) { if (totalCost > 0) {html += `<div class="section"><h3>Research Cost: <span class="cost">${firstCost}</span></h3></div>`;}}
+		{ // Requirement Tree
+			html += `<div class="section"><h3>Requirement Tree:</h3>`;
+			if (totalCost > 0) {html += `<h5>Total cost: <span class="cost">${totalCost}</span></h5>`;}
+			html += `<ul>${renderPrereqTree(node)}</ul></div>`; // able to click on these to go to their node. Also make it easier to see when two nodes are required with maybe ascii tree formatting to get lines?
+		}
+		{ // Required Experiments
+			if (node.required_experiments) {
+				html += `<div class="section"><h3>Required Experiments:</h3>`;
+				node.required_experiments.forEach(experimentPath => {
+					const lookup = experimentLookup[experimentPath];
+					const experimentName = lookup ? lookup.name : experimentPath;
+					const experimentDesc = lookup ? lookup.desc : "[NODATAFOUND]";
+					html += `<li><details><summary>${experimentName}</summary><p style="text-indent: 2em;">${experimentDesc}</p></details></li>`;
+				}); // Could use a lookup check as half of them look like "/datum/experiment/scanning/random/mecha_equipped_scan" or so.
+				html += `</div>`;
+			}
+		}
+		{ // Unlocks Tech
+			if (node.children.length > 0) {
+				html += `<div class="section"><h3>Unlocks Tech Nodes:</h3>`;
+				node.children.forEach(c => {
+					html += `<li>${c.display_name}</li>`; // Clickable text to go to this node.
+				});
+				html += `</div>`;
+			}
+		}
+		{ // Discounts
+			if (node.discount_experiments && Object.keys(node.discount_experiments).length > 0) {
+				html += `<div class="section"><h3>Discount Experiments:</h3>`;
+				Object.entries(node.discount_experiments).forEach(([experimentPath, tierKey]) => {
+					const lookup = experimentLookup[experimentPath];
+					const experimentName = lookup ? lookup.name : experimentPath;
+					const experimentDesc = lookup ? lookup.desc : "[NODATAFOUND]";
+					const refund = tierLookup[tierKey] || 0;
+					html += `<li><details><summary>Doing '${experimentName}' refunds <span class="cost">${refund}</span> research points.</summary><p style="text-indent: 2em;">${experimentDesc}</p></details></li>`;
+				});
+				html += `</ul></div>`;
+			
+			/*"discount_experiments": {
+				"/datum/experiment/scanning/points/basic_med_rig": "TECHWEB_TIER_2_POINTS"
+			},*/
+			}
+		}
+		{ // Unlocks items
+			/*if (node.design_ids) { // Hidden for now due to the items being itemID code stuff.
+				const visibleItems = node.design_ids.filter(d => !d.startsWith("//"));
+				if (visibleItems.length > 0) {
+					html += `<div class="section"><h3>Unlocks Items</h3><ul>`;
+					visibleItems.forEach(d => {
+						html += `<li>${d}</li>`;
+					});
+					html += `</ul></div>`;
+				}
+			}
+			*/
+		}
+		html += `</div>`;
+		const temp = current.cloneNode(false);
+		temp.innerHTML = html;
+		temp.removeAttribute("id");
+		temp.classList.add("content-temp");
+		wrapper.appendChild(temp);
+		requestAnimationFrame(() => {
+			temp.style.opacity = "1";
+			temp.style.transform = "translateY(0)";
+		});
+		setTimeout(() => {
+			current.innerHTML = html;
+			wrapper.removeChild(temp);
+		}, 250);
+		if (nodeSelectText) {
+			nodeSelectText.remove();
+		}
+		// console.log("discount_experiments",node)
+	}
+	function renderPrereqTree(node, visited = new Set()) {
+		if (visited.has(node.id)) return "";
+		visited.add(node.id);
+		let html = "<li>";
+		html += node.display_name;
+		if (node.parents.length > 0) {
+			html += "<ul>";
+			node.parents.forEach(parent => {
+				html += renderPrereqTree(parent, visited);
+			});
+			html += "</ul>";
+		}
+		html += "</li>";
+		return html;
+	}
+	function getPrereqChain(node, visited = new Set()) {
+		if (visited.has(node.id)) return [];
+		visited.add(node.id);
+		let chain = [];
+		node.parents.forEach(parent => {
+			chain = chain.concat(getPrereqChain(parent, visited));
+		});
+		chain.push(node);
+		return chain;
+	}
+	function getCost(node) {
+		if (!node.research_costs) return -1;
+		const value = Object.values(node.research_costs)[0];
+		return tierLookup[value] || 0;
+	}
+	searchInput.addEventListener("input", () => {
+		const q = searchInput.value.toLowerCase();
+		const filtered = nodes.filter(n =>
+			(n.display_name || "").toLowerCase().includes(q) ||
+			(n.id || "").toLowerCase().includes(q)
+		);
+		renderList(filtered);
+	});
+};
 /*
 // Average json 'node'
 {
@@ -64,196 +343,3 @@
 	},
 }
 */
-window.onload = function() {
-	const searchInput = document.getElementById("searchInput");
-	const nodeListDiv = document.getElementById("nodeList");
-	const nodeDetailsDiv = document.getElementById("nodeDetails");
-	const nodeSelectText = document.getElementById("selectANode");
-	nodeSelectText.innerHTML = '<h2>Select a node</h2>';
-	
-	let nodes = [];
-	let nodeMap = {};
-	const tierLookup = {
-		TECHWEB_TIER_1_POINTS: 40,
-		TECHWEB_TIER_2_POINTS: 80,
-		TECHWEB_TIER_3_POINTS: 120,
-		TECHWEB_TIER_4_POINTS: 160,
-		TECHWEB_TIER_5_POINTS: 200
-	};
-	const experimentLookup = {
-		"/datum/experiment/scanning/random/mecha_equipped_scan": { // Technically another set of a bunch of stuff I would probably need to setup as a json fetch. Hell, I might make all of the lookup a seperate fetch..
-			name: "Exosuit Materials: Load Strain Test",
-			desc: "Exosuit equipment places unique strain upon the structure of the vehicle. Scan exosuits you have assembled from your exosuit fabricator and fully equipped to accelerate our structural stress simulations."
-		}
-	};
-	const departmentLookup = {
-		CHANNEL_SCIENCE: "Science",
-		CHANNEL_ENGINEERING: "Engineering",
-		CHANNEL_MEDICAL: "Medical",
-		CHANNEL_SECURITY: "Security",
-		CHANNEL_SUPPLY: "Cargo",
-		CHANNEL_COMMAND: "Command",
-		CHANNEL_SERVICE: "Service",
-		CHANNEL_COMMON: "Common"
-	};
-	fetch("https://umbriee.github.io/UmbreesWebsiteStoreData/resources/parsedInfo/origin_tech_items.json").then(r => r.json()).then(data => {
-		nodes = Array.isArray(data) ? data : data.nodes;
-		// Build lookup + parent/child links
-		nodes.forEach(n => {
-			nodeMap[n.id] = n;
-			n.parents = [];
-			n.children = [];
-		});
-		nodes.forEach(n => {
-			if (n.prereq_ids) {
-				n.prereq_ids.forEach(pid => {
-					const parent = nodeMap[pid];
-					if (parent) {
-						n.parents.push(parent);
-						parent.children.push(n);
-					}
-				});
-			}
-		});
-		renderList(nodes);
-	});
-	function renderList(list) {
-		nodeListDiv.innerHTML = "";
-		const starters = list.filter(n => n.starting_node === true || n.starting_node === "TRUE");
-		const others = list.filter(n => !starters.includes(n));
-		const sorted = [...starters, ...others];
-		sorted.forEach(n => {
-			const item = document.createElement("div");
-			item.className = "nodeItem";
-			let label = n.display_name;
-			if (starters.includes(n)) {
-				label = "* " + label;
-			}
-			item.textContent = label;
-			item.onclick = () => showNode(n);
-			nodeListDiv.appendChild(item);
-		});
-	}
-	function showNode(node) {
-		const chain = getPrereqChain(node);
-		let totalCost = 0;
-		let firstCost = getCost(node);
-		let starter = (node.starting_node === true); //bool
-		chain.forEach(n => {totalCost += getCost(n);});
-		let html = "";
-		{ // Name Desc
-			html += `<div class="section">
-				<h2>${node.display_name}</h2>
-				<p>${node.description || ""}</p>
-			</div>`;
-			}
-		{ // TotalCost
-			if (totalCost > 0) {
-				html += `<div class="section"><h3>Research Cost:</h3><p>${firstCost}</p></div>`;
-			}
-		}
-		{ // Department
-			if (node.announce_channels && node.announce_channels.length > 0) {
-				html += `<div class="section"><h3>Department(s):</h3>`;
-				node.announce_channels.forEach(ch => {html += (departmentLookup[ch] || ch) + ", "; // Had the idea to make it color coded dependent on departments. But there can be multiple. So I may make it mix their colors together if there is a department and try to figure out the best way to organize them color wise in the node list.
-				});
-			}
-		}
-		if (starter) {html += `<div class="section"><h4>[Node Starts Unlocked]</h4>`;} else { if (totalCost > 0) {html += `<div class="section"><h3>Research Cost: ${firstCost}</h3></div>`;}}// Node unlocked
-		{ // Requirement Tree
-			html += `<div class="section"><h3>Requirement Tree:</h3>`;
-			if (totalCost > 0) {html += `<p>Total cost: ${totalCost}</p>`;}
-			html += `<ul>${renderPrereqTree(node)}</ul></div>`; // able to click on these to go to their node. Also make it easier to see when two nodes are required with maybe ascii tree formatting to get lines?
-		}
-		{ // Required Experiments
-			if (node.required_experiments) {
-				html += `<div class="section"><h3>Required Experiments:</h3>`;
-				node.required_experiments.forEach(experimentPath => {
-					const lookup = experimentLookup[experimentPath];
-					const experimentName = lookup ? lookup.name : experimentPath;
-					const experimentDesc = lookup ? lookup.desc : experimentPath;
-					html += `<li>${experimentName} - ${experimentDesc}</li>`;
-				}); // Could use a lookup check as half of them look like "/datum/experiment/scanning/random/mecha_equipped_scan" or so.
-			}
-		}
-		{ // Unlocks Tech
-			if (node.children.length > 0) {
-				html += `<div class="section"><h3>Unlocks Tech Nodes:</h3>`;
-				node.children.forEach(c => {
-					html += `<li>${c.display_name}</li>`; // Clickable text to go to this node.
-				});
-			}
-		}
-		{ // Discounts
-			if (node.discount_experiments && node.discount_experiments.length > 0) { // Can't figure out how to make this appear.
-				html += `<div class="section"><h3>Discount Experiments:</h3>`;
-				Object.entries(node.discount_experiments).forEach(([experimentPath, tierKey]) => {
-					const experimentName = experimentLookup[experimentPath] || experimentPath;
-					const refund = tierLookup[tierKey] || 0;
-					html += `<li>Doing ${experimentName} refunds ${refund} research points.</li>`;
-				});
-				html += `</ul></div>`;
-			
-			/*"discount_experiments": {
-				"/datum/experiment/scanning/points/basic_med_rig": "TECHWEB_TIER_2_POINTS"
-			},*/
-			}
-		}
-		{// Unlocks items
-			/*if (node.design_ids) { // Hidden for now due to the items being itemID code stuff.
-				const visibleItems = node.design_ids.filter(d => !d.startsWith("//"));
-				if (visibleItems.length > 0) {
-					html += `<div class="section"><h3>Unlocks Items</h3><ul>`;
-					visibleItems.forEach(d => {
-						html += `<li>${d}</li>`;
-					});
-					html += `</ul></div>`;
-				}
-			}
-			*/
-		}
-		nodeDetailsDiv.innerHTML = html;
-		if (nodeSelectText) {
-			nodeSelectText.remove();
-		}
-		// console.log("discount_experiments",node)
-	}
-	function renderPrereqTree(node, visited = new Set()) {
-		if (visited.has(node.id)) return "";
-		visited.add(node.id);
-		let html = "<li>";
-		html += node.display_name;
-		if (node.parents.length > 0) {
-			html += "<ul>";
-			node.parents.forEach(parent => {
-				html += renderPrereqTree(parent, visited);
-			});
-			html += "</ul>";
-		}
-		html += "</li>";
-		return html;
-	}
-	function getPrereqChain(node, visited = new Set()) {
-		if (visited.has(node.id)) return [];
-		visited.add(node.id);
-		let chain = [];
-		node.parents.forEach(parent => {
-			chain = chain.concat(getPrereqChain(parent, visited));
-		});
-		chain.push(node);
-		return chain;
-	}
-	function getCost(node) {
-		if (!node.research_costs) return -1;
-		const value = Object.values(node.research_costs)[0];
-		return tierLookup[value] || 0;
-	}
-	searchInput.addEventListener("input", () => {
-		const q = searchInput.value.toLowerCase();
-		const filtered = nodes.filter(n =>
-			(n.display_name || "").toLowerCase().includes(q) ||
-			(n.id || "").toLowerCase().includes(q)
-		);
-		renderList(filtered);
-	});
-};
