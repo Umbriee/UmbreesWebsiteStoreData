@@ -209,7 +209,7 @@ window.onload = function() {
 			}
 		}
 		{ // Unlocks items
-			if (node.design_ids && Object.keys(node.design_ids).length > 0) { // Hidden for now due to the items being itemID code stuff.
+			/*if (node.design_ids && Object.keys(node.design_ids).length > 0) { // Hidden for now due to the items being itemID code stuff.
 				const visibleItems = node.design_ids.filter(d => !d.startsWith("//"));
 				if (visibleItems.length > 0) {
 					html += `<div class="section"><h3>Unlocks ${(visibleItems.length)} Items</h3><span class='chat ooc'>(( OOC: Warning, these are formated with Item-ID's and has no current lookup!))</span><ul>`;
@@ -218,7 +218,7 @@ window.onload = function() {
 					});
 					html += `</ul></div>`;
 				}
-			}
+			}*/
 		}
 		html += `</div>`;
 		{ // Anim and Visualizing finally
