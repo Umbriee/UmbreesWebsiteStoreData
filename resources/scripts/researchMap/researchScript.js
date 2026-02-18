@@ -52,23 +52,23 @@ window.onload = function() {
 		},
 		"/datum/experiment/scanning/points/basic_engi_rig": {
 			name: "Basic Engineering Suit Scans",
-			desc: "[Umbree, add data here!]"
+			desc: "Scan 2 of either a engineering voidsuit, HAZMAT voidsuit, atmos voidsuit, or construction voidsuit. Ask Engineering if they can lend you one to touch your scanner to."
 		},
 		"/datum/experiment/scanning/points/basic_sec_rig": {
 			name: "Basic Security Suit Scans",
-			desc: "[Umbree, add data here!]"
+			desc: "Scan 2 of either a security voidsuit, crowd control voidsuit, or exploration voidsuit. Ask sec if you can bring your obviously camera shapped scanner and get sec suit secrets."
 		},
 		"/datum/experiment/scanning/points/basic_med_rig": {
 			name: "Basic Medical Suit Scans",
-			desc: "[Umbree, add data here!]"
+			desc: "Scan 2 of either a medical voidsuit, emergency medical response voidsuit, or a biohazard voidsuit. Ask Medical for any if they have."
 		},
 		"/datum/experiment/scanning/points/basic_min_rig": {
 			name: "Basic Mining Suit Scans",
-			desc: "[Umbree, add data here!]"
+			desc: "Scan 2 of either a mining voidsuit or frontier mining voidsuit. Ask cargo if they can lend you one to sniff with your scanner."
 		},
 		"/datum/experiment/scanning/points/basic_sci_rig": {
 			name: "Basic Research Suit Scans",
-			desc: "[Umbree, add data here!]"
+			desc: "Scan 4 of either a Anomaly suit, Excavation suit, Heat Adapted Excavation suit, bomb suit, or bio suit. Hey, you're apart of sci. And bio suits are just about everywhere in xenobio. If not you can go to xenoarch for one of the first 3 options. Dunno about a bomb suit. Ask Sec if you want that one."
 		},
 		"/datum/experiment/scanning/people/big_or_smol": {
 			name: "Big or small",
@@ -80,7 +80,7 @@ window.onload = function() {
 		},
 		"/datum/experiment/physical/teleporting": {
 			name: "Teleporation Basics",
-			desc: "Teleport an object by using telescience! -- If you are on the Adephagia / Teather I am sorry you must build telescience equipment. Otherwise you may use the Stellar Delights Virgo-2 Aerostat telescience thats south and to the east relative to the exit Quantum Pad!"
+			desc: "Teleport an object to telescience by using telescience! -- If you are on the Adephagia / Teather I am sorry you must build telescience equipment. Otherwise you may use the Stellar Delights Virgo-2 Aerostat telescience thats south and to the east relative to the exit Quantum Pad!"
 		},
 		"/datum/experiment/scanning/random/janitor_trash": {
 			name: "Station Hygiene Inspection",
