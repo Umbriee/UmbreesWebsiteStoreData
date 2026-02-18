@@ -156,17 +156,19 @@ window.onload = function() {
 		{ // Department
 			if (node.announce_channels && node.announce_channels.length > 0) {
 				html += `<div class="section"><h3>Department(s):</h3>`;
-				node.announce_channels.forEach(ch => {html += (departmentLookup[ch] || ch) + " "; // Had the idea to make it color coded dependent on departments. But there can be multiple. So I may make it mix their colors together if there is a department and try to figure out the best way to organize them color wise in the node list.
+				node.announce_channels.forEach(ch => {html += (departmentLookup[ch] || ch) + " ";
 				});
 				html += `
 				</div>`;
 			}
 		}
-		if (!starter) { if (totalCost > 0) {html += `<div class="section"><h3>Research Cost: <span class="cost">${firstCost}</span></h3></div>`;}}
-		{ // Requirement Tree
-			html += `<div class="section"><h3>Requirement Tree:</h3>`;
-			if (totalCost > 0) {html += `<h5>Total cost: <span class="cost">${totalCost}</span></h5>`;}
-			html += `<ul>${renderPrereqTree(node)}</ul></div>`; // able to click on these to go to their node. Also make it easier to see when two nodes are required with maybe ascii tree formatting to get lines?
+		if (!starter) { if (totalCost > 0) { // Research cost, Requirement Tree
+			html += `<div class="section"><h3>Research Cost: <span class="cost">${firstCost}</span></h3></div>`;}
+			{ // Requirement Tree
+				html += `<div class="section"><h3>Requirement Tree:</h3>`;
+				if (totalCost > 0) {html += `<h5>Total cost: <span class="cost">${totalCost}</span></h5>`;}
+				html += `<ul>${renderPrereqTree(node)}</ul></div>`; // Todo: able to click on these to go to their respective node.
+			}
 		}
 		{ // Required Experiments
 			if (node.required_experiments) {
@@ -182,7 +184,7 @@ window.onload = function() {
 		}
 		{ // Unlocks Tech
 			if (node.children.length > 0) {
-				html += `<div class="section"><h3>Unlocks Tech Nodes:</h3>`;
+				html += `<div class="section"><h3>Unlocks ${(node.children.length)} Tech Nodes:</h3>`;
 				node.children.forEach(c => {
 					html += `<li>${c.display_name}</li>`; // Clickable text to go to this node.
 				});
@@ -207,36 +209,35 @@ window.onload = function() {
 			}
 		}
 		{ // Unlocks items
-			/*if (node.design_ids) { // Hidden for now due to the items being itemID code stuff.
+			if (node.design_ids && Object.keys(node.design_ids).length > 0) { // Hidden for now due to the items being itemID code stuff.
 				const visibleItems = node.design_ids.filter(d => !d.startsWith("//"));
 				if (visibleItems.length > 0) {
-					html += `<div class="section"><h3>Unlocks Items</h3><ul>`;
+					html += `<div class="section"><h3>Unlocks ${(visibleItems.length)} Items</h3><ul>`;
+					html += `<h6>[Warning, these are formated with Item-ID's and has no current lookup!]</h6>`;
 					visibleItems.forEach(d => {
 						html += `<li>${d}</li>`;
 					});
 					html += `</ul></div>`;
 				}
 			}
-			*/
 		}
 		html += `</div>`;
-		const temp = current.cloneNode(false);
-		temp.innerHTML = html;
-		temp.removeAttribute("id");
-		temp.classList.add("techwebContent-temp");
-		wrapper.appendChild(temp);
-		requestAnimationFrame(() => {
-			temp.style.opacity = "1";
-			temp.style.transform = "translateY(0)";
-		});
-		setTimeout(() => {
-			current.innerHTML = html;
-			wrapper.removeChild(temp);
-		}, 250);
-		if (nodeSelectText) {
-			nodeSelectText.remove();
+		{ // Anim and Visualizing finally
+			const temp = current.cloneNode(false);
+			temp.innerHTML = html;
+			temp.removeAttribute("id");
+			temp.classList.add("techwebContent-temp");
+			wrapper.appendChild(temp);
+			requestAnimationFrame(() => {
+				temp.style.opacity = "1";
+				temp.style.transform = "translateY(0)";
+			});
+			setTimeout(() => {
+				current.innerHTML = html;
+				wrapper.removeChild(temp);
+			}, 250);
 		}
-		// console.log("discount_experiments",node)
+		if (nodeSelectText) {nodeSelectText.remove();}
 	}
 	function renderPrereqTree(node, visited = new Set()) {
 		if (visited.has(node.id)) return "";
@@ -323,10 +324,10 @@ window.onload = function() {
 			"titan_armour"
 		],
 		"research_costs": {
-			"TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_5_POINTS // Gives a string back, but this is used internally as a var for some numbers. Will have to lookup what they are exactly. But it seems like they only use 1-5. Will have to make a lookup table.
+			"TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_5_POINTS // Gives a string back, but this is used internally as a var for some numbers.
 		},
 		"announce_channels": [
-			"CHANNEL_SCIENCE" // A channel to send the message to. Not used in our game but the parser included it.
+			"CHANNEL_SCIENCE" // A channel to send the message to. Not used in game but the parser included it.
 		],
 		"hidden": "FALSE",
 		"experimental": "FALSE",

@@ -10,6 +10,7 @@
 	height: 100vh;
 	text-shadow: 0 0 4px #ffaa3c66;
 	position: relative;
+	max-width: 875;
 }
 #techweb::after {
 	content: "";
@@ -61,7 +62,7 @@
 }
 #techwebContent-wrapper {
 	min-width: 300px;
-	max-width: 500px;
+	max-width: 850px;
 	display: grid;
 
 	flex: 1;
