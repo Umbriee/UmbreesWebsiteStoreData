@@ -83,8 +83,8 @@ window.onload = function() {
 			desc: "Teleport an object by using telescience! -- If you are on the Adephagia / Teather I am sorry you must build telescience equipment. Otherwise you may use the Stellar Delights Virgo-2 Aerostat telescience thats south and to the east relative to the exit Quantum Pad!"
 		},
 		"/datum/experiment/scanning/random/janitor_trash": {
-			name: "[Umbree, add data here!]",
-			desc: "[Umbree, add data here!]"
+			name: "Station Hygiene Inspection",
+			desc: "Go into maints and scan some spilled oil to learn its secrets. Or blood. Your choice. Please do not be the reason to blood is all I ask.."
 		}
 	};
 	const departmentLookup = {
