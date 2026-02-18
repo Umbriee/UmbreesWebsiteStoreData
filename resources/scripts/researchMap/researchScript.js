@@ -96,7 +96,7 @@ window.onload = function() {
 		CHANNEL_SERVICE: "Service",
 		CHANNEL_COMMON: "Common"
 	};
-	fetch("https://raw.githubusercontent.com/Umbriee/UmbreesWebsiteStoreData/refs/heads/main/origin_tech_items.json").then(r => r.json()).then(data => {
+	fetch("https://umbriee.github.io/UmbreesWebsiteStoreData/resources/parsedInfo/origin_tech_items.json").then(r => r.json()).then(data => {
 		nodes = Array.isArray(data) ? data : data.nodes;
 		// Build lookup + parent/child links
 		nodes.forEach(n => {
