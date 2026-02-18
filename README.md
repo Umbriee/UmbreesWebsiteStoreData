@@ -2,7 +2,7 @@
 
 ## This repository hosts static assets and supporting resources used by [my website](https://umbree.gizmonic-institute.com/).
 
-## It exists primarily to avoid file size and embedding limitations from my website provider. Rather than compress or fragment larger components, they are stored and versioned here.
+#### It exists primarily to avoid file size and embedding limitations from my website provider. Rather than compress or fragment larger components, they are stored and versioned here.
 
 ## Purpose:
 ### This repository serves as:
