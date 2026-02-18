@@ -8,7 +8,18 @@
 	height: 100vh;
 	text-shadow: 0 0 4px rgba(255, 170, 60, 0.4);
 }
-
+#techweb ::-webkit-scrollbar {
+  width: 10px;
+}
+#techweb ::-webkit-scrollbar-track {
+  background: #5a3b1a; 
+}
+#techweb ::-webkit-scrollbar-thumb {
+  background: #ffb347; 
+}
+#techweb ::-webkit-scrollbar-thumb:hover {
+  background: #976c30; 
+}
 #sidebar {
 	width: 300px;
 	border-right: 1px solid #5a3b1a;
