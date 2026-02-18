@@ -5,8 +5,8 @@ window.onload = function() {
 	const nodeSelectText = document.getElementById("selectANode");
 	nodeSelectText.innerHTML = '<div class="section"><h2>Select A Node To Begin</h2></div>';
 
-	const wrapper = document.getElementById("content-wrapper");
-	const current = document.getElementById("content");
+	const wrapper = document.getElementById("techwebContent-wrapper");
+	const current = document.getElementById("techwebContent");
 	
 	let nodes = [];
 	let nodeMap = {};
@@ -223,7 +223,7 @@ window.onload = function() {
 		const temp = current.cloneNode(false);
 		temp.innerHTML = html;
 		temp.removeAttribute("id");
-		temp.classList.add("content-temp");
+		temp.classList.add("techwebContent-temp");
 		wrapper.appendChild(temp);
 		requestAnimationFrame(() => {
 			temp.style.opacity = "1";

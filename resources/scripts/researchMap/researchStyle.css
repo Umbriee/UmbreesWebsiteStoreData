@@ -57,7 +57,7 @@
 	flex: 1;
 	overflow-y: auto;
 }
-#content-wrapper {
+#techwebContent-wrapper {
 	min-width: 300px;
 	max-width: 500px;
 	display: grid;
@@ -66,17 +66,17 @@
 	padding: 20px;
 	overflow-y: auto;
 }
-#content,
-#content-wrapper ul {
+#techwebContent,
+#techwebContent-wrapper ul {
 	list-style: none;
 	padding-left: 20px;
 	position: relative;
 }
-#content-wrapper ul li {
+#techwebContent-wrapper ul li {
 	position: relative;
 	padding-left: 14px;
 }
-#content-wrapper ul li::before {
+#techwebContent-wrapper ul li::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -85,7 +85,7 @@
 	height: 1px;
 	background: #ffb347;
 }
-#content-wrapper ul ul::before {
+#techwebContent-wrapper ul ul::before {
 	content: "";
 	position: absolute;
 	left: 5px;
@@ -97,22 +97,22 @@
 #nodeSelectText ul {
 	padding-left: 20px;
 }
-.content-temp {
+.techwebContent-temp {
 	grid-area: 1 / 1;
 	transition: opacity 0.35s ease, transform 0.35s ease;
 	opacity: 0;
 	transform: translateY(5px);
 }
-.contentPanel {
+.techwebContentPanel {
 	padding: 20px;
 	background: #140d05;
 }
-.contentPanel,
-.content-temp {
+.techwebContentPanel,
+.techwebContent-temp {
 	grid-area: 1 / 1;
 	transition: opacity 0.25s ease, transform 0.25s ease;
 }
-.content-temp {
+.techwebContent-temp {
 	opacity: 0;
 	transform: translateY(5px);
 }
