@@ -1,49 +1,65 @@
 #techweb {
 	margin: 0;
-	font-family: Arial, sans-serif;
-	background: #1e1e1e;
-	color: #ddd;
-	
+	font-family: "Courier New", monospace;
+	background: #140d05;
+	color: #ffb347;
+
 	display: flex;
 	height: 100vh;
+	text-shadow: 0 0 4px rgba(255, 170, 60, 0.4);
 }
+
 #sidebar {
 	width: 300px;
-	border-right: 1px solid #38271D;
+	border-right: 1px solid #5a3b1a;
 	display: flex;
 	flex-direction: column;
-	background: #281C10;
+	background: #1b1208;
 }
+
 #searchInput {
 	padding: 10px;
-	border: none;
+	border: 1px solid #5a3b1a;
 	outline: none;
-	background: #333;
-	color: white;
+	background: #120a04;
+	color: #ffb347;
 }
+
+#searchInput::placeholder {
+	color: #c58a3a;
+}
+
 #nodeList {
 	flex: 1;
 	overflow-y: auto;
 }
+
 .nodeItem {
 	padding: 10px;
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid #3d2a14;
 	cursor: pointer;
+	color: #ffb347;
 }
+
 .nodeItem:hover {
-	background: #3a3a3a;
+	background: #2a1a0c;
 }
+
 #content {
 	flex: 1;
 	padding: 20px;
 	overflow-y: auto;
 }
+
 .section {
 	margin-bottom: 20px;
 }
+
 .section h3 {
 	margin-bottom: 5px;
+	color: #ffc76a;
 }
+
 #nodeSelectText ul {
 	padding-left: 20px;
 }

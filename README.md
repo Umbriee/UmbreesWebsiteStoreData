@@ -1,7 +1,7 @@
 # Umbree's Web Resources
 
 ## This repository hosts static assets and supporting resources used by [my website](https://umbree.gizmonic-institute.com/).
-#### It exists primarily to avoid file size and embedding limitations from my website provider. Rather than compress or fragment larger components, they are stored and versioned here.
+--[ It exists primarily to avoid file size and embedding limitations from my website provider. Rather than compress or fragment larger components, they are stored and versioned here. ]--
 
 ## Purpose:
 ### This repository serves as:
@@ -27,4 +27,5 @@ External linking is discouraged unless you understand that paths may change.
 
 With that all said-- what are ya doing here.
 
-[githubpages](https://umbriee.github.io/UmbreesWebsiteStoreData/)
+- If you see this on the github, click [here](https://umbriee.github.io/UmbreesWebsiteStoreData/) for the pages.
+- If you see this on the pages, click [here](https://github.com/Umbriee/UmbreesWebsiteStoreData) for the main github
