@@ -1,0 +1,4090 @@
+[
+  {
+    "_file": "alien_nodes.dm",
+    "_path": "/datum/techweb_node/alientech",
+    "_line": 2,
+    "subtype": "alientech",
+    "id": "TECHWEB_NODE_ALIENTECH",
+    "display_name": "Precursor Technology",
+    "description": "Things used by the precursors.",
+    "prereq_ids": [
+      "TECHWEB_NODE_BLUESPACE_TRAVEL"
+    ],
+    "design_ids": [
+      "anobattery-basic",
+      "anobattery-moderate",
+      "anobattery-advanced",
+      "anobattery-exotic"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "alien_nodes.dm",
+    "_path": "/datum/techweb_node/alien_engi",
+    "_line": 16,
+    "subtype": "alien_engi",
+    "id": "TECHWEB_NODE_ALIEN_ENGI",
+    "display_name": "Precursor Engineering",
+    "description": "Precursor engineering tools",
+    "prereq_ids": [
+      "TECHWEB_NODE_ALIENTECH",
+      "TECHWEB_NODE_EXP_TOOLS"
+    ],
+    "design_ids": [
+      "hybridcrowbar",
+      "hybridwrench",
+      "hybridscrewdriver",
+      "hybridwirecutters",
+      "hybridwelder"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "atmos_nodes.dm",
+    "_path": "/datum/techweb_node/atmos",
+    "_line": 2,
+    "subtype": "atmos",
+    "id": "TECHWEB_NODE_ATMOS",
+    "starting_node": true,
+    "display_name": "Atmospherics",
+    "description": "Maintaining station air and related life support systems.",
+    "design_ids": [
+      "atmosanalyzer",
+      "atmosalerts",
+      "air_management",
+      "tank_management",
+      "shutoff_monitor",
+      "//thermomachine",
+      "//space_heater",
+      "//scrubber",
+      "//generic_tank",
+      "//oxygen_tank",
+      "//plasma_tank",
+      "//plasmaman_tank_belt",
+      "//plasmarefiller",
+      "//extinguisher",
+      "//pocketfireextinguisher",
+      "//gas_filter",
+      "//plasmaman_gas_filter",
+      "//pipe_painter"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "atmos_nodes.dm",
+    "_path": "/datum/techweb_node/gas_compression",
+    "_line": 28,
+    "subtype": "gas_compression",
+    "id": "TECHWEB_NODE_GAS_COMPRESSION",
+    "display_name": "Gas Compression",
+    "description": "Highly pressurized gases hold potential for unlocking immense energy capabilities.",
+    "prereq_ids": [
+      "TECHWEB_NODE_ATMOS"
+    ],
+    "design_ids": [
+      "gasheater",
+      "gascooler",
+      "algae_farm",
+      "thermoregulator",
+      "//tank_compressor",
+      "//pump",
+      "//emergency_oxygen",
+      "//emergency_oxygen_engi",
+      "//power_turbine_console",
+      "//turbine_part_compressor",
+      "//turbine_part_rotor",
+      "//turbine_part_stator",
+      "//turbine_compressor",
+      "//turbine_rotor",
+      "//turbine_stator",
+      "//atmos_thermal",
+      "//pneumatic_seal",
+      "//large_welding_tool"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_1_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "atmos_nodes.dm",
+    "_path": "/datum/techweb_node/plasma_control",
+    "_line": 56,
+    "subtype": "plasma_control",
+    "id": "TECHWEB_NODE_PLASMA_CONTROL",
+    "display_name": "Controlled Plasma",
+    "description": "Experiments with high-pressure gases and electricity resulting in crystallization and controlled plasma reactions.",
+    "prereq_ids": [
+      "TECHWEB_NODE_GAS_COMPRESSION",
+      "TECHWEB_NODE_ENERGY_MANIPULATION"
+    ],
+    "design_ids": [
+      "pacman",
+      "superpacman",
+      "mrspacman",
+      "//electrolyzer",
+      "//pipe_scrubber",
+      "//mech_generator",
+      "//plasmacutter"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "atmos_nodes.dm",
+    "_path": "/datum/techweb_node/fusion",
+    "_line": 73,
+    "subtype": "fusion",
+    "id": "TECHWEB_NODE_FUSION",
+    "display_name": "Fusion",
+    "description": "Investigating fusion reactor technology to achieve sustainable and efficient energy production through controlled plasma reactions involving noble gases.",
+    "prereq_ids": [
+      "TECHWEB_NODE_PLASMA_CONTROL"
+    ],
+    "design_ids": [
+      "adv_rtg",
+      "fusion_core_control",
+      "fusion_fuel_compressor",
+      "fusion_fuel_control",
+      "gyrotron_control",
+      "fusion_core",
+      "fusion_injector",
+      "rapidpipedispenser",
+      "//adv_fire_extinguisher",
+      "//bolter_wrench",
+      "//rpd_loaded",
+      "//engine_goggles",
+      "//crystallizer"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "biology_nodes.dm",
+    "_path": "/datum/techweb_node/bio_scan",
+    "_line": 1,
+    "subtype": "bio_scan",
+    "id": "TECHWEB_NODE_BIO_SCAN",
+    "display_name": "Biological Scan",
+    "description": "Advanced technology for analyzing patient health and reagent compositions, ensuring precise diagnostics and treatment in the medical bay.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MEDBAY_EQUIP"
+    ],
+    "design_ids": [
+      "medical_analyzer",
+      "//healthanalyzer",
+      "//autopsyscanner",
+      "//genescanner",
+      "//medical_kiosk",
+      "//chem_master",
+      "//ph_meter",
+      "//scigoggles",
+      "//mod_reagent_scanner"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_1_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "biology_nodes.dm",
+    "_path": "/datum/techweb_node/cytology",
+    "_line": 20,
+    "subtype": "cytology",
+    "id": "TECHWEB_NODE_CYTOLOGY",
+    "display_name": "Cytology",
+    "description": "Cellular biology research focused on cultivation of limbs and diverse organisms from cells.",
+    "prereq_ids": [
+      "TECHWEB_NODE_BIO_SCAN"
+    ],
+    "design_ids": [
+      "pandemic",
+      "//limbgrower",
+      "//vatgrower",
+      "//petri_dish",
+      "//swab",
+      "//biopsy_tool"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "biology_nodes.dm",
+    "_path": "/datum/techweb_node/xenobiology",
+    "_line": 36,
+    "subtype": "xenobiology",
+    "id": "TECHWEB_NODE_XENOBIOLOGY",
+    "display_name": "Xenobiology",
+    "description": "Exploration of non-human biology, unlocking the secrets of extraterrestrial lifeforms and their unique biological processes.",
+    "prereq_ids": [
+      "TECHWEB_NODE_CYTOLOGY"
+    ],
+    "design_ids": [
+      "prosthetic_skrell",
+      "prosthetic_tajaran",
+      "prosthetic_unathi",
+      "prosthetic_teshari",
+      "slimebaton",
+      "slimetaser",
+      "slime_scanner",
+      "slime_grinder",
+      "//xenobioconsole",
+      "//slime_scanner",
+      "//limbdesign_ethereal",
+      "//limbdesign_felinid",
+      "//limbdesign_lizard",
+      "//limbdesign_plasmaman"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "discount_experiments": {
+      "/datum/experiment/scanning/points/slime_scanning": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "biology_nodes.dm",
+    "_path": "/datum/techweb_node/gene_engineering",
+    "_line": 61,
+    "subtype": "gene_engineering",
+    "id": "TECHWEB_NODE_GENE_ENGINEERING",
+    "display_name": "Gene Engineering",
+    "description": "Research into sophisticated DNA manipulation techniques, enabling the modification of human genetic traits to unlock specific abilities and enhancements.",
+    "prereq_ids": [
+      "TECHWEB_NODE_SELECTION",
+      "TECHWEB_NODE_XENOBIOLOGY"
+    ],
+    "design_ids": [
+      "clonepod",
+      "clonescanner",
+      "transhuman_clonepod",
+      "transhuman_resleever",
+      "resleeving_control",
+      "body_designer",
+      "clonecontrol",
+      "gene_scanner",
+      "sleevemate"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "biology_nodes.dm",
+    "_path": "/datum/techweb_node/botany_equip",
+    "_line": 82,
+    "subtype": "botany_equip",
+    "id": "TECHWEB_NODE_BOTANY_EQUIP",
+    "starting_node": true,
+    "display_name": "Botany Equipment",
+    "description": "Essential tools for maintaining onboard gardens, supporting plant growth in the unique environment of the space station.",
+    "design_ids": [
+      "plant_analyzer",
+      "//seed_extractor",
+      "//watering_can",
+      "//spade",
+      "//cultivator",
+      "//secateurs",
+      "//hatchet"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "biology_nodes.dm",
+    "_path": "/datum/techweb_node/hydroponics",
+    "_line": 97,
+    "subtype": "hydroponics",
+    "id": "TECHWEB_NODE_HYDROPONICS",
+    "display_name": "Hydroponics",
+    "description": "Research into advanced hydroponic systems for efficient and sustainable plant cultivation.",
+    "prereq_ids": [
+      "TECHWEB_NODE_BOTANY_EQUIP",
+      "TECHWEB_NODE_CHEM_SYNTHESIS"
+    ],
+    "design_ids": [
+      "biogenerator",
+      "//hydro_tray",
+      "//portaseeder"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SERVICE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "biology_nodes.dm",
+    "_path": "/datum/techweb_node/selection",
+    "_line": 110,
+    "subtype": "selection",
+    "id": "TECHWEB_NODE_SELECTION",
+    "display_name": "Artificial Selection",
+    "description": "Advancement in plant cultivation techniques through artificial selection, enabling precise manipulation of plant DNA.",
+    "prereq_ids": [
+      "TECHWEB_NODE_HYDROPONICS"
+    ],
+    "design_ids": [
+      "flora_gun",
+      "disk_botany",
+      "//gene_shears"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SERVICE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "circuit_nodes.dm",
+    "_path": "/datum/techweb_node/programming",
+    "_line": 1,
+    "subtype": "programming",
+    "id": "TECHWEB_NODE_PROGRAMMING",
+    "starting_node": true,
+    "display_name": "Programming",
+    "description": "Dedicate an entire shift to program a fridge to greet you when opened.",
+    "prereq_ids": [
+      "TECHWEB_NODE_ROBOTICS"
+    ],
+    "design_ids": [
+      "ic_printer",
+      "wirer",
+      "debugger",
+      "assembly-small",
+      "assembly-medium",
+      "assembly-large",
+      "assembly-device",
+      "circuit-bug"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "circuit_nodes.dm",
+    "_path": "/datum/techweb_node/circuit_shells",
+    "_line": 18,
+    "subtype": "circuit_shells",
+    "id": "TECHWEB_NODE_CIRCUIT_SHELLS",
+    "display_name": "Advanced Circuit Shells",
+    "description": "Adding brains to more things.",
+    "prereq_ids": [
+      "TECHWEB_NODE_PROGRAMMING"
+    ],
+    "design_ids": [
+      "assembly-implant",
+      "ic_printer_upgrade_adv",
+      "ic_printer_upgrade_clone"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_1_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "circuit_nodes.dm",
+    "_path": "/datum/techweb_node/programmed_robot",
+    "_line": 31,
+    "subtype": "programmed_robot",
+    "id": "TECHWEB_NODE_PROGRAMMED_ROBOT",
+    "display_name": "Programmed Robot",
+    "description": "Grants access to movable shells, allowing for remote operations and pranks.",
+    "prereq_ids": [
+      "TECHWEB_NODE_CIRCUIT_SHELLS"
+    ],
+    "design_ids": [
+      "assembly-drone"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "cyborg_nodes.dm",
+    "_path": "/datum/techweb_node/augmentation",
+    "_line": 2,
+    "subtype": "augmentation",
+    "id": "TECHWEB_NODE_AUGMENTATION",
+    "starting_node": true,
+    "display_name": "Augmentation",
+    "description": "For those who prefer shiny metal over squishy flesh.",
+    "prereq_ids": [
+      "TECHWEB_NODE_ROBOTICS"
+    ],
+    "design_ids": [
+      "// External\"pros_torso_m",
+      "pros_torso_f",
+      "pros_head",
+      "pros_l_arm",
+      "pros_l_hand",
+      "pros_r_arm",
+      "pros_r_hand",
+      "pros_l_leg",
+      "pros_l_foot",
+      "pros_r_leg",
+      "pros_r_foot",
+      "// Internal\"pros_cell",
+      "pros_eyes",
+      "pros_hydraulic",
+      "pros_reagcycler",
+      "pros_heatsink",
+      "pros_diagnostic",
+      "pros_heart",
+      "pros_lung",
+      "pros_liver",
+      "pros_kidney",
+      "pros_spleen",
+      "pros_larynx",
+      "pros_stomach",
+      "// Robots\"robot_exoskeleton",
+      "robot_torso",
+      "robot_head",
+      "robot_l_arm",
+      "robot_r_arm",
+      "robot_l_leg",
+      "robot_r_leg",
+      "// Robot Internals\"binary_communication_device",
+      "radio",
+      "actuator",
+      "diagnosis_unit",
+      "camera",
+      "armour",
+      "platform_armour"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_1_POINTS"
+    },
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "cyborg_nodes.dm",
+    "_path": "/datum/techweb_node/cybernetics",
+    "_line": 54,
+    "subtype": "cybernetics",
+    "id": "TECHWEB_NODE_CYBERNETICS",
+    "display_name": "Cybernetics",
+    "description": "Sapient robots with preloaded tool modules and programmable laws.",
+    "prereq_ids": [
+      "TECHWEB_NODE_AUGMENTATION"
+    ],
+    "design_ids": [
+      "mmi_ai_shell",
+      "borg_rename_module",
+      "borg_reset_module",
+      "borg_restart_module",
+      "borg_sizeshift_module",
+      "borg_vtec_module",
+      "borg_jetpack_module",
+      "dronecontrol",
+      "robocontrol",
+      "mmi",
+      "posibrain",
+      "dronebrain",
+      "borgupload",
+      "recharge_station",
+      "transhuman_synthprinter",
+      "robot_scanner",
+      "protean_reboot",
+      "// bags\"misc_synth_bag",
+      "misc_synth_bag_tag_nt",
+      "misc_synth_bag_tag_morph",
+      "misc_synth_bag_tag_wardtaka",
+      "misc_synth_bag_tag_zenghu",
+      "misc_synth_bag_tag_gilthari",
+      "misc_synth_bag_tag_veymed",
+      "misc_synth_bag_tag_heph",
+      "misc_synth_bag_tag_grayson",
+      "misc_synth_bag_tag_xion",
+      "misc_synth_bag_tag_bishop",
+      "borg_sizegun_module",
+      "borg_language_module",
+      "borg_taser_module",
+      "sflash",
+      "//cyborgrecharger",
+      "//advanced_l_arm",
+      "//advanced_r_arm",
+      "//advanced_l_leg",
+      "//advanced_r_leg",
+      "//borg_upgrade_rename",
+      "//borg_upgrade_restart"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_1_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "cyborg_nodes.dm",
+    "_path": "/datum/techweb_node/borg_mining",
+    "_line": 104,
+    "subtype": "borg_mining",
+    "id": "TECHWEB_NODE_BORG_MINING",
+    "display_name": "Mining Cyborg Upgrades",
+    "description": "To mine places too dangerous for humans.",
+    "prereq_ids": [
+      "TECHWEB_NODE_CYBERNETICS"
+    ],
+    "design_ids": [
+      "borg_hound_capability_module",
+      "borg_hound_capacity_module",
+      "borg_ddrill_module"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "cyborg_nodes.dm",
+    "_path": "/datum/techweb_node/borg_engi",
+    "_line": 118,
+    "subtype": "borg_engi",
+    "id": "TECHWEB_NODE_BORG_ENGI",
+    "display_name": "Engineering Cyborg Upgrades",
+    "description": "To slack even more.",
+    "prereq_ids": [
+      "TECHWEB_NODE_BORG_MINING",
+      "TECHWEB_NODE_PARTS_UPG"
+    ],
+    "design_ids": [
+      "improved_binary_communication_device",
+      "improved_radio",
+      "improved_actuator",
+      "improved_diagnosis_unit",
+      "improved_camera",
+      "borg_advrped_module"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "cyborg_nodes.dm",
+    "_path": "/datum/techweb_node/borg_medical",
+    "_line": 134,
+    "subtype": "borg_medical",
+    "id": "TECHWEB_NODE_BORG_MEDICAL",
+    "display_name": "Medical Cyborg Upgrades",
+    "description": "Let them follow Asimov's First Law.",
+    "prereq_ids": [
+      "TECHWEB_NODE_BORG_MINING) // TECHWEB_NODE_SURGERY_ADV"
+    ],
+    "design_ids": [
+      "borg_advhealth_module",
+      "//borg_upgrade_pinpointer",
+      "//borg_upgrade_beakerapp",
+      "//borg_upgrade_defibrillator",
+      "//borg_upgrade_expandedsynthesiser",
+      "//borg_upgrade_piercinghypospray",
+      "//borg_upgrade_surgicalprocessor",
+      "//borg_upgrade_surgicalomnitool"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "cyborg_nodes.dm",
+    "_path": "/datum/techweb_node/borg_syndi",
+    "_line": 152,
+    "subtype": "borg_syndi",
+    "id": "TECHWEB_NODE_BORG_SYNDI",
+    "display_name": "??? Cyborg Upgrades",
+    "description": "These seem dangerous....",
+    "prereq_ids": [
+      "TECHWEB_NODE_BORG_ENGI"
+    ],
+    "design_ids": [
+      "borg_syndicate_module",
+      "binaryencrypt"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "cyborg_nodes.dm",
+    "_path": "/datum/techweb_node/passive_implants",
+    "_line": 165,
+    "subtype": "passive_implants",
+    "id": "TECHWEB_NODE_PASSIVE_IMPLANTS",
+    "display_name": "Passive Implants",
+    "description": "Implants designed to operate seamlessly without active user input, enhancing various physiological functions or providing continuous benefits.",
+    "prereq_ids": [
+      "TECHWEB_NODE_AUGMENTATION"
+    ],
+    "design_ids": [
+      "implant_backup",
+      "health_scan_implant",
+      "//skill_station",
+      "//implant_trombone",
+      "//implant_chem",
+      "//implant_tracking",
+      "//implant_exile",
+      "//implant_beacon",
+      "//implant_bluespace",
+      "//implantcase",
+      "//implanter",
+      "//locator"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_1_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SECURITY",
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "cyborg_nodes.dm",
+    "_path": "/datum/techweb_node/cyber_implants",
+    "_line": 187,
+    "subtype": "cyber_implants",
+    "id": "TECHWEB_NODE_CYBER_IMPLANTS",
+    "display_name": "Cybernetic Implants",
+    "description": "Advanced technological enhancements integrated into the body, offering improved physical capabilities.",
+    "prereq_ids": [
+      "TECHWEB_NODE_PASSIVE_IMPLANTS",
+      "TECHWEB_NODE_CYBERNETICS"
+    ],
+    "design_ids": [
+      "implant_chem",
+      "//ci-breather",
+      "//ci-nutriment",
+      "//ci-thrusters",
+      "//ci-herculean",
+      "//ci-connector"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE",
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "cyborg_nodes.dm",
+    "_path": "/datum/techweb_node/combat_implants",
+    "_line": 203,
+    "subtype": "combat_implants",
+    "id": "TECHWEB_NODE_COMBAT_IMPLANTS",
+    "display_name": "Combat Implants",
+    "description": "To make sure that you can wake the f*** up, samurai.",
+    "prereq_ids": [
+      "TECHWEB_NODE_CYBER_IMPLANTS"
+    ],
+    "design_ids": [
+      "implant_free",
+      "blade_implant",
+      "armblade_implant",
+      "sword_implant",
+      "dartbow_implant",
+      "taser_implant",
+      "laser_implant",
+      "surge_implant",
+      "thermal_implant",
+      "//ci-reviver",
+      "//ci-antidrop",
+      "//ci-antistun"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE",
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "cyborg_nodes.dm",
+    "_path": "/datum/techweb_node/integrated_toolsets",
+    "_line": 225,
+    "subtype": "integrated_toolsets",
+    "id": "TECHWEB_NODE_INTERGRATED_TOOLSETS",
+    "display_name": "Integrated Toolsets",
+    "description": "Decades of contraband smuggling by assistants have led to the development of a full toolbox that fits seamlessly into your arm.",
+    "prereq_ids": [
+      "TECHWEB_NODE_COMBAT_IMPLANTS",
+      "TECHWEB_NODE_EXP_TOOLS"
+    ],
+    "design_ids": [
+      "research_implant",
+      "tool_implant",
+      "surgical_implant",
+      "//ci-nutrimentplus",
+      "//ci-toolset",
+      "//ci-surgery"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_5_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE",
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "cyborg_nodes.dm",
+    "_path": "/datum/techweb_node/protean",
+    "_line": 241,
+    "subtype": "protean",
+    "id": "TECHWEB_NODE_PROTEAN",
+    "display_name": "Protean Parts",
+    "description": "Incredibly advanced technology used to power Proteans.",
+    "prereq_ids": [
+      "TECHWEB_NODE_INTERGRATED_TOOLSETS",
+      "TECHWEB_NODE_COMBAT_IMPLANTS"
+    ],
+    "design_ids": [
+      "prot_orch",
+      "prot_refact"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_5_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE",
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/parts",
+    "_line": 2,
+    "subtype": "parts",
+    "id": "TECHWEB_NODE_PARTS",
+    "starting_node": true,
+    "display_name": "Essential Stock Parts",
+    "description": "Foundational components that form the backbone of station operations, encompassing a range of essential equipment necessary for day-to-day functionality.",
+    "design_ids": [
+      "basic_matter_bin",
+      "basic_capacitor",
+      "basic_sensor",
+      "basic_micro_laser",
+      "micro_manipulator",
+      "basic_cell",
+      "high_cell",
+      "device_cell",
+      "weapon_cell",
+      "high_mech_cell",
+      "potato_cell",
+      "smes_magnetic_coil",
+      "//basic_scanning",
+      "//condenser",
+      "//igniter",
+      "//infrared_emitter",
+      "//prox_sensor",
+      "//signaler",
+      "//timer",
+      "//voice_analyzer",
+      "//health_sensor",
+      "//sflash"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/parts_upg",
+    "_line": 32,
+    "subtype": "parts_upg",
+    "id": "TECHWEB_NODE_PARTS_UPG",
+    "display_name": "Upgraded Parts",
+    "description": "Offering enhanced capabilities beyond their basic counterparts.",
+    "prereq_ids": [
+      "TECHWEB_NODE_PARTS",
+      "TECHWEB_NODE_ENERGY_MANIPULATION"
+    ],
+    "design_ids": [
+      "adv_matter_bin",
+      "nano_mani",
+      "adv_capacitor",
+      "adv_sensor",
+      "high_micro_laser",
+      "super_cell",
+      "super_mech_cell",
+      "rped",
+      "smes_cap_basic",
+      "smes_trans_basic"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/parts_adv",
+    "_line": 52,
+    "subtype": "parts_adv",
+    "id": "TECHWEB_NODE_PARTS_ADV",
+    "display_name": "Advanced Parts",
+    "description": "The most finely tuned and accurate stock parts.",
+    "prereq_ids": [
+      "TECHWEB_NODE_PARTS_UPG"
+    ],
+    "design_ids": [
+      "super_matter_bin",
+      "pico_mani",
+      "super_capacitor",
+      "phasic_sensor",
+      "ultra_micro_laser",
+      "hyper_cell",
+      "super_device",
+      "hyper_device",
+      "arped",
+      "smes_cap_ultra",
+      "smes_trans_ultra"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "required_experiments": [
+      "/datum/experiment/scanning/points/machinery_tiered_scan/tier2_any"
+    ],
+    "announce_channels": [
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/parts_hyper",
+    "_line": 74,
+    "subtype": "parts_hyper",
+    "id": "TECHWEB_NODE_PARTS_HYPER",
+    "display_name": "Hyper Parts",
+    "description": "Integrating the latest in technology, these advanced components not only enhance functionality but also open up new possibilities for the station's technological capabilities.",
+    "prereq_ids": [
+      "TECHWEB_NODE_PARTS_ADV) //",
+      "TECHWEB_NODE_BLUESPACE_TRAVEL"
+    ],
+    "design_ids": [
+      "pbrped",
+      "hyper_mani",
+      "hyper_matter_bin",
+      "hyper_mani",
+      "hyper_capacitor",
+      "hyper_sensor",
+      "hyper_micro_laser",
+      "hyper_cell",
+      "hyper_device"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "discount_experiments": {
+      "/datum/experiment/scanning/points/machinery_tiered_scan/tier3_any": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/telecomms",
+    "_line": 94,
+    "subtype": "telecomms",
+    "id": "TECHWEB_NODE_TELECOMS",
+    "display_name": "Telecommunications Technology",
+    "description": "A comprehensive suite of machinery for station-wide communication setups, ensuring seamless connectivity and operational coordination.",
+    "prereq_ids": [
+      "TECHWEB_NODE_PARTS_HYPER"
+    ],
+    "design_ids": [
+      "tcom-server",
+      "tcom-processor",
+      "tcom-bus",
+      "tcom-hub",
+      "tcom-relay",
+      "tcom-broadcaster",
+      "tcom-receiver",
+      "tcom-exonet_node",
+      "message_monitor",
+      "comm_monitor",
+      "comm_server",
+      "ntnet_relay",
+      "s-ansible",
+      "s-filter",
+      "s-amplifier",
+      "s-treatment",
+      "s-analyzer",
+      "s-crystal",
+      "s-transmitter"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_5_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/parts_omni",
+    "_line": 123,
+    "subtype": "parts_omni",
+    "id": "TECHWEB_NODE_PARTS_OMNI",
+    "display_name": "Omni Parts",
+    "description": "The end-game of improving machines, these components represent the absolute cutting edge of science.",
+    "prereq_ids": [
+      "TECHWEB_NODE_PARTS_HYPER"
+    ],
+    "design_ids": [
+      "brped",
+      "omni_matter_bin",
+      "omni_mani",
+      "omni_capacitor",
+      "omni_sensor",
+      "omni_micro_laser",
+      "giga_device",
+      "giga_cell",
+      "smes_cap_hyper",
+      "smes_trans_hyper"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_5_POINTS"
+    },
+    "discount_experiments": {
+      "/datum/experiment/scanning/points/machinery_tiered_scan/tier4_any": "TECHWEB_TIER_5_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/construction",
+    "_line": 146,
+    "subtype": "construction",
+    "id": "TECHWEB_NODE_CONSTRUCTION",
+    "starting_node": true,
+    "display_name": "Construction",
+    "description": "Tools and essential machinery used for station maintenance and expansion.",
+    "design_ids": [
+      "tscanner",
+      "rcon_console",
+      "powermonitor",
+      "solarcontrol",
+      "circuit_imprinter",
+      "airlock_cycling",
+      "partslathe",
+      "securedoor",
+      "//circuit_imprinter_offstation",
+      "//solarcontrol",
+      "//solar_panel",
+      "//solar_tracker",
+      "//power_control",
+      "//airalarm_electronics",
+      "//airlock_board",
+      "//firealarm_electronics",
+      "//firelock_board",
+      "//trapdoor_electronics",
+      "//blast",
+      "//ignition",
+      "//big_manipulator",
+      "//tile_sprayer",
+      "//airlock_painter",
+      "//decal_painter",
+      "//rwd",
+      "//cable_coil",
+      "//welding_helmet",
+      "//welding_tool",
+      "//mini_welding_tool",
+      "//multitool",
+      "//wrench",
+      "//crowbar",
+      "//screwdriver",
+      "//wirecutters",
+      "//light_bulb",
+      "//light_tube",
+      "//crossing_signal",
+      "//guideway_sensor",
+      "//manuunloader",
+      "//manusmelter",
+      "//manucrusher",
+      "//manucrafter",
+      "//manulathe",
+      "//manusorter",
+      "//manurouter",
+      "//mailsorter"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/energy_manipulation",
+    "_line": 200,
+    "subtype": "energy_manipulation",
+    "id": "TECHWEB_NODE_ENERGY_MANIPULATION",
+    "display_name": "Energy Manipulation",
+    "description": "Harnessing the raw power of lightning arcs through sophisticated energy control methods.",
+    "prereq_ids": [
+      "TECHWEB_NODE_CONSTRUCTION"
+    ],
+    "design_ids": [
+      "inducersci",
+      "inducerind",
+      "upgradedtscanner",
+      "batteryrack",
+      "smes_cell",
+      "grid_checker",
+      "breakerbox",
+      "tesla_coil",
+      "rtg",
+      "//apc_control",
+      "//powermonitor",
+      "//smes",
+      "//portable_smes",
+      "//power_connector",
+      "//emitter",
+      "//grounding_rod",
+      "//cell_charger",
+      "//recharger",
+      "//welding_goggles",
+      "//tray_goggles",
+      "//geigercounter"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_1_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/holographics",
+    "_line": 231,
+    "subtype": "holographics",
+    "id": "TECHWEB_NODE_HOLOGRAPHICS",
+    "display_name": "Holographics",
+    "description": "Use of holographic technology for signage and barriers.",
+    "prereq_ids": [
+      "TECHWEB_NODE_ENERGY_MANIPULATION"
+    ],
+    "design_ids": [
+      "arf_generator",
+      "shield_generator",
+      "shield_diffuser",
+      "//forcefield_projector",
+      "//holosign",
+      "//holosignsec",
+      "//holosignengi",
+      "//holosignatmos",
+      "//holosignrestaurant",
+      "//holosignbar",
+      "//holobarrier_jani",
+      "//holobarrier_med",
+      "//holopad",
+      "//vendatray",
+      "//holodisk",
+      "//modular_shield_generator",
+      "//modular_shield_node",
+      "//modular_shield_cable",
+      "//modular_shield_relay",
+      "//modular_shield_charger",
+      "//modular_shield_well",
+      "//modular_shield_console"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/exp_tools",
+    "_line": 263,
+    "subtype": "exp_tools",
+    "id": "TECHWEB_NODE_EXP_TOOLS",
+    "display_name": "Experimental Tools",
+    "description": "Enhances the functionality and versatility of station tools.",
+    "prereq_ids": [
+      "TECHWEB_NODE_ENERGY_MANIPULATION"
+    ],
+    "design_ids": [
+      "jawslife",
+      "handdrill",
+      "expwelder",
+      "advancedtscanner",
+      "rapidpipedispenser",
+      "protohypospray",
+      "atmos_holosign",
+      "//flatpacker",
+      "//rangedanalyzer",
+      "//rtd_loaded",
+      "//mech_rcd",
+      "//rcd_loaded",
+      "//rcd_ammo",
+      "//weldingmask",
+      "//magboots"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/hud",
+    "_line": 288,
+    "subtype": "hud",
+    "id": "TECHWEB_NODE_HUD",
+    "display_name": "Integrated HUDs",
+    "description": "Initially developed for assistants to learn the nuances of different professions through augmented reality.",
+    "prereq_ids": [
+      "TECHWEB_NODE_HOLOGRAPHICS",
+      "TECHWEB_NODE_CYBER_IMPLANTS"
+    ],
+    "design_ids": [
+      "health_hud",
+      "security_hud",
+      "janitor_hud",
+      "rig_component_medhud",
+      "rig_component_sechud",
+      "rig_component_mining",
+      "graviton_goggles",
+      "omnihud",
+      "//diagnostic_hud",
+      "//mod_visor_diaghud",
+      "//ci-medhud",
+      "//ci-diaghud",
+      "//ci-sechud"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING",
+      "CHANNEL_SECURITY",
+      "CHANNEL_SCIENCE",
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/night_vision",
+    "_line": 311,
+    "subtype": "night_vision",
+    "id": "TECHWEB_NODE_NIGHT_VISION",
+    "display_name": "Night Vision Technology",
+    "description": "There are whispers that Nanotrasen pushed for this technology to extend shift durations, ensuring productivity around the clock.",
+    "prereq_ids": [
+      "TECHWEB_NODE_HUD"
+    ],
+    "design_ids": [
+      "rig_component_nvg",
+      "//diagnostic_hud_night",
+      "//health_hud_night",
+      "//night_visision_goggles",
+      "//nvgmesons",
+      "//nv_scigoggles",
+      "//security_hud_night"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING",
+      "CHANNEL_SECURITY",
+      "CHANNEL_SCIENCE",
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/chemical_refinery",
+    "_line": 328,
+    "subtype": "chemical_refinery",
+    "id": "TECHWEB_NODE_CHEM_REFINERY",
+    "display_name": "Chemical Refining",
+    "description": "Reacting and distilling reagents into more complex and useful forms.",
+    "prereq_ids": [
+      "TECHWEB_NODE_CHEM_SYNTHESIS"
+    ],
+    "design_ids": [
+      "industrial_reagent_filter",
+      "industrial_reagent_furnace",
+      "industrial_reagent_grinder",
+      "industrial_reagent_hub",
+      "industrial_reagent_pipe",
+      "industrial_reagent_pump",
+      "industrial_reagent_reactor",
+      "industrial_reagent_vat",
+      "industrial_reagent_mixer",
+      "industrial_reagent_waste_processor",
+      "pump_relay",
+      "fluid_pump"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING",
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/cells_empproof",
+    "_line": 350,
+    "subtype": "cells_empproof",
+    "id": "TECHWEB_NODE_PARTS_EMP_PROOF",
+    "display_name": "EMP-Proof Parts",
+    "description": "Advanced batteries that are able to withstand strong bursts of energy without failure.",
+    "prereq_ids": [
+      "TECHWEB_NODE_PARTS_HYPER"
+    ],
+    "design_ids": [
+      "empproof_device",
+      "empproof_advanced_device"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/cells_recharging",
+    "_line": 362,
+    "subtype": "cells_recharging",
+    "id": "TECHWEB_NODE_PARTS_RECHARGING",
+    "display_name": "Self Charging Batteries",
+    "description": "The end-game of battery technology, these batteries self charge.",
+    "prereq_ids": [
+      "TECHWEB_NODE_PARTS_OMNI"
+    ],
+    "design_ids": [
+      "recharging_advanced_device",
+      "omni-device"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_5_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/teleporter",
+    "_line": 374,
+    "subtype": "teleporter",
+    "id": "TECHWEB_NODE_TELEPORTER",
+    "display_name": "Teleportation Machinery",
+    "description": "Allows for the creation of teleportation machinery that spontaneously transports an entity.",
+    "prereq_ids": [
+      "TECHWEB_NODE_PARTS_ADV"
+    ],
+    "design_ids": [
+      "teleporter_hub",
+      "teleporter_station"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/thermal_vision",
+    "_line": 386,
+    "subtype": "thermal_vision",
+    "id": "TECHWEB_NODE_THERMAL_VISION",
+    "display_name": "Thermal Visor Technology",
+    "description": "Inspired by some form of big-game-hunter species, we have adapted the technology without the annoying colorization filter.",
+    "prereq_ids": [
+      "TECHWEB_NODE_HUD"
+    ],
+    "design_ids": [
+      "rig_component_thermal",
+      "//diagnostic_hud_night",
+      "//health_hud_night",
+      "//night_visision_goggles",
+      "//nvgmesons",
+      "//nv_scigoggles",
+      "//security_hud_night"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SECURITY",
+      "CHANNEL_SCIENCE",
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/graviton_vision",
+    "_line": 403,
+    "subtype": "graviton_vision",
+    "id": "TECHWEB_NODE_GRAVITON_VISION",
+    "display_name": "Graviton Visor Technology",
+    "description": "Our Graviton Scanning technology compressed into visors suitable for use in hardsuits. Quite handy.",
+    "prereq_ids": [
+      "TECHWEB_NODE_HUD"
+    ],
+    "design_ids": [
+      "rig_component_graviton",
+      "//diagnostic_hud_night",
+      "//health_hud_night",
+      "//night_visision_goggles",
+      "//nvgmesons",
+      "//nv_scigoggles",
+      "//security_hud_night"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SECURITY",
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "engi_nodes.dm",
+    "_path": "/datum/techweb_node/advanced_visor",
+    "_line": 420,
+    "subtype": "advanced_visor",
+    "id": "TECHWEB_NODE_ADVANCED_VISORS",
+    "display_name": "Advanced Visor Technology",
+    "description": "With careful research over transparent electrochromic glass and display project we have compressed multiple visors into a single handy package.",
+    "prereq_ids": [
+      "TECHWEB_NODE_GRAVITON_VISION",
+      "TECHWEB_NODE_THERMAL_VISION",
+      "TECHWEB_NODE_HUD"
+    ],
+    "design_ids": [
+      "rig_component_multi_visor"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SECURITY",
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mech_nodes.dm",
+    "_path": "/datum/techweb_node/mech_assembly",
+    "_line": 2,
+    "subtype": "mech_assembly",
+    "id": "TECHWEB_NODE_MECH_ASSEMBLY",
+    "starting_node": true,
+    "display_name": "Exosuit Assembly",
+    "description": "Development of mechanical exosuits designed to contend with artificial gravity while transporting cargo.",
+    "prereq_ids": [
+      "TECHWEB_NODE_ROBOTICS"
+    ],
+    "design_ids": [
+      "exo_int_hull_standard",
+      "mech_recharger",
+      "exo_int_armor_standard",
+      "exo_int_lifesup_standard",
+      "exo_int_electric_standard",
+      "exo_int_actuator_standard",
+      "ripley_main",
+      "ripley_peri",
+      "ripley_chassis",
+      "ripley_torso",
+      "ripley_left_arm",
+      "ripley_right_arm",
+      "ripley_left_leg",
+      "ripley_right_leg",
+      "hydraulic_clamp",
+      "mech_cable_layer",
+      "mech_wrench",
+      "mech_crowbar",
+      "mech_wirecutter",
+      "mech_screwdriver",
+      "mech_welder",
+      "mech_inflatables",
+      "mech_hardpoint_clamp",
+      "mech_storage",
+      "vehicle_chassis_spacebike",
+      "vehicle_chassis_quadbike",
+      "vehicle_chassis_snowmobile",
+      "gopher_main",
+      "gopher_peri",
+      "gopher_chassis",
+      "gopher_torso",
+      "gopher_left_arm",
+      "gopher_right_arm",
+      "gopher_left_leg",
+      "gopher_right_leg",
+      "polecat_main",
+      "polecat_peri",
+      "polecat_targ",
+      "polecat_chassis",
+      "polecat_torso",
+      "polecat_left_arm",
+      "polecat_right_arm",
+      "polecat_left_leg",
+      "polecat_right_leg",
+      "polecat_armour",
+      "weasel_main",
+      "weasel_peri",
+      "weasel_targ",
+      "weasel_chassis",
+      "weasel_torso",
+      "weasel_left_arm",
+      "weasel_right_arm",
+      "weasel_right_leg",
+      "weasel_head"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mech_nodes.dm",
+    "_path": "/datum/techweb_node/mech_equipment",
+    "_line": 65,
+    "subtype": "mech_equipment",
+    "id": "TECHWEB_NODE_MECH_EQUIPMENT",
+    "display_name": "Expedition Equipment",
+    "description": "Specialized exosuit gear tailored for navigating space and celestial bodies, ensuring durability and functionality in the harshest conditions.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MECH_ASSEMBLY"
+    ],
+    "design_ids": [
+      "exo_int_lifesup_reinforced",
+      "exo_int_electric_efficient",
+      "firefighter_chassis",
+      "mechacontrol",
+      "mech_jetpack",
+      "extinguisher",
+      "mech_tracker",
+      "mech_passenger",
+      "mech_speedboost_ripley",
+      "mech_rcd",
+      "mech_phoron_generator",
+      "mech_energy_relay",
+      "mech_runningboard",
+      "mech_generator_nuclear",
+      "//mecha_camera",
+      "//mech_radio",
+      "//botpad",
+      "//botpad_remote"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_1_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mech_nodes.dm",
+    "_path": "/datum/techweb_node/mech_medical",
+    "_line": 93,
+    "subtype": "mech_medical",
+    "id": "TECHWEB_NODE_MECH_MEDICAL",
+    "display_name": "Medical Exosuit",
+    "description": "Advanced robotic unit equipped with syringe guns and healing beams, revolutionizing medical assistance in hazardous environments.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MECH_ASSEMBLY",
+      "TECHWEB_NODE_CHEM_SYNTHESIS"
+    ],
+    "design_ids": [
+      "odysseus_main",
+      "odysseus_peri",
+      "odysseus_chassis",
+      "odysseus_torso",
+      "odysseus_head",
+      "odysseus_left_arm",
+      "odysseus_right_arm",
+      "odysseus_left_leg",
+      "odysseus_right_leg",
+      "mech_medigun",
+      "mech_syringe_gun",
+      "mech_med_analyzer"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mech_nodes.dm",
+    "_path": "/datum/techweb_node/mech_mining",
+    "_line": 115,
+    "subtype": "mech_mining",
+    "id": "TECHWEB_NODE_MECH_MINING",
+    "display_name": "Mining Exosuit",
+    "description": "Robust exosuit engineered to withstand lava and storms for continuous off-station mining operations.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MECH_EQUIPMENT",
+      "TECHWEB_NODE_MINING"
+    ],
+    "design_ids": [
+      "mech_drill",
+      "micro_drill",
+      "ore_scoop",
+      "mech_diamond_drill",
+      "mech_ground_drill",
+      "mech_ore_scanner",
+      "mech_ore_scanner_adv",
+      "//clarke_chassis",
+      "//clarke_torso",
+      "//clarke_head",
+      "//clarke_left_arm",
+      "//clarke_right_arm",
+      "//clarke_main",
+      "//clarke_peri",
+      "//mecha_kineticgun"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE",
+      "CHANNEL_SUPPLY"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mech_nodes.dm",
+    "_path": "/datum/techweb_node/mech_combat",
+    "_line": 140,
+    "subtype": "mech_combat",
+    "id": "TECHWEB_NODE_MECH_COMBAT",
+    "display_name": "Combat Exosuits",
+    "description": "Modular armor upgrades and specialized equipment for security exosuits.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MECH_EQUIPMENT"
+    ],
+    "design_ids": [
+      "exo_int_hull_durable",
+      "mech_ccw_armor",
+      "mech_proj_armor",
+      "mech_repair_droid",
+      "mech_med_droid",
+      "mech_rad_droid",
+      "mech_shocker",
+      "mech_taser",
+      "micro_taser",
+      "mech_taser-r"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "required_experiments": [
+      "/datum/experiment/scanning/random/mecha_equipped_scan"
+    ],
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mech_nodes.dm",
+    "_path": "/datum/techweb_node/mech_assault",
+    "_line": 161,
+    "subtype": "mech_assault",
+    "id": "TECHWEB_NODE_MECH_ASSAULT",
+    "display_name": "Assault Exosuits",
+    "description": "Heavy battle exosuits boasting robust armor but sacrificing speed for enhanced durability.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MECH_COMBAT"
+    ],
+    "design_ids": [
+      "exo_int_armor_reinforced",
+      "exo_int_armor_durand",
+      "durand_main",
+      "durand_peri",
+      "durand_targ",
+      "durand_chassis",
+      "durand_torso",
+      "durand_head",
+      "durand_left_arm",
+      "durand_right_arm",
+      "durand_left_leg",
+      "durand_right_leg",
+      "durand_armour"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mech_nodes.dm",
+    "_path": "/datum/techweb_node/mech_light",
+    "_line": 184,
+    "subtype": "mech_light",
+    "id": "TECHWEB_NODE_MECH_LIGHT",
+    "display_name": "Light Combat Exosuits",
+    "description": "Agile combat exosuits equipped with overclocking capabilities for temporary speed boosts, prioritizing speed over durability on the battlefield.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MECH_COMBAT"
+    ],
+    "design_ids": [
+      "exo_int_hull_light",
+      "exo_int_armor_lightweight",
+      "exo_int_armor_gygax",
+      "exo_int_actuator_overclock",
+      "exo_int_armor_dgygax",
+      "gygax_main",
+      "gygax_peri",
+      "gygax_targ",
+      "gygax_medical",
+      "serenity_chassis",
+      "gygax_chassis",
+      "gygax_torso",
+      "gygax_head",
+      "gygax_left_arm",
+      "gygax_right_arm",
+      "gygax_left_leg",
+      "gygax_right_leg",
+      "gygax_armour"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mech_nodes.dm",
+    "_path": "/datum/techweb_node/mech_fighter",
+    "_line": 212,
+    "subtype": "mech_fighter",
+    "id": "TECHWEB_NODE_MECH_FIGHTER",
+    "display_name": "Fighters",
+    "description": "Pew-pew fighter spaceships.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MECH_LIGHT"
+    ],
+    "design_ids": [
+      "pinnace_main",
+      "pinnace_flight",
+      "pinnace_targeting",
+      "pinnace_cockpit_control",
+      "pinnace_chassis",
+      "pinnace_core",
+      "pinnace_cockpit",
+      "pinnace_main_engine",
+      "pinnace_left_engine",
+      "pinnace_right_engine",
+      "pinnace_left_wing",
+      "pinnace_right_wing",
+      "baron_main",
+      "baron_flight",
+      "baron_targeting",
+      "baron_cockpit_control",
+      "baron_chassis",
+      "baron_core",
+      "baron_cockpit",
+      "baron_main_engine",
+      "baron_left_engine",
+      "baron_right_engine",
+      "baron_left_wing",
+      "baron_right_wing"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mech_nodes.dm",
+    "_path": "/datum/techweb_node/mech_infiltrator",
+    "_line": 246,
+    "subtype": "mech_infiltrator",
+    "id": "TECHWEB_NODE_MECH_INFILTRATOR",
+    "display_name": "Infiltration Exosuits",
+    "description": "Advanced exosuit with phasing capabilities, allowing it to move through walls and obstacles, ideal for covert and special operations.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MECH_LIGHT",
+      "TECHWEB_NODE_ANOMALY_RESEARCH"
+    ],
+    "design_ids": [
+      "exo_int_armor_phazon",
+      "janus_chassis",
+      "janus_torso",
+      "janus_head",
+      "janus_left_arm",
+      "janus_right_arm",
+      "janus_left_leg",
+      "janus_right_leg",
+      "janus_coil",
+      "janus_module",
+      "mech_cloaking"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mech_nodes.dm",
+    "_path": "/datum/techweb_node/mech_energy_guns",
+    "_line": 268,
+    "subtype": "mech_energy_guns",
+    "id": "TECHWEB_NODE_MECH_ENERGY_GUNS",
+    "display_name": "Exosuit Energy Guns",
+    "description": "Scaled-up versions of electric weapons optimized for exosuit deployment.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MECH_COMBAT",
+      "TECHWEB_NODE_ELECTRIC_WEAPONS"
+    ],
+    "design_ids": [
+      "mech_laser",
+      "micro_laser",
+      "mech_laser_rigged",
+      "mech_laser_heavy-r",
+      "mech_laser_heavy",
+      "micro_laser_heavy",
+      "mech_laser_gamma",
+      "mech_phase",
+      "mech_ion",
+      "mech_ion-r",
+      "mech_laser_xray",
+      "mech_laser_xray-r"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mech_nodes.dm",
+    "_path": "/datum/techweb_node/mech_firearms",
+    "_line": 290,
+    "subtype": "mech_firearms",
+    "id": "TECHWEB_NODE_MECH_FIREARMS",
+    "display_name": "Exosuit Firearms",
+    "description": "Mounted ballistic weaponry, enhancing combat capabilities for mechanized units.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MECH_ENERGY_GUNS",
+      "TECHWEB_NODE_EXOTIC_AMMO"
+    ],
+    "design_ids": [
+      "mech_lmg",
+      "mech_lmg-r",
+      "mecha_flare_gun",
+      "mech_scattershot",
+      "micro_scattershot",
+      "mech_scattershot-r",
+      "mech_flamer_full",
+      "mech_flamer_rigged",
+      "mech_lmg_flamer"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_5_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mech_nodes.dm",
+    "_path": "/datum/techweb_node/mech_heavy_arms",
+    "_line": 309,
+    "subtype": "mech_heavy_arms",
+    "id": "TECHWEB_NODE_MECH_HEAVY_ARMS",
+    "display_name": "Heavy Exosuit Firearms",
+    "description": "High-impact weaponry integrated into mechs, optimized for maximum firepower.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MECH_FIREARMS",
+      "TECHWEB_NODE_EXOTIC_AMMO"
+    ],
+    "design_ids": [
+      "mech_grenade_launcher",
+      "micro_flashbang_launcher",
+      "mech_grenade_launcher-rig",
+      "clusterbang_launcher",
+      "mech_grenade_launcher_conc",
+      "mech_grenade_launcher_frag",
+      "exo_int_armor_blast",
+      "exo_int_armor_marauder"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_5_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mech_nodes.dm",
+    "_path": "/datum/techweb_node/mech_equip_bluespace",
+    "_line": 327,
+    "subtype": "mech_equip_bluespace",
+    "id": "TECHWEB_NODE_MECH_EQUIP_BLUESPACE",
+    "display_name": "Bluespace Exosuit Equipment",
+    "description": "An array of equipment empowered by bluespace, providing unmatched mobility and utility.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MECH_INFILTRATOR",
+      "TECHWEB_NODE_BLUESPACE_TRAVEL"
+    ],
+    "design_ids": [
+      "mech_gravcatapult",
+      "mech_teleporter",
+      "mech_wormhole_gen",
+      "mech_storage_bs",
+      "titan_armour"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_5_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "medbay_nodes.dm",
+    "_path": "/datum/techweb_node/medbay_equip",
+    "_line": 1,
+    "subtype": "medbay_equip",
+    "id": "TECHWEB_NODE_MEDBAY_EQUIP",
+    "starting_node": true,
+    "display_name": "Medbay Equipment",
+    "description": "Essential medical tools to patch you up while medbay is still intact.",
+    "design_ids": [
+      "operating",
+      "scan_console",
+      "//medicalbed",
+      "//defibmountdefault",
+      "//defibrillator",
+      "//surgical_drapes",
+      "//scalpel",
+      "//retractor",
+      "//hemostat",
+      "//cautery",
+      "//circular_saw",
+      "//surgicaldrill",
+      "//bonesetter",
+      "//blood_filter",
+      "//surgical_tape",
+      "//penlight",
+      "//penlight_paramedic",
+      "//stethoscope",
+      "//beaker",
+      "//large_beaker",
+      "//chem_pack",
+      "//blood_pack",
+      "//syringe",
+      "//dropper",
+      "//pillbottle",
+      "//xlarge_beaker",
+      "//organ_jar",
+      "//jerrycan",
+      "//reflex_hammer",
+      "//blood_scanner"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "medbay_nodes.dm",
+    "_path": "/datum/techweb_node/chem_synthesis",
+    "_line": 39,
+    "subtype": "chem_synthesis",
+    "id": "TECHWEB_NODE_CHEM_SYNTHESIS",
+    "display_name": "Chemical Synthesis",
+    "description": "Synthesizing complex chemicals from electricity and thin air... Don't ask how...",
+    "prereq_ids": [
+      "TECHWEB_NODE_MEDBAY_EQUIP"
+    ],
+    "design_ids": [
+      "chemmaster",
+      "reagent_scanner",
+      "mass_spectrometer",
+      "improved_analyzer",
+      "nanopaste",
+      "//med_spray_bottle",
+      "//medigel",
+      "//medipen_refiller",
+      "//soda_dispenser",
+      "//beer_dispenser",
+      "//chem_dispenser",
+      "//portable_chem_mixer",
+      "//chem_heater",
+      "//w-recycler",
+      "//meta_beaker",
+      "//plumbing_rcd",
+      "//plumbing_rcd_service",
+      "//plunger",
+      "//fluid_ducts"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_1_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "medbay_nodes.dm",
+    "_path": "/datum/techweb_node/chemical_isolation",
+    "_line": 68,
+    "subtype": "chemical_isolation",
+    "id": "TECHWEB_NODE_CHEM_ISOLATION",
+    "display_name": "Chemical Identification",
+    "description": "Scanning and identifying chemicals and their uses.",
+    "prereq_ids": [
+      "TECHWEB_NODE_CHEM_SYNTHESIS"
+    ],
+    "design_ids": [
+      "chem_analyzer",
+      "smart_centrifuge"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_ENGINEERING",
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "medbay_nodes.dm",
+    "_path": "/datum/techweb_node/medbay_equip_adv",
+    "_line": 80,
+    "subtype": "medbay_equip_adv",
+    "id": "TECHWEB_NODE_MEDBAY_EQUIP_ADV",
+    "display_name": "Advanced Medbay Equipment",
+    "description": "State-of-the-art medical gear for keeping the crew in one piece — mostly.",
+    "prereq_ids": [
+      "TECHWEB_NODE_CHEM_SYNTHESIS"
+    ],
+    "design_ids": [
+      "adv_mass_spectrometer",
+      "adv_reagent_scanner",
+      "advanced_analyzer",
+      "recombobray",
+      "vitals",
+      "scalpel_laser1",
+      "scalpel_laser2",
+      "scalpel_laser3",
+      "scalpel_manager",
+      "advanced_saw",
+      "organ_ripper",
+      "bone_clamp",
+      "roller_bed",
+      "medical_holosign",
+      "//smoke_machine",
+      "//healthanalyzer_advanced",
+      "//mod_health_analyzer",
+      "//crewpinpointer",
+      "//defibrillator_compact",
+      "//defibmount",
+      "//medicalbed_emergency",
+      "//piercesyringe"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "required_experiments": [
+      "/datum/experiment/scanning/points/easy_cytology"
+    ],
+    "announce_channels": [
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "medbay_nodes.dm",
+    "_path": "/datum/techweb_node/medbay_equip_high_tech",
+    "_line": 113,
+    "subtype": "medbay_equip_high_tech",
+    "id": "TECHWEB_NODE_MEDBAY_EQUIP_HIGH_TECH",
+    "display_name": "High Tech Medbay Equipment",
+    "description": "State-of-the-art medical gear for keeping the crew in one piece — mostly.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MEDBAY_EQUIP_ADV"
+    ],
+    "design_ids": [
+      "phasic_analyzer"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "medbay_nodes.dm",
+    "_path": "/datum/techweb_node/cryostasis",
+    "_line": 124,
+    "subtype": "cryostasis",
+    "id": "TECHWEB_NODE_CRYOSTASIS",
+    "display_name": "Cryostasis",
+    "description": "The result of clown accidentally drinking a chemical, now repurposed for safely preserving crew members in suspended animation.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MEDBAY_EQUIP_ADV",
+      "TECHWEB_NODE_FUSION"
+    ],
+    "design_ids": [
+      "mech_sleeper",
+      "splitbeaker",
+      "//cryotube",
+      "//stasis",
+      "//cryo_grenade"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "medbay_nodes.dm",
+    "_path": "/datum/techweb_node/medigun",
+    "_line": 140,
+    "subtype": "medigun",
+    "id": "TECHWEB_NODE_MEDIGUN",
+    "display_name": "Cell-Loaded Medigun",
+    "description": "The ML3M Series Medigun is your one stop solution to all medical problems!",
+    "prereq_ids": [
+      "TECHWEB_NODE_CRYOSTASIS"
+    ],
+    "design_ids": [
+      "rapidsyringe",
+      "chemsprayer",
+      "cell_medigun",
+      "cell_medigun_mag",
+      "cell_medigun_mag_advanced",
+      "ml3m_cell_brute",
+      "ml3m_cell_burn",
+      "ml3m_cell_stabilize",
+      "ml3m_cell_toxin",
+      "ml3m_cell_omni",
+      "ml3m_cell_antirad",
+      "ml3m_cell_brute2",
+      "ml3m_cell_burn2",
+      "ml3m_cell_stabilize2",
+      "ml3m_cell_omni2",
+      "ml3m_cell_toxin2",
+      "ml3m_cell_haste",
+      "ml3m_cell_resist",
+      "ml3m_cell_corpse_mend",
+      "ml3m_cell_brute3",
+      "ml3m_cell_burn3",
+      "ml3m_cell_toxin3",
+      "ml3m_cell_omni3",
+      "ml3m_cell_shrink",
+      "ml3m_cell_grow",
+      "ml3m_cell_normalsize"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_5_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "medbay_nodes.dm",
+    "_path": "/datum/techweb_node/nif",
+    "_line": 176,
+    "subtype": "nif",
+    "id": "TECHWEB_NODE_NIF",
+    "display_name": "Nanite-Implant Frameworks",
+    "description": "NIFs are a series of brain implants that are helpful to the user.",
+    "prereq_ids": [
+      "TECHWEB_NODE_CRYOSTASIS"
+    ],
+    "design_ids": [
+      "nif",
+      "bioadapnif",
+      "anrt",
+      "//cell_medigun",
+      "//cell_medigun_mag",
+      "//cell_medigun_mag_advanced",
+      "//ml3m_cell_brute",
+      "//ml3m_cell_burn",
+      "//ml3m_cell_stabilize",
+      "//ml3m_cell_toxin",
+      "//ml3m_cell_omni",
+      "//ml3m_cell_antirad",
+      "//ml3m_cell_brute2",
+      "//ml3m_cell_burn2",
+      "//ml3m_cell_stabilize2",
+      "//ml3m_cell_omni2",
+      "//ml3m_cell_toxin2",
+      "//ml3m_cell_haste",
+      "//ml3m_cell_resist",
+      "//ml3m_cell_corpse_mend",
+      "//ml3m_cell_brute3",
+      "//ml3m_cell_burn3",
+      "//ml3m_cell_toxin3",
+      "//ml3m_cell_omni3",
+      "//ml3m_cell_shrink",
+      "//ml3m_cell_grow",
+      "//ml3m_cell_normalsize"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_5_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mining_nodes.dm",
+    "_path": "/datum/techweb_node/material_processing",
+    "_line": 1,
+    "subtype": "material_processing",
+    "id": "TECHWEB_NODE_MATERIAL_PROC",
+    "starting_node": true,
+    "display_name": "Material Processing",
+    "description": "Refinement and processing of alloys and ores to enhance their utility and value.",
+    "design_ids": [
+      "autolathe",
+      "//pickaxe",
+      "//shovel",
+      "//conveyor_switch",
+      "//conveyor_belt",
+      "//mass_driver",
+      "//recycler",
+      "//stack_machine",
+      "//stack_console",
+      "//rglass",
+      "//plasmaglass",
+      "//plasmareinforcedglass",
+      "//plasteel",
+      "//titaniumglass",
+      "//plastitanium",
+      "//plastitaniumglass"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mining_nodes.dm",
+    "_path": "/datum/techweb_node/mining",
+    "_line": 25,
+    "subtype": "mining",
+    "id": "TECHWEB_NODE_MINING",
+    "display_name": "Mining Technology",
+    "description": "Development of tools meant to optimize mining operations and resource extraction.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MATERIAL_PROC"
+    ],
+    "design_ids": [
+      "drill",
+      "advanced_drill",
+      "depth_scanner",
+      "mining_scanner",
+      "mining drill head",
+      "mining drill brace",
+      "gps_mine",
+      "mesons",
+      "material",
+      "//cargoexpress",
+      "//brm",
+      "//b_smelter",
+      "//b_refinery",
+      "//ore_redemption",
+      "//mining_equipment_vendor",
+      "//mech_mscanner",
+      "//superresonator",
+      "//mech_drill",
+      "//mod_drill",
+      "//mod_orebag",
+      "//beacon",
+      "//telesci_gps",
+      "//mod_visor_meson",
+      "//mesons"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_1_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SUPPLY"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mining_nodes.dm",
+    "_path": "/datum/techweb_node/low_pressure_excavation",
+    "_line": 60,
+    "subtype": "low_pressure_excavation",
+    "id": "TECHWEB_NODE_LOW_PRESSURE_EXCAVATION",
+    "display_name": "Low-Pressure Excavation",
+    "description": "Research of Proto-Kinetic Accelerators (PKAs), pneumatic guns renowned for their exceptional performance in low-pressure environments.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MINING",
+      "TECHWEB_NODE_GAS_COMPRESSION"
+    ],
+    "design_ids": [
+      "borg_pka_module",
+      "pka_mineaoe",
+      "//damagemod",
+      "//cooldownmod",
+      "//triggermod",
+      "//hypermod",
+      "//borg_upgrade_damagemod",
+      "//borg_upgrade_cooldownmod",
+      "//borg_upgrade_hypermod"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SUPPLY"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mining_nodes.dm",
+    "_path": "/datum/techweb_node/plasma_mining",
+    "_line": 79,
+    "subtype": "plasma_mining",
+    "id": "TECHWEB_NODE_PLASMA_MINING",
+    "display_name": "Plasma Beam Mining",
+    "description": "Engineers' plasma welders have proven highly effective in mining operations. This led to the development of a mech-mounted variant and an enhanced handheld cutter for miners.",
+    "prereq_ids": [
+      "TECHWEB_NODE_LOW_PRESSURE_EXCAVATION",
+      "TECHWEB_NODE_PLASMA_CONTROL"
+    ],
+    "design_ids": [
+      "plasmacutter\"//mech_plasma_cutter",
+      "//plasmacutter_adv"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SUPPLY"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "mining_nodes.dm",
+    "_path": "/datum/techweb_node/mining_adv",
+    "_line": 92,
+    "subtype": "mining_adv",
+    "id": "TECHWEB_NODE_MINING_ADV",
+    "display_name": "Advanced Mining Technology",
+    "description": "High-level mining equipment, pushing the boundaries of efficiency and effectiveness in resource extraction.",
+    "prereq_ids": [
+      "TECHWEB_NODE_PLASMA_MINING"
+    ],
+    "design_ids": [
+      "jackhammer",
+      "pick_diamond",
+      "drill_diamond",
+      "recycler_crusher",
+      "recycler_sorter",
+      "recycler_stamper",
+      "//mech_diamond_drill"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SUPPLY"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "modsuit_nodes.dm",
+    "_path": "/datum/techweb_node/mod_suit",
+    "_line": 1,
+    "subtype": "mod_suit",
+    "id": "TECHWEB_NODE_MOD_SUIT",
+    "starting_node": true,
+    "display_name": "RIG Suit",
+    "description": "Specialized back mounted power suits with various different modules.",
+    "prereq_ids": [
+      "TECHWEB_NODE_ROBOTICS"
+    ],
+    "design_ids": [
+      "rigmodule_belt_basic",
+      "zero_rig_module",
+      "rig_device_pen",
+      "rig_device_paperdispenser",
+      "//suit_storage_unit",
+      "//mod_shell",
+      "//mod_chestplate",
+      "//mod_helmet",
+      "//mod_gauntlets",
+      "//mod_boots",
+      "//mod_plating_standard",
+      "//mod_plating_civilian",
+      "//mod_paint_kit",
+      "//mod_storage",
+      "//mod_plasma",
+      "//mod_flashlight"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "modsuit_nodes.dm",
+    "_path": "/datum/techweb_node/mod_equip",
+    "_line": 26,
+    "subtype": "mod_equip",
+    "id": "TECHWEB_NODE_MOD_EQUIP",
+    "display_name": "RIG Suit Equipment",
+    "description": "More advanced modules, to improve RIG suits.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MOD_SUIT"
+    ],
+    "design_ids": [
+      "rig_siphon",
+      "rig_device_flash",
+      "rig_device_plasmacutter",
+      "rig_device_healthanalyzer",
+      "rig_gun_sizegun",
+      "rig_siphon",
+      "rig_component_datajack",
+      "//modlink_scryer",
+      "//mod_clamp",
+      "//mod_tether",
+      "//mod_welding",
+      "//mod_safety",
+      "//mod_mouthhole",
+      "//mod_longfall",
+      "//mod_thermal_regulator",
+      "//mod_sign_radio",
+      "//mod_mister_janitor"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_1_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "modsuit_nodes.dm",
+    "_path": "/datum/techweb_node/mod_medical",
+    "_line": 53,
+    "subtype": "mod_medical",
+    "id": "TECHWEB_NODE_MOD_MEDICAL",
+    "display_name": "Medical RIG Suit",
+    "description": "Medical RIGsuits for quick rescue purposes.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MOD_SUIT",
+      "TECHWEB_NODE_CHEM_SYNTHESIS"
+    ],
+    "design_ids": [
+      "medical_rig_module",
+      "rig_component_chemicals",
+      "rig_component_rescuepharm",
+      "//mod_plating_medical",
+      "//mod_quick_carry",
+      "//mod_injector",
+      "//mod_organizer",
+      "//mod_patienttransport"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "discount_experiments": {
+      "/datum/experiment/scanning/points/basic_med_rig": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE",
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "modsuit_nodes.dm",
+    "_path": "/datum/techweb_node/mod_engi",
+    "_line": 72,
+    "subtype": "mod_engi",
+    "id": "TECHWEB_NODE_MOD_ENGI",
+    "display_name": "Engineering RIG Suits",
+    "description": "Engineering suits, for powered engineers.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MOD_EQUIP"
+    ],
+    "design_ids": [
+      "eva_rig_module",
+      "rig_device_rcd",
+      "rig_component_meson",
+      "rig_component_radshield",
+      "rig_component_atmosshield",
+      "rig_component_aicontainer",
+      "rig_component_faradayshield",
+      "//mod_plating_engineering",
+      "//mod_t_ray",
+      "//mod_magboot",
+      "//mod_constructor",
+      "//mod_mister_atmos"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "discount_experiments": {
+      "/datum/experiment/scanning/points/basic_engi_rig": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE",
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "modsuit_nodes.dm",
+    "_path": "/datum/techweb_node/mod_security",
+    "_line": 95,
+    "subtype": "mod_security",
+    "id": "TECHWEB_NODE_MOD_SECURITY",
+    "display_name": "Security RIG Suits",
+    "description": "Security suits for space crime handling.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MOD_EQUIP"
+    ],
+    "design_ids": [
+      "hazard_rig_module",
+      "rig_grenade_metalfoam",
+      "rig_grenade_flashbang",
+      "rig_grenade_cleanfoam",
+      "rig_gun_taser",
+      "rig_gun_tempgun",
+      "rig_component_voice",
+      "rig_gun_egun",
+      "rig_component_sprinter",
+      "rig_component_pat",
+      "//mod_mirage_grenade",
+      "//mod_plating_security",
+      "//mod_stealth",
+      "//mod_mag_harness",
+      "//mod_pathfinder",
+      "//mod_holster",
+      "//mod_sonar",
+      "//mod_projectile_dampener",
+      "//mod_criminalcapture"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_5_POINTS"
+    },
+    "discount_experiments": {
+      "/datum/experiment/scanning/points/basic_sec_rig": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE",
+      "CHANNEL_SECURITY"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "modsuit_nodes.dm",
+    "_path": "/datum/techweb_node/mod_engi_adv",
+    "_line": 125,
+    "subtype": "mod_engi_adv",
+    "id": "TECHWEB_NODE_MOD_ENGI_ADV",
+    "display_name": "Advanced Engineering RIG Suit",
+    "description": "Advanced Engineering suits, for advanced powered engineers.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MOD_ENGI"
+    ],
+    "design_ids": [
+      "advanced_eva_rig_module",
+      "rig_component_radshield_adv",
+      "rig_component_atmosshield_adv",
+      "rig_component_faradayshield_adv",
+      "rig_thrusters",
+      "//mod_plating_atmospheric",
+      "//mod_jetpack",
+      "//mod_rad_protection",
+      "//mod_emp_shield",
+      "//mod_storage_expanded"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE",
+      "CHANNEL_ENGINEERING"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "modsuit_nodes.dm",
+    "_path": "/datum/techweb_node/mod_anomaly",
+    "_line": 145,
+    "subtype": "mod_anomaly",
+    "id": "TECHWEB_NODE_MOD_ANOMALY",
+    "display_name": "Anomalock RIG Suit",
+    "description": "Modules for RIGsuits that are designed to research anomalies.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MOD_ENGI_ADV",
+      "TECHWEB_NODE_ANOMALY_RESEARCH"
+    ],
+    "design_ids": [
+      "ami_rig_module",
+      "rig_component_teleport",
+      "rig_device_excdrill",
+      "rig_device_anomscanner"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_5_POINTS"
+    },
+    "discount_experiments": {
+      "/datum/experiment/scanning/points/basic_sci_rig": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "modsuit_nodes.dm",
+    "_path": "/datum/techweb_node/mod_supply",
+    "_line": 160,
+    "subtype": "mod_supply",
+    "id": "TECHWEB_NODE_MOD_SUPPLY",
+    "display_name": "Industrial RIG Suit",
+    "description": "Modules for RIGsuits that are designed to mine for ores.",
+    "prereq_ids": [
+      "TECHWEB_NODE_MOD_ENGI_ADV",
+      "TECHWEB_NODE_MINING"
+    ],
+    "design_ids": [
+      "industrial_rig_module",
+      "rig_device_drill",
+      "rig_device_orescanner",
+      "rig_component_material"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_5_POINTS"
+    },
+    "discount_experiments": {
+      "/datum/experiment/scanning/points/basic_min_rig": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE",
+      "CHANNEL_SUPPLY"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "research_nodes.dm",
+    "_path": "/datum/techweb_node/fundamental_sci",
+    "_line": 1,
+    "subtype": "fundamental_sci",
+    "id": "TECHWEB_NODE_FUNDIMENTAL_SCI",
+    "starting_node": true,
+    "display_name": "Fundamental Science",
+    "description": "Establishing the bedrock of scientific understanding, paving the way for deeper exploration and theoretical inquiry.",
+    "design_ids": [
+      "experi_scanner",
+      "rdserver",
+      "rdconsole",
+      "bomb_tester",
+      "tech_disk",
+      "//rdservercontrol",
+      "//doppler_array",
+      "//experimentor",
+      "destructive_analyzer",
+      "//destructive_scanner",
+      "//laptop",
+      "//portadrive_basic",
+      "//portadrive_advanced",
+      "//portadrive_super"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "research_nodes.dm",
+    "_path": "/datum/techweb_node/bluespace_theory",
+    "_line": 23,
+    "subtype": "bluespace_theory",
+    "id": "TECHWEB_NODE_BLUESPACE_THEORY",
+    "display_name": "Bluespace Theory",
+    "description": "Basic studies into the mysterious alternate dimension known as bluespace.",
+    "prereq_ids": [
+      "TECHWEB_NODE_FUNDIMENTAL_SCI"
+    ],
+    "design_ids": [
+      "bluespace_crystal"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_1_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "research_nodes.dm",
+    "_path": "/datum/techweb_node/applied_bluespace",
+    "_line": 34,
+    "subtype": "applied_bluespace",
+    "id": "TECHWEB_NODE_APPLIED_BLUESPACE",
+    "display_name": "Applied Bluespace Research",
+    "description": "With a heightened grasp of bluespace dynamics, sophisticated applications and technologies can be devised using data from bluespace crystal analyses.",
+    "prereq_ids": [
+      "TECHWEB_NODE_BLUESPACE_THEORY"
+    ],
+    "design_ids": [
+      "ore_silo",
+      "ore_holding",
+      "sheet_holding",
+      "bag_holding",
+      "dufflebag_holding",
+      "trashbag_holding",
+      "pouch_holding",
+      "belt_holding_med",
+      "belt_holding_utility",
+      "bluespacebeaker",
+      "bsflare",
+      "bluespace_crystal",
+      "beacon",
+      "beacon_locator",
+      "chameleon",
+      "shelter_capsule",
+      "shelter_capsule_luxury",
+      "shelter_capsule_recroom",
+      "shelter_capsule_sauna",
+      "shelter_capsule_luxurybar",
+      "shelter_capsule_luxurycabin",
+      "shelter_capsule_cafe",
+      "shelter_capsule_luxuryalt",
+      "shelter_capsule_kitchen",
+      "shelter_capsule_pocketdorm",
+      "shelter_capsule_luxuryrecroom",
+      "//ore_silo",
+      "//plumbing_receiver",
+      "//adv_watering_can",
+      "//bluespace_coffeepot",
+      "//bluespacesyringe",
+      "//light_replacer_blue",
+      "//bluespacebodybag",
+      "//gigabeacon"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE",
+      "CHANNEL_MEDICAL",
+      "CHANNEL_SERVICE",
+      "CHANNEL_SUPPLY"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "research_nodes.dm",
+    "_path": "/datum/techweb_node/bluespace_travel",
+    "_line": 79,
+    "subtype": "bluespace_travel",
+    "id": "TECHWEB_NODE_BLUESPACE_TRAVEL",
+    "display_name": "Bluespace Travel",
+    "description": "Facilitate teleportation methods based on bluespace principles to revolutionize logistical efficiency.",
+    "prereq_ids": [
+      "TECHWEB_NODE_APPLIED_BLUESPACE"
+    ],
+    "design_ids": [
+      "telesci_console",
+      "telesci_pad",
+      "quantum_pad",
+      "qpad_booster",
+      "teleconsole",
+      "translocator",
+      "mini_translocator",
+      "//tele_station",
+      "//tele_hub",
+      "//launchpad_console",
+      "//launchpad",
+      "//bluespace_pod",
+      "//swapper"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "research_nodes.dm",
+    "_path": "/datum/techweb_node/anomaly_research",
+    "_line": 102,
+    "subtype": "anomaly_research",
+    "id": "TECHWEB_NODE_ANOMALY_RESEARCH",
+    "display_name": "Anomaly Research",
+    "description": "Delving into the study of mysterious anomalies to investigate methods to refine and harness their unpredictable energies.",
+    "prereq_ids": [
+      "TECHWEB_NODE_APPLIED_BLUESPACE"
+    ],
+    "design_ids": [
+      "xenoarch_multitool",
+      "excavationdrill",
+      "ano_scanner",
+      "//anomaly_refinery",
+      "//anomaly_neutralizer",
+      "//reactive_armour"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "research_nodes.dm",
+    "_path": "/datum/techweb_node/telekinetics",
+    "_line": 119,
+    "subtype": "telekinetics",
+    "id": "TECHWEB_NODE_TELEKINETIC_RESEARCH",
+    "display_name": "Applied Telekinetics Research",
+    "description": "Altering the physical behavior of objects to allow remote interaction and movement.",
+    "prereq_ids": [
+      "TECHWEB_NODE_APPLIED_BLUESPACE",
+      "TECHWEB_NODE_CYBER_IMPLANTS"
+    ],
+    "design_ids": [
+      "tk_gloves"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "robo_nodes.dm",
+    "_path": "/datum/techweb_node/robotics",
+    "_line": 1,
+    "subtype": "robotics",
+    "id": "TECHWEB_NODE_ROBOTICS",
+    "starting_node": true,
+    "display_name": "Robotics",
+    "description": "Programmable machines that make our lives lazier.",
+    "design_ids": [
+      "paicard",
+      "pai_cell",
+      "pai_processor",
+      "pai_board",
+      "pai_capacitor",
+      "pai_projector",
+      "pai_emitter",
+      "pai_speech_synthesizer",
+      "mechfab",
+      "prosfab",
+      "//botnavbeacon",
+      "//mechfab"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "robo_nodes.dm",
+    "_path": "/datum/techweb_node/ai",
+    "_line": 21,
+    "subtype": "ai",
+    "id": "TECHWEB_NODE_AI",
+    "display_name": "Artificial Intelligence",
+    "description": "Exploration of AI systems, more intelligent than the entire crew put together.",
+    "prereq_ids": [
+      "TECHWEB_NODE_ROBOTICS"
+    ],
+    "design_ids": [
+      "aicore",
+      "aifixer",
+      "aiupload",
+      "intellicore",
+      "asimov",
+      "freeform",
+      "reset",
+      "safeguard",
+      "protectstation",
+      "paladin",
+      "nanotrasen"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_1_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "robo_nodes.dm",
+    "_path": "/datum/techweb_node/ai_laws",
+    "_line": 42,
+    "subtype": "ai_laws",
+    "id": "TECHWEB_NODE_AI_LAWS",
+    "display_name": "Advanced AI Upgrades",
+    "description": "Delving into sophisticated AI directives, with hopes that they won't lead to humanity's extinction.",
+    "prereq_ids": [
+      "TECHWEB_NODE_AI"
+    ],
+    "design_ids": [
+      "onehuman",
+      "notele",
+      "noengine",
+      "quarantine",
+      "oxygen",
+      "purge",
+      "freeformcore",
+      "tyrant",
+      "laws_predator_vr",
+      "laws_protective_shell_vr",
+      "laws_scientific_pursuer_vr",
+      "laws_guard_dog_vr",
+      "laws_pleasurebot_vr",
+      "laws_consuming_eradicator_vr",
+      "corp",
+      "robocop",
+      "antimov",
+      "nanotrasen_aggressive",
+      "maintenance",
+      "peacekeeper",
+      "reporter",
+      "live_and_let_live",
+      "balance"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE",
+      "CHANNEL_COMMAND"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "scene_nodes.dm",
+    "_path": "/datum/techweb_node/scene_tools",
+    "_line": 1,
+    "subtype": "scene_tools",
+    "id": "TECHWEB_NODE_SCENE_TOOLS",
+    "starting_node": true,
+    "display_name": "Potential Recreational Applications",
+    "description": "Devices made for rest and recreation purposes.",
+    "design_ids": [
+      "// TODO: Leash & Collar// Compliance// Mouse Ray"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_1_POINTS"
+    },
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "scene_nodes.dm",
+    "_path": "/datum/techweb_node/sizeplay",
+    "_line": 13,
+    "subtype": "sizeplay",
+    "id": "TECHWEB_NODE_SIZEPLAY",
+    "display_name": "Scale Distortion Technology",
+    "description": "Isolating the active components of local Xenoflora and applying them in different ways has resulted in a variety of ways to adjust the scale of living things!",
+    "prereq_ids": [
+      "TECHWEB_NODE_SCENE_TOOLS",
+      "TECHWEB_NODE_PASSIVE_IMPLANTS"
+    ],
+    "design_ids": [
+      "implant_size",
+      "sizegun",
+      "bluespacebracelet",
+      "deluxebluespacebracelet",
+      "bluespacecollar",
+      "gradsizegun",
+      "hfjumpsuit",
+      "bluespace_jumpsuit"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_COMMON"
+    ],
+    "discount_experiments": {
+      "/datum/experiment/scanning/people/big_or_smol": "TECHWEB_TIER_3_POINTS"
+    },
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "scene_nodes.dm",
+    "_path": "/datum/techweb_node/illegal",
+    "_line": 34,
+    "subtype": "illegal",
+    "id": "TECHWEB_NODE_ILLEGAL_SCENETOOLS",
+    "display_name": "Modified Sleeve Equipment",
+    "description": "It turns out that the neurological process used by the Sleevemate can be adjusted to be read AND write with moderate modification! The extra buffer memory on the modified version lets you perform both at once and swap the mind states of two participants!",
+    "prereq_ids": [
+      "TECHWEB_NODE_SCENE_TOOLS",
+      "TECHWEB_NODE_SEC_EQUIP"
+    ],
+    "design_ids": [
+      "bodysnatcher"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "security_nodes.dm",
+    "_path": "/datum/techweb_node/basic_arms",
+    "_line": 1,
+    "subtype": "basic_arms",
+    "id": "TECHWEB_NODE_BASIC_ARMS",
+    "starting_node": true,
+    "display_name": "Basic Arms",
+    "description": "Ballistics can be unpredictable in space.",
+    "design_ids": [
+      "dartgun_r",
+      "dartgun_mag_s",
+      "dartgun_ammo_s",
+      "dartgun_mag_m",
+      "dartgun_ammo_m",
+      "//toy_armblade",
+      "//toygun",
+      "//c38_rubber",
+      "//c38_rubber_mag",
+      "//c38_sec",
+      "//c38_mag",
+      "//capbox",
+      "//foam_dart",
+      "//sec_beanbag_slug",
+      "//sec_dart",
+      "//sec_Islug",
+      "//sec_rshot"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "security_nodes.dm",
+    "_path": "/datum/techweb_node/sec_equip",
+    "_line": 26,
+    "subtype": "sec_equip",
+    "id": "TECHWEB_NODE_SEC_EQUIP",
+    "display_name": "Security Equipment",
+    "description": "All the essentials to subdue a mime.",
+    "prereq_ids": [
+      "TECHWEB_NODE_BASIC_ARMS"
+    ],
+    "design_ids": [
+      "seccamera",
+      "sec_data",
+      "prisonmanage",
+      "pointdefense",
+      "pointdefense_control",
+      "//mining",
+      "//rdcamera",
+      "//security_photobooth",
+      "//photobooth",
+      "//scanner_gate",
+      "//pepperspray",
+      "//dragnet_beacon",
+      "//inspector",
+      "//evidencebag",
+      "//zipties",
+      "//seclite",
+      "//electropack"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_1_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SECURITY"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "security_nodes.dm",
+    "_path": "/datum/techweb_node/riot_supression",
+    "_line": 53,
+    "subtype": "riot_supression",
+    "id": "TECHWEB_NODE_RIOT_SUPRESSION",
+    "display_name": "Riot Supression",
+    "description": "When you are on the opposing side of a revolutionary movement.",
+    "prereq_ids": [
+      "TECHWEB_NODE_SEC_EQUIP"
+    ],
+    "design_ids": [
+      "netgun",
+      "sizenetgun",
+      "sickshot",
+      "pummeler",
+      "protector",
+      "fuelrod_gun",
+      "chargesword",
+      "chargeaxe",
+      "riflescope",
+      "motion_tracker",
+      "hunt_trap",
+      "recon_skimmer",
+      "//clown_firing_pin",
+      "//pin_testing",
+      "//pin_loyalty",
+      "//tele_shield",
+      "//ballistic_shield",
+      "//handcuffs_s",
+      "//bola_energy"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SECURITY"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "security_nodes.dm",
+    "_path": "/datum/techweb_node/explosives",
+    "_line": 82,
+    "subtype": "explosives",
+    "id": "TECHWEB_NODE_EXPLOSIVES",
+    "display_name": "Explosives",
+    "description": "For once, intentional explosions.",
+    "prereq_ids": [
+      "TECHWEB_NODE_RIOT_SUPRESSION"
+    ],
+    "design_ids": [
+      "large_Grenade"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SECURITY",
+      "CHANNEL_MEDICAL"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "security_nodes.dm",
+    "_path": "/datum/techweb_node/exotic_ammo",
+    "_line": 94,
+    "subtype": "exotic_ammo",
+    "id": "TECHWEB_NODE_EXOTIC_AMMO",
+    "display_name": "Exotic Ammunition",
+    "description": "Specialized bullets designed to ignite, freeze, and inflict various other effects on targets, expanding combat capabilities.",
+    "prereq_ids": [
+      "TECHWEB_NODE_EXPLOSIVES"
+    ],
+    "design_ids": [
+      "smg",
+      "ammo_9mm",
+      "magnetic_ammo",
+      "stunshell",
+      "empshell",
+      "ptrshell",
+      "monkey_gun",
+      "//c38_hotshot",
+      "//c38_hotshot_mag",
+      "//c38_iceblox",
+      "//c38_iceblox_mag",
+      "//c38_trac",
+      "//c38_trac_mag",
+      "//c38_true_strike",
+      "//c38_true_strike_mag",
+      "//techshotshell",
+      "//flechetteshell"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SECURITY"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "security_nodes.dm",
+    "_path": "/datum/techweb_node/electric_weapons",
+    "_line": 122,
+    "subtype": "electric_weapons",
+    "id": "TECHWEB_NODE_ELECTRIC_WEAPONS",
+    "display_name": "Electric Weaponry",
+    "description": "Energy-based weaponry designed for both lethal and non-lethal applications.",
+    "prereq_ids": [
+      "TECHWEB_NODE_RIOT_SUPRESSION"
+    ],
+    "design_ids": [
+      "stunrevolver",
+      "temp_gun",
+      "vinstunrevolver",
+      "//ioncarbine",
+      "//lasershell"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SECURITY"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "security_nodes.dm",
+    "_path": "/datum/techweb_node/beam_weapons",
+    "_line": 137,
+    "subtype": "beam_weapons",
+    "id": "TECHWEB_NODE_BEAM_WEAPONS",
+    "display_name": "Advanced Beam Weaponry",
+    "description": "So advanced, even engineers are baffled by its operational principles.",
+    "prereq_ids": [
+      "TECHWEB_NODE_ELECTRIC_WEAPONS"
+    ],
+    "design_ids": [
+      "nuclear_gun",
+      "ppistol",
+      "lasercannon",
+      "decloner",
+      "advparticle",
+      "pressureinterlock",
+      "particlecannon"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SECURITY"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "security_nodes.dm",
+    "_path": "/datum/techweb_node/gun_nsfw",
+    "_line": 154,
+    "subtype": "gun_nsfw",
+    "id": "TECHWEB_NODE_NSFW",
+    "display_name": "'NSFW' Gun",
+    "description": "Experimental N.S.F.W. Revolver.",
+    "prereq_ids": [
+      "TECHWEB_NODE_EXOTIC_AMMO"
+    ],
+    "design_ids": [
+      "nsfw_prototype",
+      "nsfw_mag_prototype",
+      "nsfw_cell_stun",
+      "nsfw_cell_lethal",
+      "nsfw_cell_net",
+      "nsfw_cell_ion",
+      "nsfw_cell_shotstun",
+      "nsfw_cell_xray",
+      "nsfw_cell_stripper"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_4_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SECURITY"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "service_nodes.dm",
+    "_path": "/datum/techweb_node/office_equip",
+    "_line": 1,
+    "subtype": "office_equip",
+    "id": "TECHWEB_NODE_OFFICE_EQUIP",
+    "starting_node": true,
+    "display_name": "Office Equipment",
+    "description": "Nanotrasen's finest in ergonomic office tech, ensuring station admin stays productive and compliant with corporate policies — because even in space, paperwork never stops.",
+    "design_ids": [
+      "communicator",
+      "laser_pointer",
+      "translator",
+      "ear_translator",
+      "walkpod",
+      "juke_remote",
+      "mail_scanner",
+      "floor_painter",
+      "//fax",
+      "//sec_pen",
+      "//handlabel",
+      "//roll",
+      "//universal_scanner",
+      "//desttagger",
+      "//packagewrap",
+      "//sticky_tape",
+      "//toner_large",
+      "//toner",
+      "//boxcutter",
+      "//bounced_radio",
+      "//radio_headset",
+      "//earmuffs",
+      "//recorder",
+      "//tape",
+      "//toy_balloon",
+      "//pet_carrier",
+      "//chisel",
+      "//spraycan",
+      "//camera_film",
+      "//camera",
+      "//razor",
+      "//bucket",
+      "//mop",
+      "//pushbroom",
+      "//normtrash",
+      "//wirebrush",
+      "//flashlight",
+      "//water_balloon",
+      "//ticket_machine",
+      "//radio_entertainment",
+      "//photocopier"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "service_nodes.dm",
+    "_path": "/datum/techweb_node/sanitation",
+    "_line": 50,
+    "subtype": "sanitation",
+    "id": "TECHWEB_NODE_SANITATION",
+    "display_name": "Advanced Sanitation Technology",
+    "description": "Nanotrasen's latest in janitorial tech, making sure the station stays spotless and bear-free.",
+    "prereq_ids": [
+      "TECHWEB_NODE_OFFICE_EQUIP"
+    ],
+    "design_ids": [
+      "advmop",
+      "light_replacer",
+      "spraybottle",
+      "beartrap",
+      "//buffer",
+      "//vacuum"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "discount_experiments": {
+      "/datum/experiment/scanning/random/janitor_trash": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SERVICE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "service_nodes.dm",
+    "_path": "/datum/techweb_node/consoles",
+    "_line": 67,
+    "subtype": "consoles",
+    "id": "TECHWEB_NODE_CONSOLES",
+    "display_name": "Civilian Consoles",
+    "description": "User-friendly consoles for non-technical crew members, enhancing communication and access to essential station information.",
+    "prereq_ids": [
+      "TECHWEB_NODE_OFFICE_EQUIP"
+    ],
+    "design_ids": [
+      "med_data",
+      "ordercomp",
+      "supplycomp",
+      "crewconsole",
+      "emp_data",
+      "comconsole",
+      "idcardconsole",
+      "jukebox",
+      "// PDAs\"pda",
+      "cart_basic",
+      "cart_engineering",
+      "cart_atmos",
+      "cart_medical",
+      "cart_chemistry",
+      "cart_security",
+      "cart_janitor",
+      "cart_science",
+      "cart_quartermaster",
+      "cart_head",
+      "cart_hop",
+      "cart_hos",
+      "cart_ce",
+      "cart_cmo",
+      "cart_rd",
+      "cart_captain",
+      "// GPS\"gps_gen",
+      "gps_com",
+      "gps_sec",
+      "gps_med",
+      "gps_eng",
+      "gps_sci",
+      "gps_exp",
+      "//automated_announcement",
+      "//bankmachine",
+      "//account_console",
+      "//idcard",
+      "//c-reader",
+      "//libraryconsole",
+      "//libraryscanner",
+      "//bookbinder",
+      "//barcode_scanner",
+      "//vendor",
+      "//custom_vendor_refill",
+      "//bounty_pad_control",
+      "//bounty_pad",
+      "//digital_clock_frame",
+      "//telescreen_research",
+      "//telescreen_ordnance",
+      "//telescreen_interrogation",
+      "//telescreen_prison",
+      "//telescreen_bar",
+      "//telescreen_entertainment"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_1_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SERVICE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "service_nodes.dm",
+    "_path": "/datum/techweb_node/modular_computers",
+    "_line": 132,
+    "subtype": "modular_computers",
+    "id": "TECHWEB_NODE_MODULAR_COMPUTER",
+    "display_name": "Modular Computers",
+    "description": "Pieces and parts for modular computers; consoles, laptops, and tablets.",
+    "prereq_ids": [
+      "TECHWEB_NODE_CONSOLES"
+    ],
+    "design_ids": [
+      "hdd_basic",
+      "hdd_advanced",
+      "hdd_super",
+      "hdd_cluster",
+      "hdd_small",
+      "hdd_micro",
+      "netcard_basic",
+      "netcard_advanced",
+      "netcard_wired",
+      "bat_normal",
+      "bat_advanced",
+      "bat_super",
+      "bat_ultra",
+      "bat_nano",
+      "bat_micro",
+      "cpu_normal",
+      "cpu_small",
+      "pcpu_normal",
+      "pcpu_small",
+      "cardslot",
+      "nanoprinter",
+      "teslalink",
+      "portadrive_basic",
+      "portadrive_advanced",
+      "portadrive_super"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_1_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SERVICE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "service_nodes.dm",
+    "_path": "/datum/techweb_node/gaming",
+    "_line": 167,
+    "subtype": "gaming",
+    "id": "TECHWEB_NODE_GAMING",
+    "display_name": "Gaming",
+    "description": "For the slackers on the station.",
+    "prereq_ids": [
+      "TECHWEB_NODE_CONSOLES"
+    ],
+    "design_ids": [
+      "arcademachine",
+      "oriontrail",
+      "clawmachine"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "discount_experiments": {
+      "/datum/experiment/physical/arcade_winner": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SERVICE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "service_nodes.dm",
+    "_path": "/datum/techweb_node/fireworks",
+    "_line": 181,
+    "subtype": "fireworks",
+    "id": "TECHWEB_NODE_FIREWORKS",
+    "display_name": "Fireworks",
+    "description": "Pretty explosives! They change the weather!",
+    "prereq_ids": [
+      "TECHWEB_NODE_PARTS_ADV"
+    ],
+    "design_ids": [
+      "fireworklauncher",
+      "fireworkaesthetic",
+      "fireworkaestheticconfig",
+      "fireworkclearsky",
+      "fireworkcloudy",
+      "fireworkfog",
+      "fireworkrain",
+      "fireworkstorm",
+      "fireworklightsnow",
+      "fireworksnow",
+      "fireworkblizzard",
+      "fireworkhail",
+      "fireworkconfetti",
+      "fireworkfallout"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SCIENCE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "service_nodes.dm",
+    "_path": "/datum/techweb_node/cafeteria_equip",
+    "_line": 207,
+    "subtype": "cafeteria_equip",
+    "id": "TECHWEB_NODE_CAFETERIA_EQUIP",
+    "starting_node": true,
+    "display_name": "Cafeteria Equipment",
+    "description": "When standard-issue tubed food no longer satisfies the station crew's appetite...",
+    "design_ids": [
+      "microwave_board",
+      "//microwave",
+      "//bowl",
+      "//plate",
+      "//oven_tray",
+      "//servingtray",
+      "//tongs",
+      "//spoon",
+      "//fork",
+      "//kitchen_knife",
+      "//plastic_spoon",
+      "//plastic_fork",
+      "//plastic_knife",
+      "//shaker",
+      "//drinking_glass",
+      "//shot_glass",
+      "//coffee_cartridge",
+      "//coffeemaker",
+      "//coffeepot",
+      "//syrup_bottle",
+      "//foodtray",
+      "//restaurant_portal"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "service_nodes.dm",
+    "_path": "/datum/techweb_node/food_proc",
+    "_line": 237,
+    "subtype": "food_proc",
+    "id": "TECHWEB_NODE_FOOD_PROC",
+    "display_name": "Food Processing",
+    "description": "Top-tier kitchen appliances from Nanotrasen, designed to keep the crew well-fed and happy.",
+    "prereq_ids": [
+      "TECHWEB_NODE_CAFETERIA_EQUIP"
+    ],
+    "design_ids": [
+      "deluxe microwave",
+      "oven_board",
+      "fryer_board",
+      "cerealmaker_board",
+      "candymachine_board",
+      "//food_replicator",
+      "borgos1",
+      "//range",
+      "//souppot",
+      "//processor",
+      "//gibber",
+      "//monkey_recycler",
+      "//reagentgrinder",
+      "//microwave_engineering",
+      "//smartfridge",
+      "//dehydrator",
+      "//sheetifier",
+      "//fat_sucker",
+      "//dish_drive",
+      "//roastingstick"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_2_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SERVICE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  },
+  {
+    "_file": "service_nodes.dm",
+    "_path": "/datum/techweb_node/confetti_cannon",
+    "_line": 267,
+    "subtype": "confetti_cannon",
+    "id": "TECHWEB_NODE_CONFETTI",
+    "display_name": "Confetti Cannon",
+    "description": "Less explosive than fireworks yet more messy!",
+    "prereq_ids": [
+      "TECHWEB_NODE_PARTS_ADV"
+    ],
+    "design_ids": [
+      "confetti_cannon"
+    ],
+    "research_costs": {
+      "TECHWEB_POINT_TYPE_GENERIC": "TECHWEB_TIER_3_POINTS"
+    },
+    "announce_channels": [
+      "CHANNEL_SERVICE"
+    ],
+    "hidden": "FALSE",
+    "experimental": "FALSE",
+    "starting_node": "FALSE",
+    "category": "Misc",
+    "show_on_wiki": "TRUE"
+  }
+]
